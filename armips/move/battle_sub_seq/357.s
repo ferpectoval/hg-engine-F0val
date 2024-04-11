@@ -10,16 +10,16 @@
 
 .create "build/move/battle_sub_seq/1_357", 0
 
-// Quash move effect
+// After You move effect
 
 a001_357:
     printattackmessage
     waitmessage
     wait 0x1E
-    changeexecutionorderpriority BATTLER_DEFENDER, EXECUTION_ORDER_QUASH, Fail
+    changeexecutionorderpriority BATTLER_DEFENDER, EXECUTION_ORDER_AFTER_YOU, Fail
     playanimation BATTLER_ATTACKER
     waitmessage
-    printmessage 1433, TAG_NICK, BATTLER_DEFENDER, "NaN", "NaN", "NaN", "NaN", "NaN" // {STRVAR_1 1, 0, 0}’s move\nwas postponed!
+    printmessage 1430, TAG_NICK, BATTLER_DEFENDER, "NaN", "NaN", "NaN", "NaN", "NaN" // {STRVAR_1 1, 0, 0}\ntook the kind offer!
     waitmessage
     wait 0x1E
     endscript

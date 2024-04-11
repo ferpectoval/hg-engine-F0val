@@ -251,7 +251,7 @@ movedata MOVE_CUT, "Cut"
     battleeffect 0
     pss SPLIT_PHYSICAL
     basepower 50
-    type TYPE_NORMAL
+    type TYPE_STEEL
     accuracy 95
     pp 30
     effectchance 0
@@ -985,7 +985,7 @@ movedata MOVE_PSYBEAM, "Psybeam"
 
 movedata MOVE_BUBBLE_BEAM, "Bubble Beam"
     battleeffect 70
-    pss SPLIT_SPECIAL
+    pss SPLIT_PHYSICAL
     basepower 65
     type TYPE_WATER
     accuracy 100
@@ -1146,7 +1146,7 @@ movedata MOVE_STRENGTH, "Strength"
 movedata MOVE_ABSORB, "Absorb"
     battleeffect 3
     pss SPLIT_SPECIAL
-    basepower 20
+    basepower 35
     type TYPE_GRASS
     accuracy 100
     pp 25
@@ -1162,7 +1162,7 @@ movedata MOVE_ABSORB, "Absorb"
 movedata MOVE_MEGA_DRAIN, "Mega Drain"
     battleeffect 3
     pss SPLIT_SPECIAL
-    basepower 40
+    basepower 55
     type TYPE_GRASS
     accuracy 100
     pp 15
@@ -3242,7 +3242,7 @@ movedata MOVE_SANDSTORM, "Sandstorm"
 movedata MOVE_GIGA_DRAIN, "Giga Drain"
     battleeffect 3
     pss SPLIT_SPECIAL
-    basepower 75
+    basepower 80
     type TYPE_GRASS
     accuracy 100
     pp 10
@@ -8136,7 +8136,7 @@ movedata MOVE_SHELL_SMASH, "Shell Smash"
     movedescription MOVE_SHELL_SMASH, "Sharply raises\nAttack, Sp. Atk, and\nSpeed, but lowers\nDefense and Sp. Def."
 
 movedata MOVE_HEAL_PULSE, "Heal Pulse"
-    battleeffect 0
+    battleeffect 401
     pss SPLIT_STATUS
     basepower 0
     type TYPE_PSYCHIC
@@ -8145,7 +8145,7 @@ movedata MOVE_HEAL_PULSE, "Heal Pulse"
     effectchance 0
     target MOVE_TARGET_SELECTED
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_SNATCH
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -8839,53 +8839,53 @@ movedata MOVE_SECRET_SWORD, "Secret Sword"
     terminatedata
     movedescription MOVE_SECRET_SWORD, "The user cuts with\nits long horn. The\nodd power in the\nhorn does physical\ndamage to the foe."
 
-movedata MOVE_GLACIATE, "Glaciate"
-    battleeffect 70
+movedata MOVE_FREEZE_DRY, "Freeze-Dry"
+    battleeffect 402
     pss SPLIT_SPECIAL
-    basepower 65
+    basepower 90
     type TYPE_ICE
-    accuracy 95
-    pp 10
-    effectchance 100
+    accuracy 100
+    pp 20
+    effectchance 0
+    target MOVE_TARGET_SELECTED
+    priority 0
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    appeal 0x00
+    contesttype CONTEST_COOL
+    terminatedata
+    movedescription MOVE_FREEZE_DRY, "The user rapidly cools\nthe target. This move\nis super effective\non Water pokemon"
+
+movedata MOVE_LEAFAGE, "Leafage"
+    battleeffect 43
+    pss SPLIT_SPECIAL
+    basepower 60
+    type TYPE_GRASS
+    accuracy 100
+    pp 25
+    effectchance 0
     target MOVE_TARGET_BOTH
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
-    appeal 0x00
+    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    appeal 0x05
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_GLACIATE, "The user attacks by\nblowing freezing cold\nair at opposing\nPokémon. This lowers\ntheir Speed."
+    movedescription MOVE_LEAFAGE, "Overwhelming foliage\nharasses the foe.\nHas a high\ncritical-hit ratio."
 
-movedata MOVE_BOLT_STRIKE, "Bolt Strike"
-    battleeffect 6
+movedata MOVE_CHLOROBLAST, "Chloroblast"
+    battleeffect 48
     pss SPLIT_SPECIAL
     basepower 130
-    type TYPE_ELECTRIC
-    accuracy 85
-    pp 5
-    effectchance 20
+    type TYPE_GRASS
+    accuracy 100
+    pp 10
+    effectchance 0
     target MOVE_TARGET_SELECTED
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
+    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    appeal 0x12
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_BOLT_STRIKE, "The user surrounds\nitself with abundant\nelectricity that can\nparalyze and charges\nits target."
-
-movedata MOVE_BLUE_FLARE, "Blue Flare"
-    battleeffect 4
-    pss SPLIT_SPECIAL
-    basepower 130
-    type TYPE_FIRE
-    accuracy 85
-    pp 5
-    effectchance 20
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_BLUE_FLARE, "The user attacks by\nengulfing the foe in\na severe, beautiful,\nblue flame. It may\nburn the foe."
+    movedescription MOVE_CHLOROBLAST, "The user launches its\namassed chlorophyll to\ninflict damage. This\nalso hurts\nthe user."
 
 movedata MOVE_FIERY_DANCE, "Fiery Dance"
     battleeffect 276
@@ -8893,7 +8893,7 @@ movedata MOVE_FIERY_DANCE, "Fiery Dance"
     basepower 80
     type TYPE_FIRE
     accuracy 100
-    pp 10
+    pp 5
     effectchance 50
     target MOVE_TARGET_SELECTED
     priority 0
@@ -8903,37 +8903,37 @@ movedata MOVE_FIERY_DANCE, "Fiery Dance"
     terminatedata
     movedescription MOVE_FIERY_DANCE, "Cloaked in flames,\nthe user dances.\nIt may also raise\nthe user’s Sp. Atk."
 
-movedata MOVE_FREEZE_SHOCK, "Freeze Shock"
-    battleeffect 75
-    pss SPLIT_SPECIAL
-    basepower 140
-    type TYPE_ICE
-    accuracy 90
-    pp 5
-    effectchance 30
+movedata MOVE_DEATH_ROLL, "Death Roll"
+    battleeffect 27
+    pss SPLIT_PHYSICAL
+    basepower 90
+    type TYPE_WATER
+    accuracy 100
+    pp 10
+    effectchance 0
     target MOVE_TARGET_SELECTED
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
+    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_CONTACT
+    appeal 0x07
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_FREEZE_SHOCK, "A two-turn attack\nthat hits the foe\nwith electrically\ncharged ice. It may\nparalyze the foe."
+    movedescription MOVE_DEATH_ROLL, "The user clamps its\njaw onto the target\nand spins rapidly for\ntwo to three turns.\nHowever, it then\nbecomes confused."
 
-movedata MOVE_ICE_BURN, "Ice Burn"
-    battleeffect 75
-    pss SPLIT_SPECIAL
-    basepower 140
-    type TYPE_ICE
-    accuracy 90
-    pp 5
-    effectchance 30
-    target MOVE_TARGET_SELECTED
+movedata MOVE_NOBLE_ROAR, "Noble Roar"
+    battleeffect 403
+    pss SPLIT_STATUS
+    basepower 0
+    type TYPE_NORMAL
+    accuracy 100
+    pp 30
+    effectchance 0
+    target MOVE_TARGET_BOTH
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_PROTECT
+    appeal 0x13
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_ICE_BURN, "A two-turn attack\nthat surrounds the\nfoe with ultracold,\nfreezing wind. It\nmay burn the foe."
+    movedescription MOVE_NOBLE_ROAR, "Letting out a noblen\nroar, the user\n intimdates the target,\nlowering both defenses."
 
 movedata MOVE_SNARL, "Snarl"
     battleeffect 71
@@ -8983,21 +8983,21 @@ movedata MOVE_V_CREATE, "V-create"
     terminatedata
     movedescription MOVE_V_CREATE, "The user hurls the\nhot flame on its\nforehead. It lowers\nthe user’s Def, Sp.\nDef, and Speed."
 
-movedata MOVE_FUSION_FLARE, "Fusion Flare"
-    battleeffect 0
+movedata MOVE_WILDFIRE, "Wildfire"
+    battleeffect 400
     pss SPLIT_SPECIAL
     basepower 100
     type TYPE_FIRE
     accuracy 100
-    pp 5
-    effectchance 0
+    pp 10
+    effectchance 100
     target MOVE_TARGET_SELECTED
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_FUSION_FLARE, "The user brings down\na huge flame. It does\nmore damage when\ninfluenced by an\nenormous bolt."
+    movedescription MOVE_WILDFIRE, "The user whips up\na terrifying conflagration.nRaises both Speed\nand Sp. Attack."
 
 movedata MOVE_FUSION_BOLT, "Fusion Bolt"
     battleeffect 0
@@ -9015,7 +9015,86 @@ movedata MOVE_FUSION_BOLT, "Fusion Bolt"
     terminatedata
     movedescription MOVE_FUSION_BOLT, "The user throws down\na giant bolt. It does\nmore damage when\ninfluenced by an\nenormous flame."
 
+movedata MOVE_GLACIATE, "Glaciate"
+    battleeffect 70
+    pss SPLIT_SPECIAL
+    basepower 65
+    type TYPE_ICE
+    accuracy 95
+    pp 10
+    effectchance 100
+    target MOVE_TARGET_BOTH
+    priority 0
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE
+    appeal 0x00
+    contesttype CONTEST_COOL
+    terminatedata
+    movedescription MOVE_GLACIATE, "The user attacks by\nblowing freezing cold\nair at opposing\nPokémon. This lowers\ntheir Speed."
 
+movedata MOVE_BOLT_STRIKE, "Bolt Strike"
+    battleeffect 6
+    pss SPLIT_SPECIAL
+    basepower 130
+    type TYPE_ELECTRIC
+    accuracy 85
+    pp 5
+    effectchance 20
+    target MOVE_TARGET_SELECTED
+    priority 0
+    flags FLAG_KEEP_HP_BAR | FLAG_CONTACT | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    appeal 0x00
+    contesttype CONTEST_COOL
+    terminatedata
+    movedescription MOVE_BOLT_STRIKE, "The user surrounds\nitself with abundant\nelectricity that can\nparalyze and charges\nits target."
+
+movedata MOVE_BLUE_FLARE, "Blue Flare"
+    battleeffect 4
+    pss SPLIT_SPECIAL
+    basepower 130
+    type TYPE_FIRE
+    accuracy 85
+    pp 5
+    effectchance 20
+    target MOVE_TARGET_SELECTED
+    priority 0
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    appeal 0x00
+    contesttype CONTEST_COOL
+    terminatedata
+    movedescription MOVE_BLUE_FLARE, "The user attacks by\nengulfing the foe in\na severe, beautiful,\nblue flame. It may\nburn the foe."
+	
+movedata MOVE_FREEZE_SHOCK, "Freeze Shock"
+    battleeffect 75
+    pss SPLIT_SPECIAL
+    basepower 140
+    type TYPE_ICE
+    accuracy 90
+    pp 5
+    effectchance 30
+    target MOVE_TARGET_SELECTED
+    priority 0
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    appeal 0x00
+    contesttype CONTEST_COOL
+    terminatedata
+    movedescription MOVE_FREEZE_SHOCK, "A two-turn attack\nthat hits the foe\nwith electrically\ncharged ice. It may\nparalyze the foe."
+
+movedata MOVE_FUSION_FLARE, "Fusion Flare"
+    battleeffect 0
+    pss SPLIT_SPECIAL
+    basepower 100
+    type TYPE_FIRE
+    accuracy 100
+    pp 5
+    effectchance 0
+    target MOVE_TARGET_SELECTED
+    priority 0
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    appeal 0x00
+    contesttype CONTEST_COOL
+    terminatedata
+    movedescription MOVE_FUSION_FLARE, "The user brings down\na huge flame. It does\nmore damage when\ninfluenced by an\nenormous bolt."
+	
 movedata MOVE_FLYING_PRESS, "Flying Press"
     battleeffect 0
     pss SPLIT_PHYSICAL
@@ -9144,21 +9223,21 @@ movedata MOVE_TRICK_OR_TREAT, "Trick-or-Treat"
     terminatedata
     movedescription MOVE_TRICK_OR_TREAT, "---"
 
-movedata MOVE_NOBLE_ROAR, "Noble Roar"
-    battleeffect 0
-    pss SPLIT_STATUS
-    basepower 0
-    type TYPE_NORMAL
-    accuracy 100
-    pp 30
-    effectchance 100
+movedata MOVE_ICE_BURN, "Ice Burn"
+    battleeffect 75
+    pss SPLIT_SPECIAL
+    basepower 140
+    type TYPE_ICE
+    accuracy 90
+    pp 5
+    effectchance 30
     target MOVE_TARGET_SELECTED
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_NOBLE_ROAR, "---"
+    movedescription MOVE_ICE_BURN, "A two-turn attack\nthat surrounds the\nfoe with ultracold,\nfreezing wind. It\nmay burn the foe."
 
 movedata MOVE_ION_DELUGE, "Ion Deluge"
     battleeffect 0
@@ -9224,21 +9303,6 @@ movedata MOVE_PETAL_BLIZZARD, "Petal Blizzard"
     terminatedata
     movedescription MOVE_PETAL_BLIZZARD, "---"
 
-movedata MOVE_FREEZE_DRY, "Freeze-Dry"
-    battleeffect 0
-    pss SPLIT_SPECIAL
-    basepower 70
-    type TYPE_ICE
-    accuracy 100
-    pp 20
-    effectchance 10
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_FREEZE_DRY, "---"
 
 movedata MOVE_DISARMING_VOICE, "Disarming Voice"
     battleeffect 0
@@ -9737,13 +9801,13 @@ movedatalongname MOVE_ELECTRIC_TERRAIN, "ElectricTerrain", "Electric Terrain"
     movedescription MOVE_ELECTRIC_TERRAIN, "---"
 
 movedata MOVE_DAZZLING_GLEAM, "Dazzling Gleam"
-    battleeffect 0
+    battleeffect 31
     pss SPLIT_SPECIAL
     basepower 80
     type (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_NORMAL
     accuracy 100
     pp 10
-    effectchance 0
+    effectchance 10
     target MOVE_TARGET_BOTH
     priority 0
     flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
@@ -10776,22 +10840,6 @@ movedata MOVE_SOLAR_BLADE, "Solar Blade"
     terminatedata
     movedescription MOVE_SOLAR_BLADE, "---"
 
-movedata MOVE_LEAFAGE, "Leafage"
-    battleeffect 0
-    pss SPLIT_PHYSICAL
-    basepower 40
-    type TYPE_GRASS
-    accuracy 100
-    pp 40
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_LEAFAGE, "---"
-
 movedata MOVE_SPOTLIGHT, "Spotlight"
     battleeffect 172
     pss SPLIT_STATUS
@@ -11419,7 +11467,7 @@ movedata MOVE_ACCELEROCK, "Accelerock"
 movedata MOVE_LIQUIDATION, "Liquidation"
     battleeffect 69
     pss SPLIT_PHYSICAL
-    basepower 85
+    basepower 100
     type TYPE_WATER
     accuracy 100
     pp 10
@@ -13415,22 +13463,6 @@ movedata MOVE_WAVE_CRASH, "Wave Crash"
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_WAVE_CRASH, "---"
-
-movedata MOVE_CHLOROBLAST, "Chloroblast"
-    battleeffect 269
-    pss SPLIT_SPECIAL
-    basepower 150
-    type TYPE_GRASS
-    accuracy 95
-    pp 5
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_CHLOROBLAST, "---"
 
 movedata MOVE_MOUNTAIN_GALE, "Mountain Gale"
     battleeffect 31

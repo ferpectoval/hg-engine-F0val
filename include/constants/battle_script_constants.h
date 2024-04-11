@@ -365,173 +365,173 @@
 #define SUB_SEQ_HANDLE_SHED_TAIL                      (355)
 #define SUB_SEQ_HANDLE_AFTER_YOU                      (356)
 #define SUB_SEQ_HANDLE_QUASH                          (357)
-
-
+#define SUB_SEQ_WILDFIRE							  (358)
 
 // add status effect constants--used in battle effect scripts to queue up a subscript through the table in src/moves.c
 
-#define ADD_STATUS_EFF_START_BATTLE                    (  0)
-#define ADD_STATUS_EFF_APPLY_SLEEP                     (  1)
-#define ADD_STATUS_EFF_APPLY_POISON                    (  2)
-#define ADD_STATUS_EFF_APPLY_BURN                      (  3)
-#define ADD_STATUS_EFF_APPLY_FREEZE                    (  4)
-#define ADD_STATUS_EFF_APPLY_PARALYSIS                 (  5)
-#define ADD_STATUS_EFF_BADLY_POISON                    (  6)
-#define ADD_STATUS_EFF_APPLY_CONFUSION                 (  7)
-#define ADD_STATUS_EFF_TRY_FLINCH                      (  8)
-#define ADD_STATUS_EFF_REST                            (  9)
-#define ADD_STATUS_EFF_UPROAR                          ( 10)
-#define ADD_STATUS_EFF_PAY_DAY                         ( 11)
-#define ADD_STATUS_EFF_VANISH_ON_CHARGE_TURN           ( 12)
-#define ADD_STATUS_EFF_CLAMP_START                     ( 13)
-#define ADD_STATUS_EFF_RECOIL_1_4                      ( 14)
-#define ADD_STATUS_EFF_BOOST_STATS_ATTACK_UP           ( 15)
-#define ADD_STATUS_EFF_BOOST_STATS_DEFENSE_UP          ( 16)
-#define ADD_STATUS_EFF_BOOST_STATS_SPEED_UP            ( 17)
-#define ADD_STATUS_EFF_BOOST_STATS_SP_ATK_UP           ( 18)
-#define ADD_STATUS_EFF_BOOST_STATS_SP_DEF_UP           ( 19)
-#define ADD_STATUS_EFF_BOOST_STATS_ACCURACY_UP         ( 20)
-#define ADD_STATUS_EFF_BOOST_STATS_EVASION_UP          ( 21)
-#define ADD_STATUS_EFF_BOOST_STATS_ATTACK_DOWN         ( 22)
-#define ADD_STATUS_EFF_BOOST_STATS_DEFENSE_DOWN        ( 23)
-#define ADD_STATUS_EFF_BOOST_STATS_SPEED_DOWN          ( 24)
-#define ADD_STATUS_EFF_BOOST_STATS_SP_ATK_DOWN         ( 25)
-#define ADD_STATUS_EFF_BOOST_STATS_SP_DEF_DOWN         ( 26)
-#define ADD_STATUS_EFF_BOOST_STATS_ACCURACY_DOWN       ( 27)
-#define ADD_STATUS_EFF_BOOST_STATS_EVASION_DOWN        ( 28)
-#define ADD_STATUS_EFF_RECHARGE_MOVE                   ( 29)
-#define ADD_STATUS_EFF_RAGE_SET                        ( 30)
-#define ADD_STATUS_EFF_THIEF                           ( 31)
-#define ADD_STATUS_EFF_MEAN_LOOK                       ( 32)
-#define ADD_STATUS_EFF_APPLY_NIGHTMARE                 ( 33)
-#define ADD_STATUS_EFF_OMNIBOOST                       ( 34)
-#define ADD_STATUS_EFF_RAPID_SPIN                      ( 35)
-#define ADD_STATUS_EFF_HEAL_PARALYSIS                  ( 36)
-#define ADD_STATUS_EFF_SUPERPOWER_DEBUFF               ( 37)
-#define ADD_STATUS_EFF_RECOIL_1_3                      ( 38)
-#define ADD_STATUS_EFF_BOOST_STATS_ATTACK_UP_2         ( 39)
-#define ADD_STATUS_EFF_BOOST_STATS_DEFENSE_UP_2        ( 40)
-#define ADD_STATUS_EFF_BOOST_STATS_SPEED_UP_2          ( 41)
-#define ADD_STATUS_EFF_BOOST_STATS_SP_ATK_UP_2         ( 42)
-#define ADD_STATUS_EFF_BOOST_STATS_SP_DEF_UP_2         ( 43)
-#define ADD_STATUS_EFF_BOOST_STATS_ACCURACY_UP_2       ( 44)
-#define ADD_STATUS_EFF_BOOST_STATS_EVASION_UP_2        ( 45)
-#define ADD_STATUS_EFF_BOOST_STATS_ATTACK_DOWN_2       ( 46)
-#define ADD_STATUS_EFF_BOOST_STATS_DEFENSE_DOWN_2      ( 47)
-#define ADD_STATUS_EFF_BOOST_STATS_SPEED_DOWN_2        ( 48)
-#define ADD_STATUS_EFF_BOOST_STATS_SP_ATK_DOWN_2       ( 49)
-#define ADD_STATUS_EFF_BOOST_STATS_SP_DEF_DOWN_2       ( 50)
-#define ADD_STATUS_EFF_BOOST_STATS_ACCURACY_DOWN_2     ( 51)
-#define ADD_STATUS_EFF_BOOST_STATS_EVASION_DOWN_2      ( 52)
-#define ADD_STATUS_EFF_THRASHING                       ( 53)
-#define ADD_STATUS_EFF_KNOCK_OFF                       ( 54)
-#define ADD_STATUS_EFF_COSMIC_POWER                    ( 55)
-#define ADD_STATUS_EFF_BULK_UP                         ( 56)
-#define ADD_STATUS_EFF_TICKLE                          ( 57)
-#define ADD_STATUS_EFF_CALM_MIND                       ( 58)
-#define ADD_STATUS_EFF_DRAGON_DANCE                    ( 59)
-#define ADD_STATUS_EFF_DRAIN_HALF                      ( 60)
-#define ADD_STATUS_EFF_DREAM_EATER                     ( 61)
-#define ADD_STATUS_EFF_CLEAR_ALL_BOOSTS                ( 62)
-#define ADD_STATUS_EFF_START_BIDE                      ( 63)
-#define ADD_STATUS_EFF_STRUGGLE                        ( 64)
-#define ADD_STATUS_EFF_CONVERSION                      ( 65)
-#define ADD_STATUS_EFF_RECOVER_HALF_HP                 ( 66)
-#define ADD_STATUS_EFF_LIGHT_SCREEN                    ( 67)
-#define ADD_STATUS_EFF_REFLECT                         ( 68)
-#define ADD_STATUS_EFF_APPLY_MIST                      ( 69)
-#define ADD_STATUS_EFF_FOCUS_ENERGY                    ( 70)
-#define ADD_STATUS_EFF_MIMIC                           ( 71)
-#define ADD_STATUS_EFF_APPLY_LEECH_SEED                ( 72)
-#define ADD_STATUS_EFF_APPLY_DISABLE                   ( 73)
-#define ADD_STATUS_EFF_APPLY_ENCORE                    ( 74)
-#define ADD_STATUS_EFF_PAIN_SPLIT                      ( 75)
-#define ADD_STATUS_EFF_CONVERSION_2                    ( 76)
-#define ADD_STATUS_EFF_LOCKON                          ( 77)
-#define ADD_STATUS_EFF_SKETCH                          ( 78)
-#define ADD_STATUS_EFF_FEINT                           ( 79)
-#define ADD_STATUS_EFF_DESTINY_BOND                    ( 80)
-#define ADD_STATUS_EFF_SPITE                           ( 81)
-#define ADD_STATUS_EFF_PROTECT                         ( 82)
-#define ADD_STATUS_EFF_HEAL_BELL                       ( 83)
-#define ADD_STATUS_EFF_TRY_SUBSTITUTE                  ( 84)
-#define ADD_STATUS_EFF_FORCE_OUT                       ( 85)
-#define ADD_STATUS_EFF_TRANSFORM                       ( 86)
-#define ADD_STATUS_EFF_EVA_PLUS_ONE                    ( 87)
-#define ADD_STATUS_EFF_CURSE_BOOST                     ( 88)
-#define ADD_STATUS_EFF_CURSE_GHOST                     ( 89)
-#define ADD_STATUS_EFF_PRINT_MESSAGE                   ( 90)
-#define ADD_STATUS_EFF_FORESIGHT                       ( 91)
-#define ADD_STATUS_EFF_START_PERISH_SONG               ( 92)
-#define ADD_STATUS_EFF_WEATHER_MESSAGE                 ( 93)
-#define ADD_STATUS_EFF_SWAGGER                         ( 94)
-#define ADD_STATUS_EFF_APPLY_ATTRACT                   ( 95)
-#define ADD_STATUS_EFF_APPLY_SAFEGUARD                 ( 96)
-#define ADD_STATUS_EFF_PRESENT                         ( 97)
-#define ADD_STATUS_EFF_MAGNITUDE                       ( 98)
-#define ADD_STATUS_EFF_BATON_PASS                      ( 99)
-#define ADD_STATUS_EFF_BELLY_DRUM                      (100)
-#define ADD_STATUS_EFF_TELEPORT                        (101)
-#define ADD_STATUS_EFF_FUTURE_SIGHT_ATTACK_MESSAGE     (102)
-#define ADD_STATUS_EFF_STOCKPILE                       (103)
-#define ADD_STATUS_EFF_SWALLOW                         (104)
-#define ADD_STATUS_EFF_APPLY_TORMENT                   (105)
-#define ADD_STATUS_EFF_FLATTER                         (106)
-#define ADD_STATUS_EFF_MEMENTO                         (107)
-#define ADD_STATUS_EFF_CHARGE                          (108)
-#define ADD_STATUS_EFF_APPLY_TAUNT                     (109)
-#define ADD_STATUS_EFF_TRICK                           (110)
-#define ADD_STATUS_EFF_ROLE_PLAY                       (111)
-#define ADD_STATUS_EFF_BREAK_SCREENS                   (112)
-#define ADD_STATUS_EFF_YAWN                            (113)
-#define ADD_STATUS_EFF_SKILL_SWAP                      (114)
-#define ADD_STATUS_EFF_REFRESH                         (115)
-#define ADD_STATUS_EFF_ROOST                           (116)
-#define ADD_STATUS_EFF_FORCE_WAKE_UP                   (117)
-#define ADD_STATUS_EFF_APPLY_GRAVITY                   (118)
-#define ADD_STATUS_EFF_MIRACLE_EYE                     (119)
-#define ADD_STATUS_EFF_HEALING_WISH                    (120)
-#define ADD_STATUS_EFF_APPLY_TAILWIND                  (121)
-#define ADD_STATUS_EFF_CLOSE_COMBAT_DEBUFF             (122)
-#define ADD_STATUS_EFF_POWER_TRICK                     (123)
-#define ADD_STATUS_EFF_GASTRO_ACID                     (124)
-#define ADD_STATUS_EFF_APPLY_LUCKY_CHANT               (125)
-#define ADD_STATUS_EFF_POWER_SWAP                      (126)
-#define ADD_STATUS_EFF_GUARD_SWAP                      (127)
-#define ADD_STATUS_EFF_WORRY_SEED                      (128)
-#define ADD_STATUS_EFF_HEART_SWAP                      (129)
-#define ADD_STATUS_EFF_FLARE_BLITZ                     (130)
-#define ADD_STATUS_EFF_DEFOG                           (131)
-#define ADD_STATUS_EFF_APPLY_HEAL_BLOCK                (132)
-#define ADD_STATUS_EFF_PIVOT_ATTACK                    (133)
-#define ADD_STATUS_EFF_EMBARGO                         (134)
-#define ADD_STATUS_EFF_PLUCK                           (135)
-#define ADD_STATUS_EFF_FLING                           (136)
-#define ADD_STATUS_EFF_VOLT_TACKLE                     (137)
-#define ADD_STATUS_EFF_RECOIL_1_2                      (138)
-#define ADD_STATUS_EFF_BURN_OR_FLINCH                  (139)
-#define ADD_STATUS_EFF_FREEZE_OR_FLINCH                (140)
-#define ADD_STATUS_EFF_PARA_OR_FLINCH                  (141)
-#define ADD_STATUS_EFF_CHATTER                         (142)
-#define ADD_STATUS_EFF_LUNAR_DANCE                     (143)
-#define ADD_STATUS_EFF_SYNCHRONIZE                     (144)
-#define ADD_STATUS_EFF_RAISE_ATTACK_AND_ACCURACY       (145)
-#define ADD_STATUS_EFF_GUARD_SPLIT                     (146)
-#define ADD_STATUS_EFF_POWER_SPLIT                     (147)
-#define ADD_STATUS_EFF_QUIVER_DANCE                    (148)
-#define ADD_STATUS_EFF_CHANGE_TARGET_TO_WATER_TYPE     (149)
-#define ADD_STATUS_EFF_COIL                            (150)
-#define ADD_STATUS_EFF_SHIFT_GEAR                      (151)
-#define ADD_STATUS_EFF_SHELL_SMASH                     (152)
-#define ADD_STATUS_EFF_V_CREATE                        (153)
-#define ADD_STATUS_EFF_AUTOTOMIZE                      (154)
-#define ADD_STATUS_EFF_HANDLE_GROWTH                   (155)
-#define ADD_STATUS_EFF_WORK_UP                         (156)
-#define ADD_STATUS_EFF_SPICY_EXTRACT                   (157)
-#define ADD_STATUS_EFF_FILLET_AWAY                     (158)
-#define ADD_STATUS_EFF_SHED_TAIL                       (159)
-#define ADD_STATUS_EFF_AFTER_YOU                       (160)
-#define ADD_STATUS_EFF_QUASH                           (161)
+#define ADD_STATUS_EFF_START_BATTLE                    (  0) // 00
+#define ADD_STATUS_EFF_APPLY_SLEEP                     (  1) // 01
+#define ADD_STATUS_EFF_APPLY_POISON                    (  2) // 02
+#define ADD_STATUS_EFF_APPLY_BURN                      (  3) // 03
+#define ADD_STATUS_EFF_APPLY_FREEZE                    (  4) // 04
+#define ADD_STATUS_EFF_APPLY_PARALYSIS                 (  5) // 05
+#define ADD_STATUS_EFF_BADLY_POISON                    (  6) // 06
+#define ADD_STATUS_EFF_APPLY_CONFUSION                 (  7) // 07
+#define ADD_STATUS_EFF_TRY_FLINCH                      (  8) // 08
+#define ADD_STATUS_EFF_REST                            (  9) // 09
+#define ADD_STATUS_EFF_UPROAR                          ( 10) // 0A
+#define ADD_STATUS_EFF_PAY_DAY                         ( 11) // 0B
+#define ADD_STATUS_EFF_VANISH_ON_CHARGE_TURN           ( 12) // 0C
+#define ADD_STATUS_EFF_CLAMP_START                     ( 13) // 0D
+#define ADD_STATUS_EFF_RECOIL_1_4                      ( 14) // 0E
+#define ADD_STATUS_EFF_BOOST_STATS_ATTACK_UP           ( 15) // 0F
+#define ADD_STATUS_EFF_BOOST_STATS_DEFENSE_UP          ( 16) // 10
+#define ADD_STATUS_EFF_BOOST_STATS_SPEED_UP            ( 17) // 11
+#define ADD_STATUS_EFF_BOOST_STATS_SP_ATK_UP           ( 18) // 12
+#define ADD_STATUS_EFF_BOOST_STATS_SP_DEF_UP           ( 19) // 13
+#define ADD_STATUS_EFF_BOOST_STATS_ACCURACY_UP         ( 20) // 14
+#define ADD_STATUS_EFF_BOOST_STATS_EVASION_UP          ( 21) // 15
+#define ADD_STATUS_EFF_BOOST_STATS_ATTACK_DOWN         ( 22) // 16
+#define ADD_STATUS_EFF_BOOST_STATS_DEFENSE_DOWN        ( 23) // 17
+#define ADD_STATUS_EFF_BOOST_STATS_SPEED_DOWN          ( 24) // 18
+#define ADD_STATUS_EFF_BOOST_STATS_SP_ATK_DOWN         ( 25) // 19
+#define ADD_STATUS_EFF_BOOST_STATS_SP_DEF_DOWN         ( 26) // 1A
+#define ADD_STATUS_EFF_BOOST_STATS_ACCURACY_DOWN       ( 27) // 1B
+#define ADD_STATUS_EFF_BOOST_STATS_EVASION_DOWN        ( 28) // 1C
+#define ADD_STATUS_EFF_RECHARGE_MOVE                   ( 29) // 1D
+#define ADD_STATUS_EFF_RAGE_SET                        ( 30) // 1E
+#define ADD_STATUS_EFF_THIEF                           ( 31) // 1F
+#define ADD_STATUS_EFF_MEAN_LOOK                       ( 32) // 20
+#define ADD_STATUS_EFF_APPLY_NIGHTMARE                 ( 33) // 21
+#define ADD_STATUS_EFF_OMNIBOOST                       ( 34) // 22
+#define ADD_STATUS_EFF_RAPID_SPIN                      ( 35) // 23
+#define ADD_STATUS_EFF_HEAL_PARALYSIS                  ( 36) // 24
+#define ADD_STATUS_EFF_SUPERPOWER_DEBUFF               ( 37) // 25
+#define ADD_STATUS_EFF_RECOIL_1_3                      ( 38) // 26
+#define ADD_STATUS_EFF_BOOST_STATS_ATTACK_UP_2         ( 39) // 27
+#define ADD_STATUS_EFF_BOOST_STATS_DEFENSE_UP_2        ( 40) // 28
+#define ADD_STATUS_EFF_BOOST_STATS_SPEED_UP_2          ( 41) // 29
+#define ADD_STATUS_EFF_BOOST_STATS_SP_ATK_UP_2         ( 42) // 2A
+#define ADD_STATUS_EFF_BOOST_STATS_SP_DEF_UP_2         ( 43) // 2B
+#define ADD_STATUS_EFF_BOOST_STATS_ACCURACY_UP_2       ( 44) // 2C
+#define ADD_STATUS_EFF_BOOST_STATS_EVASION_UP_2        ( 45) // 2D
+#define ADD_STATUS_EFF_BOOST_STATS_ATTACK_DOWN_2       ( 46) // 2E
+#define ADD_STATUS_EFF_BOOST_STATS_DEFENSE_DOWN_2      ( 47) // 2F
+#define ADD_STATUS_EFF_BOOST_STATS_SPEED_DOWN_2        ( 48) // 30
+#define ADD_STATUS_EFF_BOOST_STATS_SP_ATK_DOWN_2       ( 49) // 31
+#define ADD_STATUS_EFF_BOOST_STATS_SP_DEF_DOWN_2       ( 50) // 32
+#define ADD_STATUS_EFF_BOOST_STATS_ACCURACY_DOWN_2     ( 51) // 33
+#define ADD_STATUS_EFF_BOOST_STATS_EVASION_DOWN_2      ( 52) // 34
+#define ADD_STATUS_EFF_THRASHING                       ( 53) // 35
+#define ADD_STATUS_EFF_KNOCK_OFF                       ( 54) // 36
+#define ADD_STATUS_EFF_COSMIC_POWER                    ( 55) // 37
+#define ADD_STATUS_EFF_BULK_UP                         ( 56) // 38
+#define ADD_STATUS_EFF_TICKLE                          ( 57) // 39
+#define ADD_STATUS_EFF_CALM_MIND                       ( 58) // 3A
+#define ADD_STATUS_EFF_DRAGON_DANCE                    ( 59) // 3B
+#define ADD_STATUS_EFF_DRAIN_HALF                      ( 60) // 3C
+#define ADD_STATUS_EFF_DREAM_EATER                     ( 61) // 3D
+#define ADD_STATUS_EFF_CLEAR_ALL_BOOSTS                ( 62) // 3E
+#define ADD_STATUS_EFF_START_BIDE                      ( 63) // 3F
+#define ADD_STATUS_EFF_STRUGGLE                        ( 64) // 40
+#define ADD_STATUS_EFF_CONVERSION                      ( 65) // 41
+#define ADD_STATUS_EFF_RECOVER_HALF_HP                 ( 66) // 42
+#define ADD_STATUS_EFF_LIGHT_SCREEN                    ( 67) // 43
+#define ADD_STATUS_EFF_REFLECT                         ( 68) // 44
+#define ADD_STATUS_EFF_APPLY_MIST                      ( 69) // 45
+#define ADD_STATUS_EFF_FOCUS_ENERGY                    ( 70) // 46
+#define ADD_STATUS_EFF_MIMIC                           ( 71) // 47
+#define ADD_STATUS_EFF_APPLY_LEECH_SEED                ( 72) // 48
+#define ADD_STATUS_EFF_APPLY_DISABLE                   ( 73) // 49
+#define ADD_STATUS_EFF_APPLY_ENCORE                    ( 74) // 4A
+#define ADD_STATUS_EFF_PAIN_SPLIT                      ( 75) // 4B
+#define ADD_STATUS_EFF_CONVERSION_2                    ( 76) // 4C
+#define ADD_STATUS_EFF_LOCKON                          ( 77) // 4D
+#define ADD_STATUS_EFF_SKETCH                          ( 78) // 4E
+#define ADD_STATUS_EFF_FEINT                           ( 79) // 4F
+#define ADD_STATUS_EFF_DESTINY_BOND                    ( 80) // 50
+#define ADD_STATUS_EFF_SPITE                           ( 81) // 51
+#define ADD_STATUS_EFF_PROTECT                         ( 82) // 52
+#define ADD_STATUS_EFF_HEAL_BELL                       ( 83) // 53
+#define ADD_STATUS_EFF_TRY_SUBSTITUTE                  ( 84) // 54
+#define ADD_STATUS_EFF_FORCE_OUT                       ( 85) // 55
+#define ADD_STATUS_EFF_TRANSFORM                       ( 86) // 56
+#define ADD_STATUS_EFF_EVA_PLUS_ONE                    ( 87) // 57
+#define ADD_STATUS_EFF_CURSE_BOOST                     ( 88) // 58
+#define ADD_STATUS_EFF_CURSE_GHOST                     ( 89) // 59
+#define ADD_STATUS_EFF_PRINT_MESSAGE                   ( 90) // 5A
+#define ADD_STATUS_EFF_FORESIGHT                       ( 91) // 5B
+#define ADD_STATUS_EFF_START_PERISH_SONG               ( 92) // 5C
+#define ADD_STATUS_EFF_WEATHER_MESSAGE                 ( 93) // 5D
+#define ADD_STATUS_EFF_SWAGGER                         ( 94) // 5E
+#define ADD_STATUS_EFF_APPLY_ATTRACT                   ( 95) // 5F
+#define ADD_STATUS_EFF_APPLY_SAFEGUARD                 ( 96) // 60
+#define ADD_STATUS_EFF_PRESENT                         ( 97) // 61
+#define ADD_STATUS_EFF_MAGNITUDE                       ( 98) // 62
+#define ADD_STATUS_EFF_BATON_PASS                      ( 99) // 63
+#define ADD_STATUS_EFF_BELLY_DRUM                      (100) // 64
+#define ADD_STATUS_EFF_TELEPORT                        (101) // 65
+#define ADD_STATUS_EFF_FUTURE_SIGHT_ATTACK_MESSAGE     (102) // 66
+#define ADD_STATUS_EFF_STOCKPILE                       (103) // 67
+#define ADD_STATUS_EFF_SWALLOW                         (104) // 68
+#define ADD_STATUS_EFF_APPLY_TORMENT                   (105) // 69
+#define ADD_STATUS_EFF_FLATTER                         (106) // 6A
+#define ADD_STATUS_EFF_MEMENTO                         (107) // 6B
+#define ADD_STATUS_EFF_CHARGE                          (108) // 6C
+#define ADD_STATUS_EFF_APPLY_TAUNT                     (109) // 6D
+#define ADD_STATUS_EFF_TRICK                           (110) // 6E
+#define ADD_STATUS_EFF_ROLE_PLAY                       (111) // 6F
+#define ADD_STATUS_EFF_BREAK_SCREENS                   (112) // 70
+#define ADD_STATUS_EFF_YAWN                            (113) // 71
+#define ADD_STATUS_EFF_SKILL_SWAP                      (114) // 72
+#define ADD_STATUS_EFF_REFRESH                         (115) // 73
+#define ADD_STATUS_EFF_ROOST                           (116) // 74
+#define ADD_STATUS_EFF_FORCE_WAKE_UP                   (117) // 75
+#define ADD_STATUS_EFF_APPLY_GRAVITY                   (118) // 76
+#define ADD_STATUS_EFF_MIRACLE_EYE                     (119) // 77
+#define ADD_STATUS_EFF_HEALING_WISH                    (120) // 78
+#define ADD_STATUS_EFF_APPLY_TAILWIND                  (121) // 79
+#define ADD_STATUS_EFF_CLOSE_COMBAT_DEBUFF             (122) // 7A
+#define ADD_STATUS_EFF_POWER_TRICK                     (123) // 7B
+#define ADD_STATUS_EFF_GASTRO_ACID                     (124) // 7C
+#define ADD_STATUS_EFF_APPLY_LUCKY_CHANT               (125) // 7D
+#define ADD_STATUS_EFF_POWER_SWAP                      (126) // 7E
+#define ADD_STATUS_EFF_GUARD_SWAP                      (127) // 7F
+#define ADD_STATUS_EFF_WORRY_SEED                      (128) // 80
+#define ADD_STATUS_EFF_HEART_SWAP                      (129) // 81
+#define ADD_STATUS_EFF_FLARE_BLITZ                     (130) // 82
+#define ADD_STATUS_EFF_DEFOG                           (131) // 83
+#define ADD_STATUS_EFF_APPLY_HEAL_BLOCK                (132) // 84
+#define ADD_STATUS_EFF_PIVOT_ATTACK                    (133) // 85
+#define ADD_STATUS_EFF_EMBARGO                         (134) // 86
+#define ADD_STATUS_EFF_PLUCK                           (135) // 87
+#define ADD_STATUS_EFF_FLING                           (136) // 88
+#define ADD_STATUS_EFF_VOLT_TACKLE                     (137) // 89
+#define ADD_STATUS_EFF_RECOIL_1_2                      (138) // 8A
+#define ADD_STATUS_EFF_BURN_OR_FLINCH                  (139) // 8B
+#define ADD_STATUS_EFF_FREEZE_OR_FLINCH                (140) // 8C
+#define ADD_STATUS_EFF_PARA_OR_FLINCH                  (141) // 8D
+#define ADD_STATUS_EFF_CHATTER                         (142) // 8E
+#define ADD_STATUS_EFF_LUNAR_DANCE                     (143) // 8F
+#define ADD_STATUS_EFF_SYNCHRONIZE                     (144) // 90
+#define ADD_STATUS_EFF_RAISE_ATTACK_AND_ACCURACY       (145) // 91
+#define ADD_STATUS_EFF_GUARD_SPLIT                     (146) // 92
+#define ADD_STATUS_EFF_POWER_SPLIT                     (147) // 93
+#define ADD_STATUS_EFF_QUIVER_DANCE                    (148) // 94
+#define ADD_STATUS_EFF_CHANGE_TARGET_TO_WATER_TYPE     (149) // 95
+#define ADD_STATUS_EFF_COIL                            (150) // 96
+#define ADD_STATUS_EFF_SHIFT_GEAR                      (151) // 97
+#define ADD_STATUS_EFF_SHELL_SMASH                     (152) // 98
+#define ADD_STATUS_EFF_V_CREATE                        (153) // 99
+#define ADD_STATUS_EFF_AUTOTOMIZE                      (154) // 9A
+#define ADD_STATUS_EFF_HANDLE_GROWTH                   (155) // 9B
+#define ADD_STATUS_EFF_WORK_UP                         (156) // 9C
+#define ADD_STATUS_EFF_SPICY_EXTRACT                   (157) // 9D
+#define ADD_STATUS_EFF_FILLET_AWAY                     (158) // 9E
+#define ADD_STATUS_EFF_SHED_TAIL                       (159) // 9F
+#define ADD_STATUS_EFF_AFTER_YOU                       (160) // A0
+#define ADD_STATUS_EFF_QUASH                           (161) // A2
+#define ADD_STATUS_EFF_WILDFIRE                        (162) // A3
 
 
 

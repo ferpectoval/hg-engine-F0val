@@ -266,7 +266,7 @@
 #define ITEM_METAL_POWDER    257
 #define ITEM_THICK_CLUB      258
 #define ITEM_LEEK            259
-#define ITEM_RED_SCARF       260
+#define ITEM_EEVEERSTONE     260
 #define ITEM_BLUE_SCARF      261
 #define ITEM_PINK_SCARF      262
 #define ITEM_GREEN_SCARF     263
