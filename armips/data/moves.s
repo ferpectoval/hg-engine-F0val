@@ -8136,7 +8136,7 @@ movedata MOVE_SHELL_SMASH, "Shell Smash"
     movedescription MOVE_SHELL_SMASH, "Sharply raises\nAttack, Sp. Atk, and\nSpeed, but lowers\nDefense and Sp. Def."
 
 movedata MOVE_HEAL_PULSE, "Heal Pulse"
-    battleeffect 401
+    battleeffect 308
     pss SPLIT_STATUS
     basepower 0
     type TYPE_PSYCHIC
@@ -8840,7 +8840,7 @@ movedata MOVE_SECRET_SWORD, "Secret Sword"
     movedescription MOVE_SECRET_SWORD, "The user cuts with\nits long horn. The\nodd power in the\nhorn does physical\ndamage to the foe."
 
 movedata MOVE_FREEZE_DRY, "Freeze-Dry"
-    battleeffect 402
+    battleeffect 309
     pss SPLIT_SPECIAL
     basepower 90
     type TYPE_ICE
@@ -8920,7 +8920,7 @@ movedata MOVE_DEATH_ROLL, "Death Roll"
     movedescription MOVE_DEATH_ROLL, "The user clamps its\njaw onto the target\nand spins rapidly for\ntwo to three turns.\nHowever, it then\nbecomes confused."
 
 movedata MOVE_NOBLE_ROAR, "Noble Roar"
-    battleeffect 403
+    battleeffect 310
     pss SPLIT_STATUS
     basepower 0
     type TYPE_NORMAL
@@ -8984,7 +8984,7 @@ movedata MOVE_V_CREATE, "V-create"
     movedescription MOVE_V_CREATE, "The user hurls the\nhot flame on its\nforehead. It lowers\nthe user’s Def, Sp.\nDef, and Speed."
 
 movedata MOVE_WILDFIRE, "Wildfire"
-    battleeffect 400
+    battleeffect 307
     pss SPLIT_SPECIAL
     basepower 100
     type TYPE_FIRE
