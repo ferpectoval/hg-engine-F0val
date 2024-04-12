@@ -258,7 +258,7 @@ a {COLOR 255}Lucky Punch{COLOR 0}
 a {COLOR 255}Metal Powder{COLOR 0}
 a {COLOR 255}Thick Club{COLOR 0}
 a {COLOR 255}Leek{COLOR 0}
-a {COLOR 255}Red Scarf{COLOR 0}
+a {COLOR 255}Eeveerstone{COLOR 0}
 a {COLOR 255}Blue Scarf{COLOR 0}
 a {COLOR 255}Pink Scarf{COLOR 0}
 a {COLOR 255}Green Scarf{COLOR 0}
