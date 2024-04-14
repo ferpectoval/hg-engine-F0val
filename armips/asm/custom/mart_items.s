@@ -206,10 +206,6 @@ const u16 *_0210FA3C[] = {
 .halfword ITEM_REPEL
 .halfword ITEM_SUPER_REPEL
 .halfword ITEM_MAX_REPEL
-.halfword ITEM_TM07
-.halfword ITEM_TM11
-.halfword ITEM_TM18
-.halfword ITEM_TM17
 .halfword 0xFFFF
 
 /* const u16 _020FBBC6[] = {ITEM_X_SPEED, ITEM_X_ATTACK, ITEM_X_DEFENSE, ITEM_GUARD_SPEC_, ITEM_DIRE_HIT, ITEM_X_ACCURACY, ITEM_X_SPECIAL, ITEM_X_SP__DEF, 0xFFFF}; */
@@ -234,16 +230,20 @@ const u16 *_0210FA3C[] = {
 /* Goldenrod Dept Store 4F */
 .org 0x020FBAFA
 .halfword ITEM_TM04
+.halfword ITEM_TM07
+.halfword ITEM_TM11
 .halfword ITEM_TM13
 .halfword ITEM_TM14
 .halfword ITEM_TM15
-.halfword ITEM_TM20
-.halfword ITEM_TM21
-.halfword ITEM_TM24
+.halfword ITEM_TM17
 .halfword 0xFFFF
 
 /* Goldenrod Dept Store 4F Part 2 */
 .org 0x020FBB08
+.halfword ITEM_TM18
+.halfword ITEM_TM20
+.halfword ITEM_TM21
+.halfword ITEM_TM24
 .halfword ITEM_TM25
 .halfword ITEM_TM30
 .halfword ITEM_TM31
@@ -256,10 +256,9 @@ const u16 *_0210FA3C[] = {
 .halfword ITEM_TM60
 .halfword ITEM_TM73
 .halfword ITEM_TM84
-.halfword ITEM_SPACE_MAIL
 .halfword 0xFFFF
 
-/* const u16 _020FBC34[] = {ITEM_SUN_STONE, ITEM_MOON_STONE, ITEM_FIRE_STONE, ITEM_THUNDER_STONE, ITEM_WATER_STONE, ITEM_LEAF_STONE, ITEM_ICE_STONE, ITEM_EVERSTONE, 0xFFFF}; WRONG */ 
+/* const u16 _020FBC34[] = {ITEM_SUN_STONE, ITEM_MOON_STONE, ITEM_FIRE_STONE, ITEM_THUNDER_STONE, ITEM_WATER_STONE, ITEM_LEAF_STONE, ITEM_ICE_STONE, ITEM_EVERSTONE, 0xFFFF} */ 
 /* Goldenrod Dept Store 5F */
 .org 0x020FBC34
 .halfword ITEM_SUN_STONE

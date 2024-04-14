@@ -306,7 +306,7 @@
 #define MOVE_EFFECT_AFTER_YOU						   305
 #define MOVE_EFFECT_QUASH   						   306
 
-//dummy move effects:
+//custom move effects:
 #define MOVE_EFFECT_WILDFIRE						   307
 #define MOVE_EFFECT_HEAL_PULSE                         308
 #define MOVE_EFFECT_FREEZE_DRY                         309

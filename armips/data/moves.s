@@ -8997,7 +8997,7 @@ movedata MOVE_WILDFIRE, "Wildfire"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_WILDFIRE, "The user whips up\na terrifying conflagration.nRaises both Speed\nand Sp. Attack."
+    movedescription MOVE_WILDFIRE, "The user whips up a\nterrifying conflagration.\nRaises both Speed\nand Sp. Attack."
 
 movedata MOVE_FUSION_BOLT, "Fusion Bolt"
     battleeffect 0

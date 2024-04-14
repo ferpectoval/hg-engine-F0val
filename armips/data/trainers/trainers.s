@@ -967,7 +967,7 @@ trainerdata 29, "Rod"
 
 trainerdata 30, "Whitney"
     trainermontype TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_MOVES
-    trainerclass CLASS_LEADER_0
+    trainerclass CLASS_LEADER
     nummons 5
     item ITEM_SUPER_POTION
     item ITEM_SUPER_POTION

@@ -17370,7 +17370,7 @@ const ITEMDATA __data[] =
 {
     .price = 3000,
     .holdEffect = HOLD_EFFECT_GAIN_ATTACK_EVS,
-    .holdEffectParam = 21,
+    .holdEffectParam = 42,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 70,
@@ -17435,7 +17435,7 @@ const ITEMDATA __data[] =
 {
     .price = 3000,
     .holdEffect = HOLD_EFFECT_GAIN_DEFENSE_EVS,
-    .holdEffectParam = 21,
+    .holdEffectParam = 42,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 70,
@@ -17500,7 +17500,7 @@ const ITEMDATA __data[] =
 {
     .price = 3000,
     .holdEffect = HOLD_EFFECT_GAIN_SP_ATK_EVS,
-    .holdEffectParam = 21,
+    .holdEffectParam = 42,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 70,
@@ -17565,7 +17565,7 @@ const ITEMDATA __data[] =
 {
     .price = 3000,
     .holdEffect = HOLD_EFFECT_GAIN_SP_DEF_EVS,
-    .holdEffectParam = 21,
+    .holdEffectParam = 42,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 70,
@@ -17630,7 +17630,7 @@ const ITEMDATA __data[] =
 {
     .price = 3000,
     .holdEffect = HOLD_EFFECT_GAIN_SPEED_EVS,
-    .holdEffectParam = 21,
+    .holdEffectParam = 42,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 70,
@@ -17695,7 +17695,7 @@ const ITEMDATA __data[] =
 {
     .price = 3000,
     .holdEffect = HOLD_EFFECT_GAIN_HP_EVS,
-    .holdEffectParam = 21,
+    .holdEffectParam = 42,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 70,
