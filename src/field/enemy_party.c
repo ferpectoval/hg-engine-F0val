@@ -16,11 +16,6 @@
 #include "../../include/constants/species.h"
 #include "../../include/constants/weather_numbers.h"
 
-
-#define DoScaling TRUE //set to FALSE to remove Dynamic Level Scaling
-
-
-
 /**
  *  @brief swap two integer values with each other given pointers
  *
@@ -50,6 +45,16 @@ void randomize(int arr[], int n) {
 extern u32 gLastPokemonLevelForMoneyCalc;
 
 /**
+ *  @brief get which dynamic scaling formula to apply from the script variable defined by SCALING_TYPE_VARIABLE
+ *
+ *  @return scaling type from LEVEL_CAP_VARIABLE script variable
+ */
+u32 GetScalingType(void)
+{
+    return GetScriptVar(SCALING_TYPE_VARIABLE);
+}
+
+/**
  *  @brief Generate the scaled level to use for a Pokemon based on average level of player party
  *		-ALL CREDIT TO Mixone-FinallyHere FOR THIS-
  *  @param bp battle param
@@ -73,8 +78,8 @@ extern u32 gLastPokemonLevelForMoneyCalc;
 	return newLevel;
 	
  }
-
-/**
+ 
+ /**
  * replace code between comments in above function with below to scale to highest level
  
 	 u16 highestLevel = 0;
@@ -100,6 +105,7 @@ extern u32 gLastPokemonLevelForMoneyCalc;
  *
  */
  
+
 /**
  *  @brief create the trainer Party from the trainer data file and trainer party file
  *
@@ -113,8 +119,8 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
     int i, j;
     u32 rnd_tmp, rnd, seed_tmp;
     u8 pow;
-
-    seed_tmp = gf_get_seed();
+	
+	seed_tmp = gf_get_seed();
 
     PokeParty_Init(bp->poke_party[num], 6);
 
@@ -147,7 +153,12 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
     u16 *nickname = sys_AllocMemory(heapID, 11*sizeof(u16));
     u8 form_no = 0, abilityslot = 0, nature = 0, ballseal = 0, shinylock = 0, status = 0, ab1 = 0, ab2 = 0;
     u32 additionalflags = 0;
-		
+	u16 newLevel = GetScaledLevel(bp);
+	
+	#ifdef IMPLEMENT_SCALING
+	u32 DoScaling = GetScalingType();
+	#endif
+	
 	int partyOrder[pokecount];
     if (randomorder_flag)
     {
@@ -200,8 +211,8 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
 		level = buf[offset] | (buf[offset+1] << 8);
         gLastPokemonLevelForMoneyCalc = level; // ends up being the last level at the end of the loop that we use for the money calc loop default case
         offset += 2;
-		if (DoScaling) {
-			level = GetScaledLevel(bp);
+		if ((DoScaling != 0) && newLevel >= level) {
+			level = newLevel;
 		}
 
         // species field
@@ -543,6 +554,7 @@ BOOL LONG_CALL AddWildPartyPokemon(int inTarget, EncounterInfo *encounterInfo, s
     u16 species;
 	u16 level;
 	u32 exp;
+	u32 DoScaling = GetScalingType();
 	
     if (encounterInfo->isEgg == 0 && encounterInfo->ability == ABILITY_COMPOUND_EYES)
     {
@@ -551,14 +563,14 @@ BOOL LONG_CALL AddWildPartyPokemon(int inTarget, EncounterInfo *encounterInfo, s
 
     species = GetMonData(encounterPartyPokemon, MON_DATA_SPECIES, NULL);
 	
-	if (DoScaling) {
+	if (DoScaling != 0) {
 		level = GetScaledLevel(bp);
 		exp = PokeLevelExpGet(species,level);
 		SetMonData(encounterPartyPokemon, MON_DATA_LEVEL, &level);
 		SetMonData(encounterPartyPokemon, MON_DATA_EXPERIENCE, (u8 *)&exp);
 		RecalcPartyPokemonStats(encounterPartyPokemon);
 	}
-
+	
     if (space_for_setmondata != 0)
     {
         change_form = 1;
