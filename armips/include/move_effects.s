@@ -307,6 +307,10 @@ MOVE_EFFECT_FILLET_AWAY                             equ 303
 MOVE_EFFECT_SHED_TAIL                               equ 304
 MOVE_EFFECT_AFTER_YOU                               equ 305
 MOVE_EFFECT_QUASH                                   equ 306
-MOVE_EFFECT_TECHNO_BLAST                            equ 307
-MOVE_EFFECT_MULTI_ATTACK                            equ 308
-MOVE_EFFECT_IVY_CUDGEL                              equ 309
+MOVE_EFFECT_WILDFIRE                                equ 307
+MOVE_EFFECT_HEAL_PULSE								equ 308
+MOVE_EFFECT_FREEZE_DRY								equ 309
+MOVE_EFFECT_NOBLE_ROAR								equ 310
+MOVE_EFFECT_TECHNO_BLAST                            equ 311
+MOVE_EFFECT_MULTI_ATTACK                            equ 312
+MOVE_EFFECT_IVY_CUDGEL                              equ 313

@@ -310,9 +310,13 @@
 #define MOVE_EFFECT_SHED_TAIL                               304
 #define MOVE_EFFECT_AFTER_YOU                               305
 #define MOVE_EFFECT_QUASH                                   306
-#define MOVE_EFFECT_TECHNO_BLAST                            307
-#define MOVE_EFFECT_MULTI_ATTACK                            308
-#define MOVE_EFFECT_IVY_CUDGEL                              309
+#define MOVE_EFFECT_WILDFIRE						  		307
+#define MOVE_EFFECT_HEAL_PULSE                         		308
+#define MOVE_EFFECT_FREEZE_DRY                         		309
+#define MOVE_EFFECT_NOBLE_ROAR                         		310
+#define MOVE_EFFECT_TECHNO_BLAST                            311
+#define MOVE_EFFECT_MULTI_ATTACK                            312
+#define MOVE_EFFECT_IVY_CUDGEL                              313
 
 
 
