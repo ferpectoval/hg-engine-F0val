@@ -3036,44 +3036,44 @@ walklevels 14, 14, 14, 14, 16, 16, 16, 16, 15, 14, 15, 14
 // morning encounter slots
 pokemon SPECIES_MAGBY
 pokemon SPECIES_SLUGMA
-pokemon SPECIES_MAGCARGO
-pokemon SPECIES_PAWNIARD
+pokemon SPECIES_LITWICK
+pokemon SPECIES_MISDREAVUS
 pokemon SPECIES_HOUNDOUR
+pokemon SPECIES_GASTLY
 pokemon SPECIES_MAWILE
-pokemon SPECIES_MAGMAR
+pokemon SPECIES_DUSKULL
 pokemon SPECIES_LARVESTA
-pokemon SPECIES_CHANDELURE
+pokemon SPECIES_PAWNIARD
 pokemon SPECIES_DARUMAKA
-pokemon SPECIES_DARMANITAN
-pokemon SPECIES_VOLCARONA
+pokemon SPECIES_YAMASK
 
 // day encounter slots
 pokemon SPECIES_MAGBY
 pokemon SPECIES_SLUGMA
-pokemon SPECIES_MAGCARGO
-pokemon SPECIES_PAWNIARD
+pokemon SPECIES_LITWICK
+pokemon SPECIES_MISDREAVUS
 pokemon SPECIES_HOUNDOUR
+pokemon SPECIES_GASTLY
 pokemon SPECIES_MAWILE
-pokemon SPECIES_MAGMAR
+pokemon SPECIES_DUSKULL
 pokemon SPECIES_LARVESTA
-pokemon SPECIES_CHANDELURE
+pokemon SPECIES_PAWNIARD
 pokemon SPECIES_DARUMAKA
-pokemon SPECIES_DARMANITAN
-pokemon SPECIES_VOLCARONA
+pokemon SPECIES_YAMASK
 
 // night encounter slots
 pokemon SPECIES_MAGBY
 pokemon SPECIES_SLUGMA
-pokemon SPECIES_MAGCARGO
-pokemon SPECIES_PAWNIARD
+pokemon SPECIES_LITWICK
+pokemon SPECIES_MISDREAVUS
 pokemon SPECIES_HOUNDOUR
+pokemon SPECIES_GASTLY
 pokemon SPECIES_MAWILE
-pokemon SPECIES_MAGMAR
+pokemon SPECIES_DUSKULL
 pokemon SPECIES_LARVESTA
-pokemon SPECIES_CHANDELURE
+pokemon SPECIES_PAWNIARD
 pokemon SPECIES_DARUMAKA
-pokemon SPECIES_DARMANITAN
-pokemon SPECIES_VOLCARONA
+pokemon SPECIES_YAMASK
 
 // hoenn encounter slots
 pokemon SPECIES_ZIGZAGOON
@@ -3149,7 +3149,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // day encounter slots
 pokemon SPECIES_GASTLY
@@ -3163,7 +3163,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // night encounter slots
 pokemon SPECIES_GASTLY
@@ -3177,7 +3177,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // hoenn encounter slots
 pokemon SPECIES_ZIGZAGOON
@@ -3253,7 +3253,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // day encounter slots
 pokemon SPECIES_GASTLY
@@ -3267,7 +3267,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // night encounter slots
 pokemon SPECIES_GASTLY
@@ -3281,7 +3281,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // hoenn encounter slots
 pokemon SPECIES_ZIGZAGOON
@@ -3357,7 +3357,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // day encounter slots
 pokemon SPECIES_GASTLY
@@ -3371,7 +3371,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // night encounter slots
 pokemon SPECIES_GASTLY
@@ -3385,7 +3385,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // hoenn encounter slots
 pokemon SPECIES_ZIGZAGOON
@@ -3461,7 +3461,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // day encounter slots
 pokemon SPECIES_GASTLY
@@ -3475,7 +3475,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // night encounter slots
 pokemon SPECIES_GASTLY
@@ -3489,7 +3489,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // hoenn encounter slots
 pokemon SPECIES_ZIGZAGOON
@@ -3565,7 +3565,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // day encounter slots
 pokemon SPECIES_GASTLY
@@ -3579,7 +3579,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // night encounter slots
 pokemon SPECIES_GASTLY
@@ -3593,7 +3593,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // hoenn encounter slots
 pokemon SPECIES_ZIGZAGOON
@@ -3669,7 +3669,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // day encounter slots
 pokemon SPECIES_GASTLY
@@ -3683,7 +3683,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // night encounter slots
 pokemon SPECIES_GASTLY
@@ -3697,7 +3697,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // hoenn encounter slots
 pokemon SPECIES_ZIGZAGOON
@@ -3773,7 +3773,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // day encounter slots
 pokemon SPECIES_GASTLY
@@ -3787,7 +3787,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // night encounter slots
 pokemon SPECIES_GASTLY
@@ -3801,7 +3801,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // hoenn encounter slots
 pokemon SPECIES_ZIGZAGOON
@@ -3877,7 +3877,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // day encounter slots
 pokemon SPECIES_GASTLY
@@ -3891,7 +3891,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // night encounter slots
 pokemon SPECIES_GASTLY
@@ -3905,7 +3905,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_MISMAGIUS
 pokemon SPECIES_DUSCLOPS
 pokemon SPECIES_SHEDINJA
-pokemon SPECIES_YAMASK
+pokemon SPECIES_COFAGRIGUS
 
 // hoenn encounter slots
 pokemon SPECIES_ZIGZAGOON
