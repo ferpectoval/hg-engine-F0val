@@ -1033,6 +1033,7 @@ levelup SPECIES_PARAS
 
 
 levelup SPECIES_PARASECT
+	learnset MOVE_SPORE, 0
     learnset MOVE_CROSS_POISON, 1
     learnset MOVE_SCRATCH, 1
     learnset MOVE_STUN_SPORE, 1
@@ -1042,8 +1043,8 @@ levelup SPECIES_PARASECT
     learnset MOVE_POISON_POWDER, 6
     learnset MOVE_ABSORB, 11
     learnset MOVE_FURY_CUTTER, 17
-    learnset MOVE_SPORE, 22
     learnset MOVE_SLASH, 29
+	learnset MOVE_SPORE, 33
     learnset MOVE_GROWTH, 37
     learnset MOVE_GIGA_DRAIN, 44
     learnset MOVE_AROMATHERAPY, 51
