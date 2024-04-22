@@ -82,10 +82,10 @@ const u16 *_0210FA3C[] = {
     _020FBBEA, 3 ;Goldenrod 2F-Bottom
     _020FBC1A, 4 ;Goldenrod 2F-Top
     _020FBBB4, 5 ;Goldenrod 3F
-    _020FBAFA, 6 ;Goldenrod 4F First 7 slots, _020FBB08 is Last 5 Slots
+    _020FBAFA, 6 ;Goldenrod 4F
     _020FBC34, 7 ;Goldenrod 5F
     _020FBACA, 8 ;Goldenrod Tunnel Herb Shop
-    _020FBA60, 9 ;Ecruteak & Cherrygrove 2
+    _020FBA60, 9 ;Ecruteak
     _020FBA88, 10 ;Olivine
     _020FBAD4, 11 ;Cianwood Pharmacy
     _020FBA80, 12 ;Blackthorn City
@@ -93,13 +93,13 @@ const u16 *_0210FA3C[] = {
     _020FBAC0, 14 ;Vermilion City
     _020FBA70, 15 ;Saffron City
     _020FBA98, 16 ;Lavender Town
-    _020FBA5A, 17 ;Unknown
+    _020FBA5A, 17 ;Cerulean City
     _020FBC02, 18 ;Celadon 2F-Left
     _020FBC4E, 19 ;Celadon 2F-Right
     _020FBC68, 20 ;Celadon 3F
-    _020FBA68, 21 ;Unknown
-    _020FBBC6, 22 ;Unknown (Celadon 5F 1)
-    _020FBB08, 23 ;Goldenrod & Celadon Dept Stores 5F
+    _020FBA68, 21 ;Celadon 4F
+    _020FBBC6, 22 ;Celadon 5F 1
+    _020FBB08, 23 ;Celadon 5F 2
     _020FBA90, 24 ;Fuchsia City
     _020FBAA0, 25 ;Pewter City
     _020FBAA8, 26 ;Viridian City
@@ -300,10 +300,10 @@ const u16 *_0210FA3C[] = {
 .halfword ITEM_EVERSTONE
 .halfword 0xFFFF
 
-/* const u16 _020FBAB8[] = {ITEM_TINYMUSHROOM, ITEM_POKE_BALL, ITEM_POTION, 0xFFFF}; */
+/* const u16 _020FBAB8[] = {ITEM_TINY_MUSHROOM, ITEM_POKE_BALL, ITEM_POTION, 0xFFFF}; */
 /* Mahogany Town Before Team Rocket */
 .org 0x020FBAB8
-.halfword ITEM_TINYMUSHROOM
+.halfword ITEM_TINY_MUSHROOM
 .halfword ITEM_POKE_BALL
 .halfword ITEM_POTION
 .halfword 0xFFFF
