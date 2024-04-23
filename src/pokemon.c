@@ -1919,9 +1919,7 @@ u32 SpeciesAndFormeToWazaOshieIndex(u32 species, u32 form)
  */
 u32 GetLevelCap(void)
 {
-    u32 levelCap = GetScriptVar(LEVEL_CAP_VARIABLE);
-    if (levelCap > 100) levelCap = 100;
-    return levelCap;
+    return GetScriptVar(LEVEL_CAP_VARIABLE);
 }
 
 /**
