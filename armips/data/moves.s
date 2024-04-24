@@ -13770,20 +13770,20 @@ movedata MOVE_POPULATION_BOMB, "Population Bomb"
     movedescription MOVE_POPULATION_BOMB, "---"
 
 movedata MOVE_ICE_SPINNER, "Ice Spinner"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_REMOVE_HAZARDS_AND_BINDING
     pss SPLIT_PHYSICAL
     basepower 80
     type TYPE_ICE
     accuracy 100
     pp 15
-    effectchance 0
-    target MOVE_TARGET_SELECTED
+    effectchance 100
+    target MOVE_TARGET_FOES_AND_ALLY
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_ICE_SPINNER, "---"
+    movedescription MOVE_ICE_SPINNER, "The user covers its feet in thin ice\nand twirls around, slamming into the\ntarget. This move's spinning motion\nalso destroys the terrain."
 
 movedata MOVE_GLAIVE_RUSH, "Glaive Rush"
     battleeffect MOVE_EFFECT_HIT

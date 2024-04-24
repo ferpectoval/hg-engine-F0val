@@ -1358,7 +1358,6 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
     if (expcalc->seq_no != 38)
     {
         int i;
-        int total_exp;
         //int mons_getting_exp = 0;
         //int mons_getting_exp_from_item = 0;
         u16 item;
