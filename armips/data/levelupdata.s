@@ -21194,7 +21194,23 @@ levelup SPECIES_TING_LU
     terminatelearnset
 
 levelup SPECIES_CHI_YU
-    learnset MOVE_TACKLE, 1
+    learnset MOVE_SMOKESCREEN, 1
+    learnset MOVE_EMBER, 1
+    learnset MOVE_SMOKESCREEN, 6
+    learnset MOVE_PAYBACK, 10
+    learnset MOVE_WILL_O_WISP, 15
+    learnset MOVE_FLAME_WHEEL, 20
+    learnset MOVE_INCINERATE, 24
+	learnset MOVE_CONFUSE_RAY, 30
+	learnset MOVE_NASTY_PLOT, 35
+    learnset MOVE_DARK_PULSE, 40
+    learnset MOVE_LAVA_PLUME, 45
+	learnset MOVE_FLAMETHROWER, 48
+    learnset MOVE_BOUNCE, 53
+    learnset MOVE_SWAGGER, 60
+    learnset MOVE_INFERNO, 65
+    learnset MOVE_MEMENTO, 70
+    learnset MOVE_OVERHEAT, 75
     terminatelearnset
 
 levelup SPECIES_ROARING_MOON

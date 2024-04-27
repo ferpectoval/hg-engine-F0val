@@ -1616,7 +1616,7 @@ struct OVERWORLD_TAG gOWTagToFileNum[] = // skip down a bit to see the parts tha
     { .tag = 1745, .gfx =  1454, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_CLODSIRE
     { .tag = 1746, .gfx =  1455, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_FARIGIRAF
     { .tag = 1747, .gfx =  1456, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_DUDUNSPARCE
-    { .tag = 1748, .gfx =  1457, .callback_params = OVERWORLD_SIZE_LARGE}, // three segment
+    { .tag = 1748, .gfx =  1456, .callback_params = OVERWORLD_SIZE_LARGE}, // three segment
     { .tag = 1749, .gfx =  297, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_KINGAMBIT
     { .tag = 1750, .gfx =  297, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_GREAT_TUSK
     { .tag = 1751, .gfx =  297, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_SCREAM_TAIL
@@ -1639,7 +1639,7 @@ struct OVERWORLD_TAG gOWTagToFileNum[] = // skip down a bit to see the parts tha
     { .tag = 1768, .gfx =  297, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_WO_CHIEN
     { .tag = 1769, .gfx =  297, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_CHIEN_PAO
     { .tag = 1770, .gfx =  297, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_TING_LU
-    { .tag = 1771, .gfx =  297, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_CHI_YU
+    { .tag = 1771, .gfx =  1457, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_CHI_YU
     { .tag = 1772, .gfx =  297, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_ROARING_MOON
     { .tag = 1773, .gfx =  297, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_IRON_VALIANT
     { .tag = 1774, .gfx =  297, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_KORAIDON

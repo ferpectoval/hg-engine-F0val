@@ -72,7 +72,7 @@ The Pokémon makes it\nsunny if it is in battle.
 Prevents the foe from\nfleeing.
 Prevents the Pokémon\nfrom falling asleep.
 Prevents its stats from\nbeing lowered.
-Boosts the power of\nphysical attacks.
+Boosts the power of\nspecial attacks.
 The Pokémon is protected\nagainst critical hits.
 Eliminates the effects of\nweather.
 Raises evasion if the\nPokémon is confused.
@@ -282,7 +282,7 @@ Becomes charged when\nhit by an attack.
 Boosts its best stat\nin harsh sunlight.
 Boosts its best stat\nin Electric Terrain.
 This Pokémon is immune\nto all status moves.
-Lowers the Sp. Atk\nstat of other Pokémon.
+Raises the Pokémon’s\n Sp. Attack stat.
 Lowers the Defense\nstat of other Pokémon.
 Lowers the Attack\nstat of other Pokémon.
 Lowers the Sp. Def\nstat of other Pokémon.
