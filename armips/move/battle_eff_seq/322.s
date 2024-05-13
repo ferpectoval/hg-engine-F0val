@@ -7,12 +7,14 @@
 .include "armips/include/monnums.s"
 .include "armips/include/movenums.s"
 
-.create "build/move/battle_eff_seq/0_308", 0
+.create "build/move/battle_eff_seq/0_307", 0
 
-//Heal Pulse
 
-a030_308:
-    changevar VAR_OP_SET, VAR_ADD_STATUS1, 0x80000042
-    endscript
+//Wildfire
+a030_307:
+	changevar VAR_OP_SET, VAR_ADD_STATUS1,  ADD_STATUS_WILDFIRE | ADD_STATUS_ATTACKER
+    critcalc
+    damagecalc
+	endscript
 
 .close
