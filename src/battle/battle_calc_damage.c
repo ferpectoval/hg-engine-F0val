@@ -280,10 +280,6 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
 	// handle new pure power function
     if (AttackingMon.ability == ABILITY_PURE_POWER)
         sp_attack = sp_attack * 2;
-	
-	// handle bad Beads of Ruin function
-    if (AttackingMon.ability == ABILITY_BEADS_OF_RUIN)
-        sp_attack = ((sp_attack * 3) / 2);
 
     // handle slow start
     if ((AttackingMon.ability == ABILITY_SLOW_START)

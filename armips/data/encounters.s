@@ -4759,11 +4759,11 @@ encounter SPECIES_GEODUDE, 10, 20
 encounter SPECIES_ROGGENROLA, 10, 20
 
 // old rod encounters
-encounter SPECIES_CHI_YU, 20, 30
-encounter SPECIES_CHI_YU, 20, 30
-encounter SPECIES_CHI_YU, 20, 30
-encounter SPECIES_CHI_YU, 20, 30
-encounter SPECIES_CHI_YU, 20, 30
+encounter SPECIES_CARVANHA, 10, 10
+encounter SPECIES_REMORAID, 10, 10
+encounter SPECIES_KABUTO, 10, 10
+encounter SPECIES_OMANYTE, 10, 10
+encounter SPECIES_OMANYTE, 10, 10
 
 // good rod encounters
 encounter SPECIES_MANTYKE, 20, 30
