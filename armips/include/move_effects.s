@@ -322,6 +322,7 @@ MOVE_EFFECT_GEOMANCY                                equ 318
 MOVE_EFFECT_WEATHER_SNOW                            equ 319
 MOVE_EFFECT_HIT_AND_PREVENT_HEALING                 equ 320
 
+
 // custom move effects
 MOVE_EFFECT_WILDFIRE                                equ 321
 MOVE_EFFECT_SHADOW_JUKE                             equ 322

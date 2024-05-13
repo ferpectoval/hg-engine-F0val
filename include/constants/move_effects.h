@@ -310,13 +310,27 @@
 #define MOVE_EFFECT_SHED_TAIL                               304
 #define MOVE_EFFECT_AFTER_YOU                               305
 #define MOVE_EFFECT_QUASH                                   306
-#define MOVE_EFFECT_WILDFIRE						  		307
-#define MOVE_EFFECT_HEAL_PULSE                         		308
-#define MOVE_EFFECT_FREEZE_DRY                         		309
-#define MOVE_EFFECT_NOBLE_ROAR                         		310
-#define MOVE_EFFECT_TECHNO_BLAST                            311
-#define MOVE_EFFECT_MULTI_ATTACK                            312
-#define MOVE_EFFECT_IVY_CUDGEL                              313
+#define MOVE_EFFECT_TECHNO_BLAST                            307
+#define MOVE_EFFECT_MULTI_ATTACK                            308
+#define MOVE_EFFECT_IVY_CUDGEL                              309
+#define MOVE_EFFECT_HIT_AND_PLANT_SEED                      310
+#define MOVE_EFFECT_HIT_AND_SET_LIGHT_SCREEN                311
+#define MOVE_EFFECT_HIT_AND_SET_REFLECT                     312
+#define MOVE_EFFECT_HIT_AND_RESET_STAT_CHANGES              313
+#define MOVE_EFFECT_HIT_AND_CURE_PARTY_STATUS               314
+#define MOVE_EFFECT_RECOVER_FULL_DAMAGE_DEALT               315
+#define MOVE_EFFECT_HIT_AND_EVA_UP                          316
+#define MOVE_EFFECT_RAISE_DEF_2_HIT                         317
+#define MOVE_EFFECT_GEOMANCY                                318
+#define MOVE_EFFECT_WEATHER_SNOW                            319
+#define MOVE_EFFECT_HIT_AND_PREVENT_HEALING                 320
+
+// custom move effects
+#define MOVE_EFFECT_WILDFIRE								321
+#define MOVE_EFFECT_SHADOW_JUKE                             322
+#define MOVE_EFFECT_DEATH_ROLL                              323
+#define MOVE_EFFECT_FREEZE_DRY								324
+#define MOVE_EFFECT_NOBLE_ROAR								325
 
 
 

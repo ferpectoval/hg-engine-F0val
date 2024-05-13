@@ -106,4 +106,9 @@
 #define IMPLEMENT_SCALING
 #define SCALING_TYPE_VARIABLE 0x406A
 
+// RESTORE_ITEMS_AT_BATTLE_END will restore held items that are single-use at the end of battle
+// comment out the line below to keep vanilla behavior
+#define RESTORE_ITEMS_AT_BATTLE_END
+
+
 #endif
