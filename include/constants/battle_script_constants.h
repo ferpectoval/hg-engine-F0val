@@ -373,6 +373,8 @@
 #define SUB_SEQ_HANDLE_SANDSTORM_TEMPORARY            (363)
 #define SUB_SEQ_HANDLE_SNOW_TEMPORARY                 (364)
 
+#define SUB_SEQ_WILDFIRE			                  (365)
+
 
 
 // add status effect constants--used in battle effect scripts to queue up a subscript through the table in src/moves.c
