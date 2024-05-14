@@ -368,7 +368,7 @@ Large boulders are hurled at the foe\nto inflict damage. It lowers the foe’s\n
 The user confounds the foe with speed,\nthen strikes. The attack lands without\nfail.
 The user torments and enrages the\nfoe, making it incapable of using the\nsame move twice in a row.
 An attack move that doubles its power\nif the user is poisoned, paralyzed, or\nhas a burn.
-The user plays rough with the target\nand attacks it. This may also lower the\ntarget's Attack stat.
+The user plays rough with the target\nand attacks it. This may also lower the\ntarget’s Attack stat.
 The user goes to sleep for two\nturns. It fully restores the user’s HP\nand heals any status problem.
 If it is the opposite gender of the\nuser, the foe becomes infatuated\nand less likely to attack.
 The user attacks and steals the foe’s\nheld item simultaneously. It can’t\nsteal if the user holds an item.
