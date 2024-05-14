@@ -14714,7 +14714,7 @@ movedata MOVE_MALIGNANT_CHAIN, "Malignant Chain"
     movedescription MOVE_MALIGNANT_CHAIN, "---"
 
 movedata MOVE_FREEZE_DRY, "Freeze-Dry"
-    battleeffect 309
+    battleeffect MOVE_EFFECT_FREEZE_DRY
     pss SPLIT_SPECIAL
     basepower 90
     type TYPE_ICE
@@ -14730,7 +14730,7 @@ movedata MOVE_FREEZE_DRY, "Freeze-Dry"
     movedescription MOVE_FREEZE_DRY, "The user rapidly cools\nthe target. This move\nis super effective\non Water pokemon"
 
 movedata MOVE_LEAFAGE, "Leafage"
-    battleeffect 43
+    battleeffect MOVE_EFFECT_HIGH_CRITICAL
     pss SPLIT_SPECIAL
     basepower 60
     type TYPE_GRASS
@@ -14746,7 +14746,7 @@ movedata MOVE_LEAFAGE, "Leafage"
     movedescription MOVE_LEAFAGE, "Overwhelming foliage\nharasses the foe.\nHas a high\ncritical-hit ratio."
 
 movedata MOVE_CHLOROBLAST, "Chloroblast"
-    battleeffect 48
+    battleeffect MOVE_EFFECT_RECOIL_QUARTER_DAMAGE_DELT
     pss SPLIT_SPECIAL
     basepower 130
     type TYPE_GRASS
@@ -14762,7 +14762,7 @@ movedata MOVE_CHLOROBLAST, "Chloroblast"
     movedescription MOVE_CHLOROBLAST, "The user launches its\namassed chlorophyll to\ninflict damage. This\nalso hurts\nthe user."
 
 movedata MOVE_DEATH_ROLL, "Death Roll"
-    battleeffect 27
+    battleeffect MOVE_EFFECT_CONTINUE_AND_CONFUSE_SELF
     pss SPLIT_PHYSICAL
     basepower 90
     type TYPE_WATER
@@ -14778,7 +14778,7 @@ movedata MOVE_DEATH_ROLL, "Death Roll"
     movedescription MOVE_DEATH_ROLL, "The user clamps its\njaw onto the target\nand spins rapidly for\ntwo to three turns.\nHowever, it then\nbecomes confused."
 
 movedata MOVE_NOBLE_ROAR, "Noble Roar"
-    battleeffect 310
+    battleeffect MOVE_EFFECT_NOBLE_ROAR
     pss SPLIT_STATUS
     basepower 0
     type TYPE_NORMAL
@@ -14794,9 +14794,9 @@ movedata MOVE_NOBLE_ROAR, "Noble Roar"
     movedescription MOVE_NOBLE_ROAR, "Letting out a noblen\nroar, the user\n intimdates the target,\nlowering both defenses."
 
 movedata MOVE_WILDFIRE, "Wildfire"
-    battleeffect 307
+    battleeffect MOVE_EFFECT_WILDFIRE
     pss SPLIT_SPECIAL
-    basepower 100
+    basepower 80
     type TYPE_FIRE
     accuracy 100
     pp 10
@@ -14808,6 +14808,22 @@ movedata MOVE_WILDFIRE, "Wildfire"
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_WILDFIRE, "The user whips up a\nterrifying conflagration.\nRaises both Speed\nand Sp. Attack."
+	
+	movedata MOVE_SHADOW_JUKE, "Shadow Juke"
+    battleeffect MOVE_EFFECT_REMOVE_PROTECT
+    pss SPLIT_SPECIAL
+    basepower 60
+    type TYPE_DARK
+    accuracy 100
+    pp 10
+    effectchance 0
+    target MOVE_TARGET_SELECTED
+    priority 2
+    flags FLAG_MIRROR_MOVE
+    appeal 0x10
+    contesttype CONTEST_BEAUTY
+    terminatedata
+    movedescription MOVE_SHADOW_JUKE, "As the user moves one way, its shadow\nstrikes from another, ignoring Protect."
 
 movedatanoname NUM_OF_MOVES+1
     battleeffect MOVE_EFFECT_HIT

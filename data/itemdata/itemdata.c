@@ -36738,7 +36738,7 @@ const ITEMDATA __data[] =
 
 [ITEM_BIG_NUGGET - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 10000,
+    .price = 50000,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
