@@ -3668,6 +3668,7 @@ levelup SPECIES_QUILAVA
 
 levelup SPECIES_TYPHLOSION
     learnset MOVE_DARK_PULSE, 0
+	learnset MOVE_SHADOW_JUKE, 0
 	learnset MOVE_ERUPTION, 1
     learnset MOVE_DOUBLE_EDGE, 1
     learnset MOVE_GYRO_BALL, 1
@@ -3737,6 +3738,7 @@ levelup SPECIES_CROCONAW
 
 levelup SPECIES_FERALIGATR
 	learnset MOVE_BRICK_BREAK, 0
+	learnset MOVE_DEATH_ROLL, 0
 	learnset MOVE_BULK_UP, 0
 	learnset MOVE_BULK_UP, 1
     learnset MOVE_AGILITY, 1
@@ -9351,7 +9353,7 @@ levelup SPECIES_BUDEW
     learnset MOVE_STUN_SPORE, 1
     learnset MOVE_WORRY_SEED, 1
     learnset MOVE_GROWTH, 4
-    learnset MOVE_WATER_SPORT, 7
+	learnset MOVE_ABSORB, 5
     learnset MOVE_STUN_SPORE, 10
     learnset MOVE_MEGA_DRAIN, 13
     learnset MOVE_WORRY_SEED, 16

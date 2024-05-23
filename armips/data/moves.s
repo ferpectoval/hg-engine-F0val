@@ -14765,7 +14765,7 @@ movedata MOVE_DEATH_ROLL, "Death Roll"
     battleeffect MOVE_EFFECT_CONTINUE_AND_CONFUSE_SELF
     pss SPLIT_PHYSICAL
     basepower 90
-    type TYPE_WATER
+    type TYPE_FIGHTING
     accuracy 100
     pp 10
     effectchance 0

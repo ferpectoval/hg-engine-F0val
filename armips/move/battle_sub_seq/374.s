@@ -6,7 +6,6 @@
 .include "armips/include/itemnums.s"
 .include "armips/include/monnums.s"
 .include "armips/include/movenums.s"
-<<<<<<< HEAD
 .include "armips/include/constants.s"
 
 // Wildfire new move effect

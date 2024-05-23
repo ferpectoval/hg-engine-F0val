@@ -564,7 +564,7 @@
 #define MOVE_NOBLE_ROAR 557
 #define MOVE_SNARL 558
 #define MOVE_ICICLE_CRASH 559
-#define MOVE_V_CREATE 560
+#define MOVE_SHADOW_JUKE 560
 #define MOVE_WILDFIRE 561
 #define MOVE_FUSION_BOLT 562
 
@@ -940,11 +940,11 @@
 #define MOVE_BOLT_STRIKE 924
 #define MOVE_BLUE_FLARE 925
 #define MOVE_FUSION_FLARE 926
-#define MOVE_FREEZE_SHOCK 927
+#define MOVE_FREEZE_SHOCK 928
 
 // there are a bunch more here but that is fine
 
-#define NUM_OF_MOVES 928
+#define NUM_OF_MOVES 929
 
 #define MOVE_G_MAX_WILDFIRE (NUM_OF_MOVES-1+1)
 #define MOVE_G_MAX_BEFUDDLE (NUM_OF_MOVES-1+2)

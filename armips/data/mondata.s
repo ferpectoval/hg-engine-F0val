@@ -3205,7 +3205,7 @@ mondata SPECIES_MEW, "Mew"
 
 
 mondata SPECIES_CHIKORITA, "Chikorita"
-    basestats 50, 40, 65, 45, 65, 65
+    basestats 50, 40, 55, 45, 65, 65
     types TYPE_GRASS, TYPE_GRASS
     catchrate 45
     baseexp 0 // defined in baseexp.s
@@ -3226,7 +3226,7 @@ mondata SPECIES_CHIKORITA, "Chikorita"
 
 
 mondata SPECIES_BAYLEEF, "Bayleef"
-    basestats 70, 50, 80, 60, 95, 80
+    basestats 70, 50, 70, 60, 95, 80
     types TYPE_GRASS, TYPE_GRASS
     catchrate 45
     baseexp 0 // defined in baseexp.s
@@ -3247,7 +3247,7 @@ mondata SPECIES_BAYLEEF, "Bayleef"
 
 
 mondata SPECIES_MEGANIUM, "Meganium"
-    basestats 90, 70, 100, 80, 125, 100
+    basestats 90, 70, 80, 80, 125, 100
     types TYPE_GRASS, TYPE_FIRE
     catchrate 45
     baseexp 0 // defined in baseexp.s
