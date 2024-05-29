@@ -249,13 +249,13 @@ movedata MOVE_SWORDS_DANCE, "Swords Dance"
     movedescription MOVE_SWORDS_DANCE, "A frenetic dance to\nuplift the fighting\nspirit. It sharply\nraises the user’s\nAttack stat."
 
 movedata MOVE_CUT, "Cut"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_LOWER_DEFENSE_HIT
     pss SPLIT_PHYSICAL
-    basepower 50
-    type TYPE_NORMAL
-    accuracy 95
+    basepower 70
+    type TYPE_STEEL
+    accuracy 100
     pp 30
-    effectchance 0
+    effectchance 75
     target MOVE_TARGET_SELECTED
     priority 0
     flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
@@ -1132,7 +1132,7 @@ movedata MOVE_STRENGTH, "Strength"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 80
-    type TYPE_NORMAL
+    type TYPE_FIGHTING
     accuracy 100
     pp 15
     effectchance 0
@@ -1147,7 +1147,7 @@ movedata MOVE_STRENGTH, "Strength"
 movedata MOVE_ABSORB, "Absorb"
     battleeffect MOVE_EFFECT_RECOVER_HALF_DAMAGE_DEALT
     pss SPLIT_SPECIAL
-    basepower 20
+    basepower 40
     type TYPE_GRASS
     accuracy 100
     pp 25
@@ -1163,7 +1163,7 @@ movedata MOVE_ABSORB, "Absorb"
 movedata MOVE_MEGA_DRAIN, "Mega Drain"
     battleeffect MOVE_EFFECT_RECOVER_HALF_DAMAGE_DEALT
     pss SPLIT_SPECIAL
-    basepower 40
+    basepower 60
     type TYPE_GRASS
     accuracy 100
     pp 15
@@ -3243,7 +3243,7 @@ movedata MOVE_SANDSTORM, "Sandstorm"
 movedata MOVE_GIGA_DRAIN, "Giga Drain"
     battleeffect MOVE_EFFECT_RECOVER_HALF_DAMAGE_DEALT
     pss SPLIT_SPECIAL
-    basepower 75
+    basepower 80
     type TYPE_GRASS
     accuracy 100
     pp 10
@@ -11354,20 +11354,20 @@ movedata MOVE_SHADOW_BONE, "Shadow Bone"
     movedescription MOVE_SHADOW_BONE, "---"
 
 movedata MOVE_ACCELEROCK, "Accelerock"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_PRIORITY_1
     pss SPLIT_PHYSICAL
-    basepower 40
+    basepower 50
     type TYPE_ROCK
     accuracy 100
     pp 20
     effectchance 0
     target MOVE_TARGET_SELECTED
     priority 1
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_ACCELEROCK, "---"
+    movedescription MOVE_ACCELEROCK, "The user smashes into the target at\nhigh speed. This move always\ngoes first."
 
 movedata MOVE_LIQUIDATION, "Liquidation"
     battleeffect MOVE_EFFECT_LOWER_DEFENSE_HIT

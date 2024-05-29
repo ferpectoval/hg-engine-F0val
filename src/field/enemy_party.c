@@ -570,6 +570,7 @@ BOOL LONG_CALL AddWildPartyPokemon(int inTarget, EncounterInfo *encounterInfo, s
 		SetMonData(encounterPartyPokemon, MON_DATA_LEVEL, &level);
 		SetMonData(encounterPartyPokemon, MON_DATA_EXPERIENCE, (u8 *)&exp);
 		RecalcPartyPokemonStats(encounterPartyPokemon);
+        InitBoxMonMoveset(&encounterPartyPokemon->box);
 	}
 	
     if (space_for_setmondata != 0)
