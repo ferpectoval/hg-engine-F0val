@@ -26550,7 +26550,7 @@ levelup SPECIES_GROWLITHE_HISUIAN
     learnset MOVE_AGILITY, 20
     learnset MOVE_FIRE_FANG, 24
     learnset MOVE_RETALIATE, 28
-	learnset MOVE_ACCELEROCK, 30
+	learnset MOVE_ACCELEROCK, 31
     learnset MOVE_CRUNCH, 32
 	learnset MOVE_ROCK_SLIDE, 34
     learnset MOVE_TAKE_DOWN, 36

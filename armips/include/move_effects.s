@@ -325,7 +325,4 @@ MOVE_EFFECT_HIT_AND_PREVENT_HEALING                 equ 320
 
 // custom move effects
 MOVE_EFFECT_WILDFIRE                                equ 321
-MOVE_EFFECT_SHADOW_JUKE                             equ 322
-MOVE_EFFECT_DEATH_ROLL                              equ 323
-MOVE_EFFECT_FREEZE_DRY								equ 324
-MOVE_EFFECT_NOBLE_ROAR								equ 325
+MOVE_EFFECT_NOBLE_ROAR								equ 322

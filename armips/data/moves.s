@@ -11353,21 +11353,21 @@ movedata MOVE_SHADOW_BONE, "Shadow Bone"
     terminatedata
     movedescription MOVE_SHADOW_BONE, "---"
 
-movedata MOVE_ACCELEROCK, "Accelerock"
-    battleeffect MOVE_EFFECT_PRIORITY_1
-    pss SPLIT_PHYSICAL
-    basepower 50
-    type TYPE_ROCK
+movedata MOVE_PRISMATIC_LASER, "Prismatic Laser"
+    battleeffect MOVE_EFFECT_RECHARGE_AFTER
+    pss SPLIT_SPECIAL
+    basepower 160
+    type TYPE_PSYCHIC
     accuracy 100
-    pp 20
+    pp 10
     effectchance 0
     target MOVE_TARGET_SELECTED
-    priority 1
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    priority 0
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_ACCELEROCK, "The user smashes into the target at\nhigh speed. This move always\ngoes first."
+    movedescription MOVE_PRISMATIC_LASER, "---"
 
 movedata MOVE_LIQUIDATION, "Liquidation"
     battleeffect MOVE_EFFECT_LOWER_DEFENSE_HIT
@@ -11385,21 +11385,21 @@ movedata MOVE_LIQUIDATION, "Liquidation"
     terminatedata
     movedescription MOVE_LIQUIDATION, "---"
 
-movedata MOVE_PRISMATIC_LASER, "Prismatic Laser"
-    battleeffect MOVE_EFFECT_RECHARGE_AFTER
-    pss SPLIT_SPECIAL
-    basepower 160
-    type TYPE_PSYCHIC
+movedata MOVE_ACCELEROCK, "Accelerock"
+    battleeffect MOVE_EFFECT_PRIORITY_1
+    pss SPLIT_PHYSICAL
+    basepower 50
+    type TYPE_ROCK
     accuracy 100
-    pp 10
+    pp 20
     effectchance 0
     target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    priority 1
+    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_PRISMATIC_LASER, "---"
+    movedescription MOVE_ACCELEROCK, "The user smashes into the target at\nhigh speed. This move always\ngoes first."
 
 movedata MOVE_SPECTRAL_THIEF, "Spectral Thief"
     battleeffect MOVE_EFFECT_HIT
@@ -14714,13 +14714,13 @@ movedata MOVE_MALIGNANT_CHAIN, "Malignant Chain"
     movedescription MOVE_MALIGNANT_CHAIN, "---"
 
 movedata MOVE_FREEZE_DRY, "Freeze-Dry"
-    battleeffect MOVE_EFFECT_FREEZE_DRY
+    battleeffect MOVE_EFFECT_FREEZE_HIT
     pss SPLIT_SPECIAL
     basepower 90
     type TYPE_ICE
     accuracy 100
     pp 20
-    effectchance 0
+    effectchance 10
     target MOVE_TARGET_SELECTED
     priority 0
     flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK

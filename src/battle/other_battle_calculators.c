@@ -1468,32 +1468,39 @@ int LONG_CALL ServerDoTypeCalcMod(void *bw UNUSED, struct BattleStruct *sp, int 
             }
             if (TypeEffectivenessTable[i][0] == move_type)
             {
-                if (TypeEffectivenessTable[i][1] == defender_type_1)
+                if (TypeEffectivenessTable[i][1] == BattlePokemonParamGet(sp, defence_client, BATTLE_MON_DATA_TYPE1, NULL))
                 {
-                    if (ShouldUseNormalTypeEffCalc(sp, attack_client, defence_client, i) == TRUE
-                    && !(!CheckSideAbility(bw, sp, CHECK_ABILITY_ALL_HP, 0, ABILITY_CLOUD_NINE)
-                        && !CheckSideAbility(bw, sp, CHECK_ABILITY_ALL_HP, 0, ABILITY_AIR_LOCK)
-                        && sp->field_condition & WEATHER_STRONG_WINDS
-                        && (TypeEffectivenessTable[i][2] == 20)
-                        && defender_type_1 == TYPE_FLYING))
+                    if (ShouldUseNormalTypeEffCalc(sp, attack_client, defence_client, i) == TRUE)
                     {
-                        damage = TypeCheckCalc(sp, attack_client, TypeEffectivenessTable[i][2], damage, base_power, flag);
+                        if ((move_no == MOVE_FREEZE_DRY) && (sp->battlemon[defence_client].type1 == TYPE_WATER))
+                        {
+                            damage = TypeCheckCalc(sp, attack_client, 20, damage, base_power, flag);
+                        }
+                        else
+                        {
+                            damage = TypeCheckCalc(sp, attack_client, TypeEffectivenessTable[i][2], damage, base_power, flag);
+                        }
+                        
                         if (TypeEffectivenessTable[i][2] == 20) // seems to be useless, modifier isn't used elsewhere
                         {
                             modifier *= 2;
                         }
                     }
                 }
-                if ((TypeEffectivenessTable[i][1] == defender_type_2) && (defender_type_1 != defender_type_2))
+                if ((TypeEffectivenessTable[i][1] == BattlePokemonParamGet(sp, defence_client, BATTLE_MON_DATA_TYPE2, NULL))
+                 && (BattlePokemonParamGet(sp, defence_client, BATTLE_MON_DATA_TYPE1, NULL) != BattlePokemonParamGet(sp, defence_client, BATTLE_MON_DATA_TYPE2, NULL)))
                 {
-                    if (ShouldUseNormalTypeEffCalc(sp, attack_client, defence_client, i) == TRUE
-                    && !(!CheckSideAbility(bw, sp, CHECK_ABILITY_ALL_HP, 0, ABILITY_CLOUD_NINE)
-                        && !CheckSideAbility(bw, sp, CHECK_ABILITY_ALL_HP, 0, ABILITY_AIR_LOCK)
-                        && sp->field_condition & WEATHER_STRONG_WINDS
-                        && (TypeEffectivenessTable[i][2] == 20)
-                        && defender_type_2 == TYPE_FLYING))
+                    if (ShouldUseNormalTypeEffCalc(sp, attack_client, defence_client, i) == TRUE)
                     {
-                        damage = TypeCheckCalc(sp, attack_client, TypeEffectivenessTable[i][2], damage, base_power, flag);
+                        if ((move_no == MOVE_FREEZE_DRY) && (sp->battlemon[defence_client].type2 == TYPE_WATER))
+                        {
+                            damage = TypeCheckCalc(sp, attack_client, 20, damage, base_power, flag);
+                        }
+                        else
+                        {
+                            damage = TypeCheckCalc(sp, attack_client, TypeEffectivenessTable[i][2], damage, base_power, flag);
+                        }
+                        
                         if (TypeEffectivenessTable[i][2] == 20) // seems to be useless, modifier isn't used elsewhere
                         {
                             modifier *= 2;

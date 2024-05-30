@@ -327,10 +327,7 @@
 
 // custom move effects
 #define MOVE_EFFECT_WILDFIRE								321
-#define MOVE_EFFECT_SHADOW_JUKE                             322
-#define MOVE_EFFECT_DEATH_ROLL                              323
-#define MOVE_EFFECT_FREEZE_DRY								324
-#define MOVE_EFFECT_NOBLE_ROAR								325
+#define MOVE_EFFECT_NOBLE_ROAR								322
 
 
 

@@ -11753,7 +11753,7 @@ mondata SPECIES_STOUTLAND, "Stoutland"
 
 mondata SPECIES_PURRLOIN, "Purrloin"
     basestats 41, 50, 37, 66, 50, 37
-    types TYPE_DARK, TYPE_DARK
+    types TYPE_DARK, TYPE_NORMAL
     catchrate 255
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 1, 0, 0
@@ -11763,7 +11763,7 @@ mondata SPECIES_PURRLOIN, "Purrloin"
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
-    abilities ABILITY_LIMBER, ABILITY_UNBURDEN
+    abilities ABILITY_LIMBER, ABILITY_PRANKSTER
     runchance 0
     colorflip BODY_COLOR_PURPLE, 0
     mondexentry SPECIES_PURRLOIN, "They trick people with cuteness, and\nsteal their valuables just to see the\nlooks on their faces."
@@ -11774,7 +11774,7 @@ mondata SPECIES_PURRLOIN, "Purrloin"
 
 mondata SPECIES_LIEPARD, "Liepard"
     basestats 64, 88, 50, 106, 88, 50
-    types TYPE_DARK, TYPE_DARK
+    types TYPE_DARK, TYPE_NORMAL
     catchrate 90
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 2, 0, 0
@@ -11784,7 +11784,7 @@ mondata SPECIES_LIEPARD, "Liepard"
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
-    abilities ABILITY_LIMBER, ABILITY_UNBURDEN
+    abilities ABILITY_LIMBER, ABILITY_PRANKSTER
     runchance 0
     colorflip BODY_COLOR_PURPLE, 0
     mondexentry SPECIES_LIEPARD, "Their beautiful form comes from the\nmuscles they have developed. They run\nsilently in the night."

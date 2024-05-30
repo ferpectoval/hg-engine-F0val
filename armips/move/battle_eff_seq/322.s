@@ -7,14 +7,11 @@
 .include "armips/include/monnums.s"
 .include "armips/include/movenums.s"
 
-.create "build/move/battle_eff_seq/0_307", 0
+.create "build/move/battle_eff_seq/0_324", 0
 
-
-//Wildfire
-a030_307:
-	changevar VAR_OP_SET, VAR_ADD_STATUS1,  ADD_STATUS_WILDFIRE | ADD_STATUS_ATTACKER
-    critcalc
-    damagecalc
-	endscript
+//Noble Roar
+a030_324:
+    changevar VAR_OP_SET, VAR_ADD_STATUS1, 0x8000007A
+    endscript
 
 .close
