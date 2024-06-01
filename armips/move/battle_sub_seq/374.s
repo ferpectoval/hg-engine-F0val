@@ -40,6 +40,6 @@ NoStatusEffect:
     waitmessage
     wait 0x1E
     changevar VAR_OP_SETMASK, VAR_MOVE_STATUS, 0x80000000
-	endscript
+    endscript
 
 .close
