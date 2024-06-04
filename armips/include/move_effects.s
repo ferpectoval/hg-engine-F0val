@@ -273,8 +273,8 @@ MOVE_EFFECT_LOWER_SP_DEF_2_HIT                      equ 271
 MOVE_EFFECT_SHADOW_FORCE                            equ 272
 MOVE_EFFECT_FLINCH_BURN_HIT                         equ 273
 MOVE_EFFECT_FLINCH_FREEZE_HIT                       equ 274
-MOVE_EFFECT_FLINCH_PARALYZE_HIT                     equ 275
-MOVE_EFFECT_RAISE_SP_ATK_HIT                        equ 276
+MOVE_EFFECT_RAISE_SP_ATK_HIT                     	equ 275
+MOVE_EFFECT_RAISE_SPEED_SPA_HIT                     equ 276
 
 // new move effects:
 MOVE_EFFECT_HONE_CLAWS                              equ 277
@@ -302,7 +302,7 @@ MOVE_EFFECT_HIT_THREE_TIMES_INCREASE_BASE_POWER     equ 298
 MOVE_EFFECT_HIT_THREE_TIMES_TRIPLE_DIVE             equ 299
 MOVE_EFFECT_PSYBLADE                                equ 300
 MOVE_EFFECT_HIT_SLEEP                               equ 301
-MOVE_EFFECT_SPICY_EXTRACT                           equ 302
+MOVE_EFFECT_FLINCH_PARALYZE_HIT                     equ 302
 MOVE_EFFECT_FILLET_AWAY                             equ 303
 MOVE_EFFECT_SHED_TAIL                               equ 304
 MOVE_EFFECT_AFTER_YOU                               equ 305
@@ -326,3 +326,4 @@ MOVE_EFFECT_HIT_AND_PREVENT_HEALING                 equ 320
 // custom move effects
 MOVE_EFFECT_WILDFIRE                                equ 321
 MOVE_EFFECT_NOBLE_ROAR								equ 322
+MOVE_EFFECT_SPICY_EXTRACT                           equ 323

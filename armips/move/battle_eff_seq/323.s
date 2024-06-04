@@ -7,12 +7,11 @@
 .include "armips/include/monnums.s"
 .include "armips/include/movenums.s"
 
-.create "build/move/battle_eff_seq/0_276", 0
+.create "build/move/battle_eff_seq/0_323", 0
 
-a030_276:
-    changevar VAR_OP_SET, VAR_ADD_STATUS2, 0x400000A3
-    critcalc
-    damagecalc
+// Spicy Extract
+a030_323:
+    changevar VAR_OP_SET, VAR_ADD_STATUS1, ADD_STATUS_SPICY_EXTRACT | ADD_STATUS_DEFENDER
     endscript
-
+	
 .close

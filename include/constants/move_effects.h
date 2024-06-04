@@ -276,8 +276,8 @@
 #define MOVE_EFFECT_SHADOW_FORCE                            272
 #define MOVE_EFFECT_FLINCH_BURN_HIT                         273
 #define MOVE_EFFECT_FLINCH_FREEZE_HIT                       274
-#define MOVE_EFFECT_FLINCH_PARALYZE_HIT                     275
-#define MOVE_EFFECT_RAISE_SP_ATK_HIT                        276
+#define MOVE_EFFECT_RAISE_SP_ATK_HIT	                    275
+#define MOVE_EFFECT_RAISE_SPEED_SPA_HIT                     276
 
 // new move effects:
 #define MOVE_EFFECT_HONE_CLAWS                              277
@@ -305,7 +305,7 @@
 #define MOVE_EFFECT_HIT_THREE_TIMES_TRIPLE_DIVE             299
 #define MOVE_EFFECT_PSYBLADE                                300
 #define MOVE_EFFECT_HIT_SLEEP                               301
-#define MOVE_EFFECT_SPICY_EXTRACT                           302
+#define MOVE_EFFECT_FLINCH_PARALYZE_HIT          			302
 #define MOVE_EFFECT_FILLET_AWAY                             303
 #define MOVE_EFFECT_SHED_TAIL                               304
 #define MOVE_EFFECT_AFTER_YOU                               305
@@ -328,7 +328,7 @@
 // custom move effects
 #define MOVE_EFFECT_WILDFIRE								321
 #define MOVE_EFFECT_NOBLE_ROAR								322
-
+#define MOVE_EFFECT_SPICY_EXTRACT                           323
 
 
 #define MOVE_TARGET_SELECTED             0x0000

@@ -14794,7 +14794,7 @@ movedata MOVE_NOBLE_ROAR, "Noble Roar"
     movedescription MOVE_NOBLE_ROAR, "Letting out a noblen\nroar, the user\n intimdates the target,\nlowering both defenses."
 
 movedata MOVE_WILDFIRE, "Wildfire"
-    battleeffect MOVE_EFFECT_WILDFIRE
+    battleeffect MOVE_EFFECT_RAISE_SPEED_SPA_HIT
     pss SPLIT_SPECIAL
     basepower 80
     type TYPE_FIRE

@@ -550,7 +550,7 @@
 #define ADD_STATUS_EFF_AFTER_YOU                       (160)
 #define ADD_STATUS_EFF_QUASH                           (161)
 #define ADD_STATUS_EFF_DRAIN_FULL                      (162)
-#define ADD_STATUS_EFF_RAISE_ATK_SPA				   (163)
+#define ADD_STATUS_EFF_WILDFIRE						   (163)
 
 
 
