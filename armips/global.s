@@ -1,11 +1,9 @@
+.include "armips/include/monnums.s"
+.include "armips/include/abilities.s"
 .include "armips/include/config.s"
 .include "armips/include/constants.s"
-
-// standard assembler includes
-.include "asm/include/abilities.inc"
-.include "asm/include/items.inc"
-.include "asm/include/moves.inc"
-.include "asm/include/species.inc"
+.include "armips/include/itemnums.s"
+.include "armips/include/movenums.s"
 
 .include "armips/asm/backgrounds.s" // fixes new move animations
 .include "armips/asm/moves.s" // repoints all the move table defines within the structure

@@ -1,7 +1,7 @@
 .nds
 .thumb
 
-.include "asm/include/species.inc"
+.include "armips/include/monnums.s"
 
 .include "armips/data/pokedex/000.s"
 .include "armips/data/pokedex/002.s"

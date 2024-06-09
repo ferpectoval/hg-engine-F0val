@@ -2,8 +2,7 @@
 .thumb
 
 .include "armips/include/macros.s"
-
-.include "asm/include/species.inc"
+.include "armips/include/monnums.s"
 
 // Each encounter data has been labeled with the area it gets used.
 // Some are labeled ???, these are most likely not used.

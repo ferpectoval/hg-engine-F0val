@@ -4,10 +4,9 @@
 .include "armips/include/macros.s"
 .include "armips/include/constants.s"
 .include "armips/include/config.s"
+.include "armips/include/move_effects.s"
 .include "armips/include/movemacros.s"
-
-.include "asm/include/moves.inc"
-.include "asm/include/move_effects.inc"
+.include "armips/include/movenums.s"
 
 movedata MOVE_NONE, "-"
     battleeffect MOVE_EFFECT_HIT
@@ -250,13 +249,13 @@ movedata MOVE_SWORDS_DANCE, "Swords Dance"
     movedescription MOVE_SWORDS_DANCE, "A frenetic dance to\nuplift the fighting\nspirit. It sharply\nraises the user’s\nAttack stat."
 
 movedata MOVE_CUT, "Cut"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_LOWER_DEFENSE_HIT
     pss SPLIT_PHYSICAL
-    basepower 50
-    type TYPE_NORMAL
-    accuracy 95
+    basepower 70
+    type TYPE_STEEL
+    accuracy 100
     pp 30
-    effectchance 0
+    effectchance 75
     target MOVE_TARGET_SELECTED
     priority 0
     flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
@@ -1133,7 +1132,7 @@ movedata MOVE_STRENGTH, "Strength"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 80
-    type TYPE_NORMAL
+    type TYPE_FIGHTING
     accuracy 100
     pp 15
     effectchance 0
@@ -1148,7 +1147,7 @@ movedata MOVE_STRENGTH, "Strength"
 movedata MOVE_ABSORB, "Absorb"
     battleeffect MOVE_EFFECT_RECOVER_HALF_DAMAGE_DEALT
     pss SPLIT_SPECIAL
-    basepower 20
+    basepower 40
     type TYPE_GRASS
     accuracy 100
     pp 25
@@ -1164,7 +1163,7 @@ movedata MOVE_ABSORB, "Absorb"
 movedata MOVE_MEGA_DRAIN, "Mega Drain"
     battleeffect MOVE_EFFECT_RECOVER_HALF_DAMAGE_DEALT
     pss SPLIT_SPECIAL
-    basepower 40
+    basepower 60
     type TYPE_GRASS
     accuracy 100
     pp 15
@@ -3244,7 +3243,7 @@ movedata MOVE_SANDSTORM, "Sandstorm"
 movedata MOVE_GIGA_DRAIN, "Giga Drain"
     battleeffect MOVE_EFFECT_RECOVER_HALF_DAMAGE_DEALT
     pss SPLIT_SPECIAL
-    basepower 75
+    basepower 80
     type TYPE_GRASS
     accuracy 100
     pp 10
@@ -7771,7 +7770,7 @@ movedata MOVE_FLAME_BURST, "Flame Burst"
 
 movedata MOVE_SLUDGE_WAVE, "Sludge Wave"
     battleeffect MOVE_EFFECT_POISON_HIT
-    pss SPLIT_SPECIAL
+    pss SPLIT_PHYSICAL
     basepower 95
     type TYPE_POISON
     accuracy 100
@@ -9146,22 +9145,6 @@ movedata MOVE_TRICK_OR_TREAT, "Trick-or-Treat"
     terminatedata
     movedescription MOVE_TRICK_OR_TREAT, "---"
 
-movedata MOVE_NOBLE_ROAR, "Noble Roar"
-    battleeffect MOVE_EFFECT_HIT
-    pss SPLIT_STATUS
-    basepower 0
-    type TYPE_NORMAL
-    accuracy 100
-    pp 30
-    effectchance 100
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_NOBLE_ROAR, "---"
-
 movedata MOVE_ION_DELUGE, "Ion Deluge"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_STATUS
@@ -9225,22 +9208,6 @@ movedata MOVE_PETAL_BLIZZARD, "Petal Blizzard"
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_PETAL_BLIZZARD, "---"
-
-movedata MOVE_FREEZE_DRY, "Freeze-Dry"
-    battleeffect MOVE_EFFECT_HIT
-    pss SPLIT_SPECIAL
-    basepower 70
-    type TYPE_ICE
-    accuracy 100
-    pp 20
-    effectchance 10
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_FREEZE_DRY, "---"
 
 movedata MOVE_DISARMING_VOICE, "Disarming Voice"
     battleeffect MOVE_EFFECT_HIT
@@ -10778,22 +10745,6 @@ movedata MOVE_SOLAR_BLADE, "Solar Blade"
     terminatedata
     movedescription MOVE_SOLAR_BLADE, "---"
 
-movedata MOVE_LEAFAGE, "Leafage"
-    battleeffect MOVE_EFFECT_HIT
-    pss SPLIT_PHYSICAL
-    basepower 40
-    type TYPE_GRASS
-    accuracy 100
-    pp 40
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_LEAFAGE, "---"
-
 movedata MOVE_SPOTLIGHT, "Spotlight"
     battleeffect MOVE_EFFECT_MAKE_GLOBAL_TARGET
     pss SPLIT_STATUS
@@ -11402,21 +11353,21 @@ movedata MOVE_SHADOW_BONE, "Shadow Bone"
     terminatedata
     movedescription MOVE_SHADOW_BONE, "---"
 
-movedata MOVE_ACCELEROCK, "Accelerock"
-    battleeffect MOVE_EFFECT_HIT
-    pss SPLIT_PHYSICAL
-    basepower 40
-    type TYPE_ROCK
+movedata MOVE_PRISMATIC_LASER, "Prismatic Laser"
+    battleeffect MOVE_EFFECT_RECHARGE_AFTER
+    pss SPLIT_SPECIAL
+    basepower 160
+    type TYPE_PSYCHIC
     accuracy 100
-    pp 20
+    pp 10
     effectchance 0
     target MOVE_TARGET_SELECTED
-    priority 1
+    priority 0
     flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_ACCELEROCK, "---"
+    movedescription MOVE_PRISMATIC_LASER, "---"
 
 movedata MOVE_LIQUIDATION, "Liquidation"
     battleeffect MOVE_EFFECT_LOWER_DEFENSE_HIT
@@ -11434,21 +11385,21 @@ movedata MOVE_LIQUIDATION, "Liquidation"
     terminatedata
     movedescription MOVE_LIQUIDATION, "---"
 
-movedata MOVE_PRISMATIC_LASER, "Prismatic Laser"
-    battleeffect MOVE_EFFECT_RECHARGE_AFTER
-    pss SPLIT_SPECIAL
-    basepower 160
-    type TYPE_PSYCHIC
+movedata MOVE_ACCELEROCK, "Accelerock"
+    battleeffect MOVE_EFFECT_PRIORITY_1
+    pss SPLIT_PHYSICAL
+    basepower 50
+    type TYPE_ROCK
     accuracy 100
-    pp 10
+    pp 20
     effectchance 0
     target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    priority 1
+    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_PRISMATIC_LASER, "---"
+    movedescription MOVE_ACCELEROCK, "The user smashes into the target at\nhigh speed. This move always\ngoes first."
 
 movedata MOVE_SPECTRAL_THIEF, "Spectral Thief"
     battleeffect MOVE_EFFECT_HIT
@@ -13418,22 +13369,6 @@ movedata MOVE_WAVE_CRASH, "Wave Crash"
     terminatedata
     movedescription MOVE_WAVE_CRASH, "---"
 
-movedata MOVE_CHLOROBLAST, "Chloroblast"
-    battleeffect MOVE_EFFECT_RECOIL_HALF
-    pss SPLIT_SPECIAL
-    basepower 150
-    type TYPE_GRASS
-    accuracy 95
-    pp 5
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_CHLOROBLAST, "---"
-
 movedata MOVE_MOUNTAIN_GALE, "Mountain Gale"
     battleeffect MOVE_EFFECT_FLINCH_HIT
     pss SPLIT_PHYSICAL
@@ -13835,20 +13770,20 @@ movedata MOVE_POPULATION_BOMB, "Population Bomb"
     movedescription MOVE_POPULATION_BOMB, "---"
 
 movedata MOVE_ICE_SPINNER, "Ice Spinner"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_REMOVE_HAZARDS_AND_BINDING
     pss SPLIT_PHYSICAL
     basepower 80
     type TYPE_ICE
     accuracy 100
     pp 15
-    effectchance 0
-    target MOVE_TARGET_SELECTED
+    effectchance 100
+    target MOVE_TARGET_FOES_AND_ALLY
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_ICE_SPINNER, "---"
+    movedescription MOVE_ICE_SPINNER, "The user covers its feet in thin ice\nand twirls around, slamming into the\ntarget. This move's spinning motion\nalso destroys the terrain."
 
 movedata MOVE_GLAIVE_RUSH, "Glaive Rush"
     battleeffect MOVE_EFFECT_HIT
@@ -14778,7 +14713,119 @@ movedata MOVE_MALIGNANT_CHAIN, "Malignant Chain"
     terminatedata
     movedescription MOVE_MALIGNANT_CHAIN, "---"
 
-movedatanoname NUM_OF_MOVES
+movedata MOVE_FREEZE_DRY, "Freeze-Dry"
+    battleeffect MOVE_EFFECT_FREEZE_HIT
+    pss SPLIT_SPECIAL
+    basepower 90
+    type TYPE_ICE
+    accuracy 100
+    pp 20
+    effectchance 10
+    target MOVE_TARGET_SELECTED
+    priority 0
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    appeal 0x00
+    contesttype CONTEST_COOL
+    terminatedata
+    movedescription MOVE_FREEZE_DRY, "The user rapidly cools\nthe target. This move\nis super effective\non Water pokemon"
+
+movedata MOVE_LEAFAGE, "Leafage"
+    battleeffect MOVE_EFFECT_HIGH_CRITICAL
+    pss SPLIT_SPECIAL
+    basepower 60
+    type TYPE_GRASS
+    accuracy 100
+    pp 25
+    effectchance 0
+    target MOVE_TARGET_BOTH
+    priority 0
+    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    appeal 0x05
+    contesttype CONTEST_COOL
+    terminatedata
+    movedescription MOVE_LEAFAGE, "Overwhelming foliage\nharasses the foe.\nHas a high\ncritical-hit ratio."
+
+movedata MOVE_CHLOROBLAST, "Chloroblast"
+    battleeffect MOVE_EFFECT_RECOIL_QUARTER_DAMAGE_DELT
+    pss SPLIT_SPECIAL
+    basepower 130
+    type TYPE_GRASS
+    accuracy 100
+    pp 10
+    effectchance 0
+    target MOVE_TARGET_SELECTED
+    priority 0
+    flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    appeal 0x12
+    contesttype CONTEST_COOL
+    terminatedata
+    movedescription MOVE_CHLOROBLAST, "The user launches its\namassed chlorophyll to\ninflict damage. This\nalso hurts\nthe user."
+
+movedata MOVE_DEATH_ROLL, "Death Roll"
+    battleeffect MOVE_EFFECT_CONTINUE_AND_CONFUSE_SELF
+    pss SPLIT_PHYSICAL
+    basepower 90
+    type TYPE_FIGHTING
+    accuracy 100
+    pp 10
+    effectchance 0
+    target MOVE_TARGET_SELECTED
+    priority 0
+    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_CONTACT
+    appeal 0x07
+    contesttype CONTEST_COOL
+    terminatedata
+    movedescription MOVE_DEATH_ROLL, "The user clamps its\njaw onto the target\nand spins rapidly for\ntwo to three turns.\nHowever, it then\nbecomes confused."
+
+movedata MOVE_NOBLE_ROAR, "Noble Roar"
+    battleeffect MOVE_EFFECT_NOBLE_ROAR
+    pss SPLIT_STATUS
+    basepower 0
+    type TYPE_NORMAL
+    accuracy 100
+    pp 30
+    effectchance 0
+    target MOVE_TARGET_BOTH
+    priority 0
+    flags FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_PROTECT
+    appeal 0x13
+    contesttype CONTEST_COOL
+    terminatedata
+    movedescription MOVE_NOBLE_ROAR, "Letting out a noblen\nroar, the user\n intimdates the target,\nlowering both defenses."
+
+movedata MOVE_WILDFIRE, "Wildfire"
+    battleeffect MOVE_EFFECT_RAISE_SPEED_SPA_HIT
+    pss SPLIT_SPECIAL
+    basepower 80
+    type TYPE_FIRE
+    accuracy 100
+    pp 10
+    effectchance 100
+    target MOVE_TARGET_SELECTED
+    priority 0
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    appeal 0x00
+    contesttype CONTEST_COOL
+    terminatedata
+    movedescription MOVE_WILDFIRE, "The user whips up a\nterrifying conflagration.\nRaises both Speed\nand Sp. Attack."
+	
+	movedata MOVE_SHADOW_JUKE, "Shadow Juke"
+    battleeffect MOVE_EFFECT_REMOVE_PROTECT
+    pss SPLIT_SPECIAL
+    basepower 60
+    type TYPE_DARK
+    accuracy 100
+    pp 10
+    effectchance 0
+    target MOVE_TARGET_SELECTED
+    priority 2
+    flags FLAG_MIRROR_MOVE
+    appeal 0x10
+    contesttype CONTEST_BEAUTY
+    terminatedata
+    movedescription MOVE_SHADOW_JUKE, "As the user moves one way, its shadow\nstrikes from another, ignoring Protect."
+
+movedatanoname NUM_OF_MOVES+1
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
     basepower 100

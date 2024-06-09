@@ -1,8 +1,7 @@
 .include "armips/include/constants.s"
 .include "armips/include/macros.s"
-
-.include "asm/include/species.inc"
-
+.include "armips/include/monnums.s"
+                 
 .nds
 .thumb
 
@@ -3769,3 +3768,4 @@ headbuttheader 538,   0,   0
 
 headbuttheader 539,   0,   0
 .close
+

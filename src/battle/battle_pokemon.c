@@ -871,7 +871,7 @@ void BattleEndRevertFormChange(struct BattleSystem *bw)
     struct PartyPokemon *pp;
     u16 monsno;
     u16 form;
-    u16 newItems[6] = {0, 0, 0, 0, 0, 0};
+    u16 newItems[6] = {0};
 
     newBS.SideMega[0] = 0;
     newBS.SideMega[1] = 0;
@@ -966,17 +966,11 @@ void BattleEndRevertFormChange(struct BattleSystem *bw)
     // restore items regardless of if it's a trainer battle--this will also overwrite items gained from trainers
     for (i = 0; i < BattleWorkPokeCountGet(bw, 0); i++)
     {
-        u32 battleItem = newBS.itemsToRestore[i];
         pp = BattleWorkPokemonParamGet(bw, 0, i);
         if (!IS_ITEM_BERRY(newBS.itemsToRestore[i]))
         {
-            SetMonData(pp, MON_DATA_HELD_ITEM, &battleItem);
+            SetMonData(pp, MON_DATA_HELD_ITEM, &newBS.itemsToRestore[i]);
         }
-    }
-
-    // set to zero after the items have already been restored to maybe prevent observed byte loss
-    for (i = 0; i < BattleWorkPokeCountGet(bw, 0); i++)
-    {
         newBS.itemsToRestore[i] = 0;
     }
 #endif // RESTORE_ITEMS_AT_BATTLE_END

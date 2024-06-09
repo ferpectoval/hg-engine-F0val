@@ -2,8 +2,7 @@
 .thumb
 
 .include "armips/include/macros.s"
-
-.include "asm/include/species.inc"
+.include "armips/include/monnums.s"
 
 // matches each species to its baby species
 

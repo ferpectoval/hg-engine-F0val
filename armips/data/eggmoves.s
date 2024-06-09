@@ -2,9 +2,8 @@
 .thumb
 
 .include "armips/include/macros.s"
-
-.include "asm/include/moves.inc"
-.include "asm/include/species.inc"
+.include "armips/include/monnums.s"
+.include "armips/include/movenums.s"
 
 // the egg moves of each mon
 // needs to be in species order
@@ -2462,7 +2461,7 @@ eggmoveentry SPECIES_SNIVY
     eggmove MOVE_PURSUIT
     eggmove MOVE_SWEET_SCENT
     eggmove MOVE_TWISTER
-
+    
 
 eggmoveentry SPECIES_TEPIG
     eggmove MOVE_BODY_SLAM
@@ -2593,7 +2592,7 @@ eggmoveentry SPECIES_BLITZLE
     eggmove MOVE_SAND_ATTACK
     eggmove MOVE_SCREECH
     eggmove MOVE_SHOCK_WAVE
-    eggmove MOVE_TAKE_DOWN
+    eggmove MOVE_TAKE_DOWN 
 
 
 eggmoveentry SPECIES_ROGGENROLA

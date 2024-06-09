@@ -2,12 +2,11 @@
 .thumb
 
 .include "armips/include/animscriptcmd.s"
-
-.include "asm/include/abilities.inc"
+.include "armips/include/abilities.s"
 .include "armips/include/constants.s"
-.include "asm/include/items.inc"
-.include "asm/include/species.inc"
-.include "asm/include/moves.inc"
+.include "armips/include/itemnums.s"
+.include "armips/include/monnums.s"
+.include "armips/include/movenums.s"
 
 // misty terrain
 

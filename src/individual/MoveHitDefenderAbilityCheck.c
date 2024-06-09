@@ -297,7 +297,6 @@ BOOL MoveHitDefenderAbilityCheckInternal(void *bw, struct BattleStruct *sp, int 
             }
             break;
         case ABILITY_MUMMY:
-        case ABILITY_LINGERING_AROMA:
             if (((sp->waza_status_flag & WAZA_STATUS_FLAG_NO_OUT) == 0)
                 && ((sp->server_status_flag & SERVER_STATUS_FLAG_x20) == 0)
                 && ((sp->server_status_flag2 & SERVER_STATUS_FLAG2_U_TURN) == 0)
@@ -308,7 +307,7 @@ BOOL MoveHitDefenderAbilityCheckInternal(void *bw, struct BattleStruct *sp, int 
             {
                 sp->addeffect_type = ADD_EFFECT_ABILITY;
                 sp->client_work = sp->attack_client;
-                sp->battlemon[sp->attack_client].ability = GetBattlerAbility(sp, sp->defence_client); // spread defender ability to attacker
+                sp->battlemon[sp->attack_client].ability = ABILITY_MUMMY;
                 seq_no[0] = SUB_SEQ_HANDLE_MUMMY_MESSAGE;
                 ret = TRUE;
             }
@@ -491,12 +490,12 @@ BOOL MoveHitDefenderAbilityCheckInternal(void *bw, struct BattleStruct *sp, int 
 }
 
 /**
- *  @brief check if mummy can overwrite the attacker's ability
+ *  @brief check if mummy can overwrite the attacker's ability.  copied into this overlay for convenience
  *
  *  @param sp global battle structure
  *  @return TRUE if the ability can be overwritten; FALSE otherwise
  */
-BOOL MummyAbilityCheck(struct BattleStruct *sp)
+static BOOL MummyAbilityCheck(struct BattleStruct *sp)
 {
     switch(GetBattlerAbility(sp, sp->attack_client))
     {
@@ -511,12 +510,6 @@ BOOL MummyAbilityCheck(struct BattleStruct *sp)
         case ABILITY_DISGUISE:
         case ABILITY_COMATOSE:
         case ABILITY_MUMMY:
-        case ABILITY_AS_ONE_GLASTRIER:
-        case ABILITY_AS_ONE_SPECTRIER:
-        // seems to be based on Lingering Aroma from Bulbapedia
-        case ABILITY_ZERO_TO_HERO:
-        case ABILITY_COMMANDER:
-        case ABILITY_LINGERING_AROMA:
             return FALSE;
         default:
             return TRUE;

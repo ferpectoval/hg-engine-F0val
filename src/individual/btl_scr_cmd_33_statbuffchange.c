@@ -188,8 +188,7 @@ BOOL btl_scr_cmd_33_statbuffchange(void *bw, struct BattleStruct *sp)
         {
             if (sp->attack_client != sp->state_client)
             {
-                // infiltrator bypasses mist
-                if (sp->scw[IsClientEnemy(bw, sp->state_client)].mistCount && GetBattlerAbility(sp, sp->attack_client) != ABILITY_INFILTRATOR)
+                if (sp->scw[IsClientEnemy(bw, sp->state_client)].mistCount)
                 {
                     sp->mp.msg_id = BATTLE_MSG_PROTECTED_BY_MIST;
                     sp->mp.msg_tag = TAG_NICK;
@@ -225,8 +224,7 @@ BOOL btl_scr_cmd_33_statbuffchange(void *bw, struct BattleStruct *sp)
                 }
                 else if ((MoldBreakerAbilityCheck(sp, sp->attack_client, sp->state_client, ABILITY_CLEAR_BODY) == TRUE)
                       || (MoldBreakerAbilityCheck(sp, sp->attack_client, sp->state_client, ABILITY_WHITE_SMOKE) == TRUE)
-                      || (GetBattlerAbility(sp, sp->state_client) == ABILITY_FULL_METAL_BODY)   // Full Metal Body cannot be ignored
-                      || (HeldItemHoldEffectGet(sp, sp->attack_client) != HOLD_EFFECT_PREVENT_STAT_DROPS)) // clear amulet
+                      || (GetBattlerAbility(sp, sp->state_client) == ABILITY_FULL_METAL_BODY))   // Full Metal Body cannot be ignored
                 {
                     if (sp->addeffect_type == ADD_EFFECT_ABILITY)
                     {

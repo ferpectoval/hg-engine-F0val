@@ -2,11 +2,10 @@
 .thumb
 
 .include "armips/include/animscriptcmd.s"
-
-.include "asm/include/abilities.inc"
-.include "asm/include/items.inc"
-.include "asm/include/species.inc"
-.include "asm/include/moves.inc"
+.include "armips/include/abilities.s"
+.include "armips/include/itemnums.s"
+.include "armips/include/monnums.s"
+.include "armips/include/movenums.s"
 
 // fix strength: originally makes user go right 2 pixels
 
