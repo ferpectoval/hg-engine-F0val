@@ -5207,7 +5207,7 @@ pokemon SPECIES_NONE
 .close
 
 
-encounterdata  50   // ???
+encounterdata  50   // Ominous Ziggurat
 
 walkrate 0
 surfrate 0
@@ -6157,7 +6157,7 @@ walklevels 23, 22, 23, 22, 22, 22, 24, 24, 24, 26, 24, 26
 pokemon SPECIES_SNOVER
 pokemon SPECIES_SWINUB
 pokemon SPECIES_SNORUNT
-pokemon SPECIES_AMAURA
+monwithform SPECIES_VULPIX, 1
 pokemon SPECIES_SNEASEL
 pokemon SPECIES_GABITE
 pokemon SPECIES_AURORUS
@@ -6171,7 +6171,7 @@ pokemon SPECIES_CRESSELIA
 pokemon SPECIES_SNOVER
 pokemon SPECIES_SWINUB
 pokemon SPECIES_SNORUNT
-pokemon SPECIES_AMAURA
+monwithform SPECIES_VULPIX, 1
 pokemon SPECIES_SNEASEL
 pokemon SPECIES_GABITE
 pokemon SPECIES_AURORUS
@@ -6185,7 +6185,7 @@ pokemon SPECIES_CRESSELIA
 pokemon SPECIES_SNOVER
 pokemon SPECIES_SWINUB
 pokemon SPECIES_SNORUNT
-pokemon SPECIES_AMAURA
+monwithform SPECIES_VULPIX, 1
 pokemon SPECIES_SNEASEL
 pokemon SPECIES_GABITE
 pokemon SPECIES_AURORUS

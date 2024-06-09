@@ -307,9 +307,9 @@ const u16 *_0210FA3C[] = {
 /* const u16 _020FBA88[] = {ITEM_HEART_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL, 0xFFFF}; */
 /* Olivine City */
 .org 0x020FBA88
-.halfword ITEM_QUICK_BALL
-.halfword ITEM_HEAL_BALL
-.halfword ITEM_NET_BALL
+.halfword ITEM_FLAME_ORB
+.halfword ITEM_TOXIC_ORB
+.halfword ITEM_ROCKY_HELMET
 .halfword 0xFFFF
 
 /* const u16 _020FBAD4[] = {ITEM_POTION, ITEM_SUPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL, ITEM_REVIVE, 0xFFFF}; */
@@ -340,10 +340,14 @@ const u16 *_0210FA3C[] = {
 /* const u16 _020FBAC0[] = {ITEM_AIR_MAIL, ITEM_NEST_BALL, ITEM_DUSK_BALL, ITEM_QUICK_BALL, 0xFFFF}; */
 /* Vermilion City */
 .org 0x020FBAC0
-.halfword ITEM_AIR_MAIL
-.halfword ITEM_NEST_BALL
-.halfword ITEM_DUSK_BALL
-.halfword ITEM_QUICK_BALL
+.halfword ITEM_KINGS_ROCK
+.halfword ITEM_LINKING_CORD
+.halfword ITEM_RAZOR_CLAW
+.halfword ITEM_RAZOR_FANG
+.halfword ITEM_PRISM_SCALE
+.halfword ITEM_METAL_COAT
+.halfword ITEM_UP_GRADE
+.halfword ITEM_DUBIOUS_DISC
 .halfword 0xFFFF
 
 /* const u16 _020FBA70[] = {ITEM_AIR_MAIL, ITEM_DUSK_BALL, ITEM_QUICK_BALL, 0xFFFF}; */
