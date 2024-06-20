@@ -943,7 +943,7 @@ MOVE_V_CREATE equ 928
 
 // there are a bunch more here but that is fine
 
-NUM_OF_MOVES equ 929
+NUM_OF_MOVES equ 928
 
 MOVE_G_MAX_WILDFIRE equ (NUM_OF_MOVES-1+1)
 MOVE_G_MAX_BEFUDDLE equ (NUM_OF_MOVES-1+2)
