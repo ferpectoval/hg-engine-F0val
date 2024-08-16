@@ -8,7 +8,7 @@
 
 // headbutt trees
 // headbuttheader header, numberOfNormalTrees, numberOfSpecialTrees
-// treecoords requires 6 pairs of x/y coordinates per tree.  fill the remaining pairs with -1's
+// treecoords requires 6 pairs of x/y coordinates per tree.  fill the remaining pairs with -1
 
 headbuttheader   0,   0,   0
 .close

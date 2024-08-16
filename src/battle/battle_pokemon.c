@@ -94,7 +94,7 @@ u8 TypeEffectivenessTable[][3] =
     { TYPE_BUG, TYPE_STEEL, 0x05 },
 
 #if FAIRY_TYPE_IMPLEMENTED == 1
-    { TYPE_BUG, TYPE_FAIRY, 0x05 },
+    { TYPE_BUG, TYPE_FAIRY, 0x14 }, //change fairy to 2x from bug
 #endif
 
     { TYPE_BUG, TYPE_FIRE, 0x05 },
@@ -120,6 +120,7 @@ u8 TypeEffectivenessTable[][3] =
 #if FAIRY_TYPE_IMPLEMENTED == 1
     { TYPE_FAIRY, TYPE_FIGHTING, 0x14 },
     { TYPE_FAIRY, TYPE_POISON, 0x05 },
+	{ TYPE_FAIRY, TYPE_BUG, 0x05 }, //change bug to 1/2 from fairy
     { TYPE_FAIRY, TYPE_STEEL, 0x05 },
     { TYPE_FAIRY, TYPE_FIRE, 0x05 },
     { TYPE_FAIRY, TYPE_DRAGON, 0x14 },
@@ -139,6 +140,7 @@ u8 TypeEffectivenessTable[][3] =
     { TYPE_WATER, TYPE_FIRE, 0x14 },
     { TYPE_WATER, TYPE_WATER, 0x05 },
     { TYPE_WATER, TYPE_GRASS, 0x05 },
+	{ TYPE_WATER, TYPE_ICE, 0x05 }, //change ice to 1/2 from water
     { TYPE_WATER, TYPE_DRAGON, 0x05 },
     { TYPE_GRASS, TYPE_FLYING, 0x05 },
     { TYPE_GRASS, TYPE_POISON, 0x05 },
@@ -168,7 +170,6 @@ u8 TypeEffectivenessTable[][3] =
     { TYPE_ICE, TYPE_ICE, 0x05 },
     { TYPE_ICE, TYPE_DRAGON, 0x14 },
     { TYPE_DRAGON, TYPE_STEEL, 0x05 },
-
     { TYPE_DRAGON, TYPE_DRAGON, 0x14 },
     { TYPE_DARK, TYPE_FIGHTING, 0x05 },
     { TYPE_DARK, TYPE_GHOST, 0x14 },

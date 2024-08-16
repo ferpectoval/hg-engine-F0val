@@ -1483,7 +1483,15 @@ int LONG_CALL ServerDoTypeCalcMod(void *bw UNUSED, struct BattleStruct *sp, int 
                         && (TypeEffectivenessTable[i][2] == 20)
                         && defender_type_1 == TYPE_FLYING))
                     {
-                        damage = TypeCheckCalc(sp, attack_client, TypeEffectivenessTable[i][2], damage, base_power, flag);
+						if ((move_no == MOVE_FREEZE_DRY) && (sp->battlemon[defence_client].type1 == TYPE_WATER))
+                        {
+                            damage = TypeCheckCalc(sp, attack_client, 20, damage, base_power, flag);
+                        }
+                        else
+                        {
+                            damage = TypeCheckCalc(sp, attack_client, TypeEffectivenessTable[i][2], damage, base_power, flag);
+                        }
+                        
                         if (TypeEffectivenessTable[i][2] == 20) // seems to be useless, modifier isn't used elsewhere
                         {
                             modifier *= 2;
@@ -1499,7 +1507,15 @@ int LONG_CALL ServerDoTypeCalcMod(void *bw UNUSED, struct BattleStruct *sp, int 
                         && (TypeEffectivenessTable[i][2] == 20)
                         && defender_type_2 == TYPE_FLYING))
                     {
-                        damage = TypeCheckCalc(sp, attack_client, TypeEffectivenessTable[i][2], damage, base_power, flag);
+						if ((move_no == MOVE_FREEZE_DRY) && (sp->battlemon[defence_client].type2 == TYPE_WATER))
+                        {
+                            damage = TypeCheckCalc(sp, attack_client, 20, damage, base_power, flag);
+                        }
+                        else
+                        {
+                            damage = TypeCheckCalc(sp, attack_client, TypeEffectivenessTable[i][2], damage, base_power, flag);
+                        }
+                        
                         if (TypeEffectivenessTable[i][2] == 20) // seems to be useless, modifier isn't used elsewhere
                         {
                             modifier *= 2;

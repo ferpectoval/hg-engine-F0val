@@ -1,6 +1,8 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
+// ADD DEFINES FOR DIFFICULTY LEVEL VARIABLE AND SETTINGS
+
 // FAIRY_TYPE_IMPLEMENTED should be used if you want to implement the fairy type and overwrite type 9 in this project
 // set FAIRY_TYPE_IMPLEMENTED to 0 if you do not want this to happen
 #define FAIRY_TYPE_IMPLEMENTED 1
@@ -20,7 +22,7 @@
 
 // EXPERIENCE_FORMULA_GEN defines the experience formula you would like to use.  Gens 5, 7, and 8 consider the difference between the attacker's level and the fainted's level to scale the experience gained.
 // i.e. defining this as "5", "7", or "8" would use a scaled formula, whereas "6" and others would use the default formula.  There is a multiplier of 255 / 390 to not artificially inflate the experience given as well with higher base experience.
-#define EXPERIENCE_FORMULA_GEN 8
+#define EXPERIENCE_FORMULA_GEN 6
 
 // HIDDEN_ABILITIES defines whether or not Pokémon with their hidden ability bit set will receive their hidden abilities when being generated/changing form in battle.
 // commenting this line out essentially disables hidden abilities to maintain default behavior, while leaving this as-is will introduce hidden abilities and all of their handling.
@@ -68,8 +70,9 @@
 // IMPLEMENT_LEVEL_CAP defines whether or not a configurable hard level cap system is built into the rom based on the value in LEVEL_CAP_VARIABLE
 // if the level is greater than or equal to LEVEL_CAP_VARIABLE, the pokémon will no longer gain experience
 // uncommenting IMPLEMENT_LEVEL_CAP enables the level cap system.  undefining LEVEL_CAP_VARIABLE will just cause compilation errors
-//#define IMPLEMENT_LEVEL_CAP
+#define IMPLEMENT_LEVEL_CAP
 #define LEVEL_CAP_VARIABLE 0x416F
+
 
 // UPDATE_OVERWORLD_POISON will remove overworld poison if enabled
 // comment the line out below to retain overworld poison
@@ -86,7 +89,7 @@
 // SHINY_ODDS are the odds that a pokémon will be shiny.  actual odds are SHINY_ODDS over 65,536, by default 8 / 65536 or 1 / 8192
 // note that changing this still has no chance of spawning shiny mons in for trainers like the tutorial's method does
 // this will change existing mons too!  if you want to change the odds of wild mons only, you will have to add a certain amount of pid rerolls to the AddWildPartyPokemon routine
-#define SHINY_ODDS 8
+#define SHINY_ODDS 4096
 
 // LEARNSET_TOTAL_MOVES is the amount of moves that each pokémon should be able to learn by level up
 #define LEARNSET_TOTAL_MOVES 41 // 40+terminate - currently driven by gallade
@@ -95,11 +98,21 @@
 // modern generations have this value at 160, older ones at 220.  still max out at 255
 #define FRIENDSHIP_EVOLUTION_THRESHOLD 160
 
+// IMPLEMENT_SCALING defines whether or not dynamic level scaling of wild pokemon and enemy trainers is implemented, and provides a variable to allow for user selection of different implementations (WIP)
+// Need to add script to ask/set variable
+// 0 = Do Not Scale; 1 = Scale Up Wild and Trainer pokemon to AVERAGE level of player party; 2 = Scale Up Wild and Trainer pokemon to HIGHEST level in player party
+// Trainers will only scale up, if levels in trainers.s are higher they will remain the same.
+// uncommenting IMPLEMENT_SCALING enables dynamic scaling.  Undefining SCALING_TYPE_VARIABLE will just cause compilation errors
+#define IMPLEMENT_SCALING
+#define SCALING_TYPE_VARIABLE 0x406A
+
 // RESTORE_ITEMS_AT_BATTLE_END will restore held items that are single-use at the end of battle
 // comment out the line below to keep vanilla behavior
 #define RESTORE_ITEMS_AT_BATTLE_END
 
+
 // PROTEAN_GENERATION defines the behavior that protean should exhibit, where it either changes type every move (<=8) or changes type once per appearance in battle (>=9)
-#define PROTEAN_GENERATION 9
+#define PROTEAN_GENERATION 6
+
 
 #endif

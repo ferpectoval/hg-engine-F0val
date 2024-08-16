@@ -341,7 +341,7 @@
 // tutor field constants
 
 .equ TUTOR_DIVE, 1 << 0
-.equ TUTOR_MUD_SLAP, 1 << 1
+.equ TUTOR_GRASSY_GLIDE, 1 << 1
 .equ TUTOR_FURY_CUTTER, 1 << 2
 .equ TUTOR_ICY_WIND, 1 << 3
 .equ TUTOR_ROLLOUT, 1 << 4
@@ -367,12 +367,12 @@
 .equ TUTOR_EARTH_POWER, 1 << 24
 .equ TUTOR_GUNK_SHOT, 1 << 25
 .equ TUTOR_TWISTER, 1 << 26
-.equ TUTOR_SEED_BOMB, 1 << 27
+.equ TUTOR_LEAF_BLADE, 1 << 27
 .equ TUTOR_IRON_DEFENSE, 1 << 28
 .equ TUTOR_MAGNET_RISE, 1 << 29
 .equ TUTOR_LAST_RESORT, 1 << 30
 .equ TUTOR_BOUNCE, 1 << 31
-.equ TUTOR_TRICK, 1 << 0
+.equ TUTOR_ICE_SPINNER, 1 << 0
 .equ TUTOR_HEAT_WAVE, 1 << 1
 .equ TUTOR_KNOCK_OFF, 1 << 2
 .equ TUTOR_SUCKER_PUNCH, 1 << 3

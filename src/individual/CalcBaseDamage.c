@@ -253,9 +253,13 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
 
     movesplit = GetMoveSplit(sp, moveno);
 
-    // handle huge power + pure power
-    if ((AttackingMon.ability == ABILITY_HUGE_POWER) || (AttackingMon.ability == ABILITY_PURE_POWER))
+    // handle huge power
+    if (AttackingMon.ability == ABILITY_HUGE_POWER)
         attack = attack * 2;
+	
+	// handle new pure power
+    if (AttackingMon.ability == ABILITY_PURE_POWER)
+        sp_attack = sp_attack * 2;
 
     // handle slow start
     if ((AttackingMon.ability == ABILITY_SLOW_START)

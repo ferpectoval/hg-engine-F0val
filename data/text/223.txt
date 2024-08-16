@@ -258,7 +258,7 @@ a {COLOR 255}Lucky Punch{COLOR 0}
 a {COLOR 255}Metal Powder{COLOR 0}
 a {COLOR 255}Thick Club{COLOR 0}
 a {COLOR 255}Leek{COLOR 0}
-a {COLOR 255}Red Scarf{COLOR 0}
+a {COLOR 255}Eeveerstone{COLOR 0}
 a {COLOR 255}Blue Scarf{COLOR 0}
 a {COLOR 255}Pink Scarf{COLOR 0}
 a {COLOR 255}Green Scarf{COLOR 0}
@@ -790,11 +790,3 @@ a {COLOR 255}Hasty Mint{COLOR 0}
 a {COLOR 255}Jolly Mint{COLOR 0}
 a {COLOR 255}Naive Mint{COLOR 0}
 a {COLOR 255}Serious Mint{COLOR 0}
-a {COLOR 255}Fairy Feather{COLOR 0}
-a {COLOR 255}Syrupy Apple{COLOR 0}
-a {COLOR 255}Mediocre Teacup{COLOR 0}
-a {COLOR 255}MasterfulTeacup{COLOR 0}
-a {COLOR 255}CornerstoneMask{COLOR 0}
-a {COLOR 255}Wellspring Mask{COLOR 0}
-a {COLOR 255}HearthflameMask{COLOR 0}
-a {COLOR 255}Metal Alloy{COLOR 0}

@@ -22,6 +22,8 @@
 
 .include "armips/data/starters.s" // data definitions for which species to use for the starter Pokemon
 
+.include "armips/asm/custom/mart_items.s" // custom mart inventories
+
 .if REUSABLE_TMS == 1
 
 .include "armips/asm/tm.s" // make tms infinite

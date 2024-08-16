@@ -937,9 +937,13 @@
 #define MOVE_UPPER_HAND 921
 #define MOVE_MALIGNANT_CHAIN 922
 
+#define MOVE_FIERY_IMPACT 923
+#define MOVE_SHADOW_JUKE 924
+#define MOVE_DEATH_ROLL 925
+
 // there are a bunch more here but that is fine
 
-#define NUM_OF_MOVES 923
+#define NUM_OF_MOVES 926
 
 #define MOVE_G_MAX_WILDFIRE (NUM_OF_MOVES-1+1)
 #define MOVE_G_MAX_BEFUDDLE (NUM_OF_MOVES-1+2)
