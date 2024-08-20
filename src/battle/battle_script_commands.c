@@ -1381,7 +1381,7 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
     if (expcalc->seq_no != 38)
     {
         int i;
-        int total_exp;
+        //int total_exp;
         //int mons_getting_exp = 0;
         //int mons_getting_exp_from_item = 0;
         u16 item;
@@ -1421,7 +1421,8 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
         }
         /* multiply by 255/390 (map audino to 255) to not get massively inflated experience rates - removed to actually get inflated experience
         totalexp = 255 * GetSpeciesBaseExp(sp->battlemon[sp->fainting_client].species, sp->battlemon[sp->fainting_client].form_no) / 390;//PokePersonalParaGet(sp->battlemon[sp->fainting_client].species, PERSONAL_EXP_YIELD); */
-        totalexp = (totalexp * sp->battlemon[sp->fainting_client].level) / 4; //7; - continuing to inflate experience
+		totalexp = GetSpeciesBaseExp(sp->battlemon[sp->fainting_client].species, sp->battlemon[sp->fainting_client].form_no);
+        totalexp = ((totalexp * sp->battlemon[sp->fainting_client].level) / 4); //7; - continuing to inflate experience
         if (monCountFromItem)
         {
             sp->obtained_exp = (totalexp / 2) / monCount;

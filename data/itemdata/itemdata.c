@@ -12625,7 +12625,7 @@ const ITEMDATA __data[] =
 {
     .price = 3000,
     .holdEffect = HOLD_EFFECT_EXP_SHARE,
-    .holdEffectParam = 0,
+    .holdEffectParam = 1,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -13600,7 +13600,7 @@ const ITEMDATA __data[] =
 {
     .price = 200,
     .holdEffect = HOLD_EFFECT_EXP_UP,
-    .holdEffectParam = 0,
+    .holdEffectParam = 200,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -36738,7 +36738,7 @@ const ITEMDATA __data[] =
 
 [ITEM_BIG_NUGGET - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 100000,
+    .price = 75000,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -39143,7 +39143,7 @@ const ITEMDATA __data[] =
 
 [ITEM_ABILITY_PATCH - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 250000,
+    .price = 25000,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
