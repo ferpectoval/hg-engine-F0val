@@ -60,28 +60,31 @@ u32 GetScalingType(void)
  *  @param bp battle param
  */
  
- u16 GetAvgLevel(struct BATTLE_PARAM *bp)
+u16 GetAvgLevel(struct BATTLE_PARAM *bp)
  {
 	int i;
 	struct PartyPokemon *pp;
 	struct Party *party = bp->poke_party[0];
 	s32 playerCount = bp->poke_party[0]->count;
-	u16 avgLevel; //begin avg level implementation
+	u16 avgLevel;
 	u16 totalLevel = 0;
 	for (i = 0; i < playerCount; i++) {
 		pp = Party_GetMonByIndex(party, i);
 		u16 currLevel = GetMonData(pp, MON_DATA_LEVEL, NULL);
 		totalLevel += currLevel;
 	}
-	avgLevel = (int)(totalLevel / playerCount);//end avg level implementation
+	avgLevel = (int)(totalLevel / playerCount);
 	 
 	return avgLevel;
 	
  }
  
  /**
- * replace code between comments in above function with below to scale to highest level
+ @brief Generate the scaled level to use for a Pokemon based on highest level in player party
+ *		-ALL CREDIT TO Mixone-FinallyHere FOR THIS-
+ *  @param bp battle param
 */ 
+
 u16 GetHighLevel(struct BATTLE_PARAM *bp)
  {
 	int i;
@@ -555,8 +558,7 @@ BOOL LONG_CALL AddWildPartyPokemon(int inTarget, EncounterInfo *encounterInfo, s
     u16 species;
 	u16 level;
 	u32 exp;
-	u32 DoScaling = GetScalingType();
-	
+		
     if (encounterInfo->isEgg == 0 && encounterInfo->ability == ABILITY_COMPOUND_EYES)
     {
         range = 1;
@@ -564,14 +566,31 @@ BOOL LONG_CALL AddWildPartyPokemon(int inTarget, EncounterInfo *encounterInfo, s
 
     species = GetMonData(encounterPartyPokemon, MON_DATA_SPECIES, NULL);
 	
-	if (DoScaling != 0) {
-		level = GetAvgLevel(bp);
+	#ifdef IMPLEMENT_SCALING
+	
+	u32 DoScaling = GetScalingType();
+	u16 avgLevel = GetAvgLevel(bp);
+	u16 highLevel = GetHighLevel(bp);
+	
+	if (DoScaling == 1) {
+		level = avgLevel;
 		exp = PokeLevelExpGet(species,level);
 		SetMonData(encounterPartyPokemon, MON_DATA_LEVEL, &level);
 		SetMonData(encounterPartyPokemon, MON_DATA_EXPERIENCE, (u8 *)&exp);
 		RecalcPartyPokemonStats(encounterPartyPokemon);
         InitBoxMonMoveset(&encounterPartyPokemon->box);
 	}
+	
+	if (DoScaling == 2) {
+		level = highLevel;
+		exp = PokeLevelExpGet(species,level);
+		SetMonData(encounterPartyPokemon, MON_DATA_LEVEL, &level);
+		SetMonData(encounterPartyPokemon, MON_DATA_EXPERIENCE, (u8 *)&exp);
+		RecalcPartyPokemonStats(encounterPartyPokemon);
+        InitBoxMonMoveset(&encounterPartyPokemon->box);
+	}
+	
+	#endif
 	
     if (space_for_setmondata != 0)
     {
