@@ -584,6 +584,10 @@ u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int clien
     int ability2;
     int stat_stage_spd1;
     int stat_stage_spd2;
+	int player_type1;
+	int player_type2;
+	int enemy_type1;
+	int enemy_type2;
     u32 i;
 
     // if one mon is fainted and the other isn't, then the alive one obviously goes first
@@ -619,8 +623,14 @@ u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int clien
                 break;
         }
     }
-
-    ability1 = GetBattlerAbility(sp, client1);
+	
+	// Get Type for Hail Speed Nerf
+	player_type1 = BattlePokemonParamGet(sp, client1, BATTLE_MON_DATA_TYPE1, NULL);
+	player_type2 = BattlePokemonParamGet(sp, client1, BATTLE_MON_DATA_TYPE2, NULL);
+	enemy_type1 = BattlePokemonParamGet(sp, client1, BATTLE_MON_DATA_TYPE1, NULL);
+	enemy_type2 = BattlePokemonParamGet(sp, client1, BATTLE_MON_DATA_TYPE2, NULL);
+	  
+	ability1 = GetBattlerAbility(sp, client1);
     ability2 = GetBattlerAbility(sp, client2);
 
     hold_effect1 = HeldItemHoldEffectGet(sp, client1);
@@ -901,12 +911,14 @@ u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int clien
         }
 
         // Handle Gale Wings
-        if
+        if 
         (
             GetBattlerAbility(sp, client1) == ABILITY_GALE_WINGS
             && sp->moveTbl[move1].type == TYPE_FLYING
-            && sp->battlemon[client1].hp == (s32)sp->battlemon[client1].maxhp
-        ) {
+            && (sp->battlemon[client1].hp == (s32)sp->battlemon[client1].maxhp || GALE_WINGS_GENERATION < 7)
+        ) 
+		
+		{
             priority1++;
         }
 
@@ -940,6 +952,20 @@ u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int clien
             }
         }
     }
+	
+	#ifdef IMPLEMENT_HAIL_BUFF
+	
+	if ((sp->field_condition & WEATHER_HAIL_ANY) && ((player_type1 == (TYPE_GRASS || TYPE_GROUND || TYPE_FIGHTING)) || (player_type2 == (TYPE_GRASS || TYPE_GROUND || TYPE_FIGHTING))))
+	{
+        speed1 = speed1 * 15 / 10;
+	}
+	
+	if ((sp->field_condition & WEATHER_HAIL_ANY) && ((enemy_type1 == (TYPE_GRASS || TYPE_GROUND || TYPE_FIGHTING)) || (enemy_type2 == (TYPE_GRASS || TYPE_GROUND || TYPE_FIGHTING))))
+	{
+        speed2 = speed2 * 15 / 10;
+	}
+	
+	#endif
 
     if (sp->field_condition & FIELD_STATUS_TRICK_ROOM) {
         speed1 = (10000 - speed1) % 8192;

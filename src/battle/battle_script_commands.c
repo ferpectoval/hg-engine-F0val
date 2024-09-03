@@ -1419,16 +1419,17 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
                 }
             }
         }
-		/* inflated experience formula below;
-        totalexp = GetSpeciesBaseExp(sp->battlemon[sp->fainting_client].species, sp->battlemon[sp->fainting_client].form_no);//PokePersonalParaGet(sp->battlemon[sp->fainting_client].species, PERSONAL_EXP_YIELD); 
-		totalexp = GetSpeciesBaseExp(sp->battlemon[sp->fainting_client].species, sp->battlemon[sp->fainting_client].form_no);
-        totalexp = ((totalexp * sp->battlemon[sp->fainting_client].level) / 4);
-		end changes to inflate experience */
-		
+				
 		// multiply by 255/390 (map audino to 255) to not get massively inflated experience rates - removed to actually get inflated experience
-        totalexp = 255 * GetSpeciesBaseExp(sp->battlemon[sp->fainting_client].species, sp->battlemon[sp->fainting_client].form_no) / 390;//PokePersonalParaGet(sp->battlemon[sp->fainting_client].species, PERSONAL_EXP_YIELD); */
-		totalexp = GetSpeciesBaseExp(sp->battlemon[sp->fainting_client].species, sp->battlemon[sp->fainting_client].form_no);
-        totalexp = ((totalexp * sp->battlemon[sp->fainting_client].level) / 7);
+        totalexp = 255 * GetSpeciesBaseExp(sp->battlemon[sp->fainting_client].species, sp->battlemon[sp->fainting_client].form_no) / 390;//PokePersonalParaGet(sp->battlemon[sp->fainting_client].species, PERSONAL_EXP_YIELD)
+		totalexp = (totalexp * sp->battlemon[sp->fainting_client].level) / 7;
+		
+		#ifdef IMPLEMENT_EXP_MULT
+		
+		totalexp = totalexp * 3;
+		
+		#endif
+		
         if (monCountFromItem)
         {
             sp->obtained_exp = (totalexp / 2) / monCount;
