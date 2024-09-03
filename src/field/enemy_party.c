@@ -123,7 +123,7 @@ u16 GetLowLevel(struct BATTLE_PARAM *bp)
 		 pp = Party_GetMonByIndex(party, i);
 		 u16 currLevel = GetMonData(pp, MON_DATA_LEVEL, NULL);
 		 if (currLevel < lowestLevel) {
-			 highestLevel = currLevel;
+			 lowestLevel = currLevel;
 		 }
 	 }
 	 lowLevel = lowestLevel;
