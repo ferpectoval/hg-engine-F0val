@@ -98,6 +98,23 @@
 // modern generations have this value at 160, older ones at 220.  still max out at 255
 #define FRIENDSHIP_EVOLUTION_THRESHOLD 160
 
+// RESTORE_ITEMS_AT_BATTLE_END will restore held items that are single-use at the end of battle
+// comment out the line below to keep vanilla behavior
+#define RESTORE_ITEMS_AT_BATTLE_END
+
+// PROTEAN_GENERATION defines the behavior that protean should exhibit, where it either changes type every move (<=8) or changes type once per appearance in battle (>=9)
+#define PROTEAN_GENERATION 6
+
+// IMPLEMENT_REUSABLE_REPELS defines whether or not a prompt to use another repel automatically appears upon the previous repel being used up
+#define IMPLEMENT_REUSABLE_REPELS
+
+// GALE_WINGS_GENERATION defines the behavior that Gale Wings should exhibit, where it either always adds priority (<=6) or changes type once per appearance in battle (>=7)
+#define GALE_WINGS_GENERATION 6
+
+// SPA_PURE_POWER defines if Pure Power is changed to double Special Attack instead of Attack
+// set value to 0 for vanilla behavior or 1 for new behavior
+#define SPA_PURE_POWER 1
+
 // IMPLEMENT_SCALING defines whether or not dynamic level scaling of wild pokemon and enemy trainers is implemented, and provides a variable to allow for user selection of different implementations (WIP)
 // Need to add script to ask/set variable
 // 0 = Do Not Scale; 1 = Scale Up Wild and Trainer pokemon to AVERAGE level of player party; 2 = Scale Up Wild and Trainer pokemon to HIGHEST level in player party; 3 = Scale Up Wild and Trainer pokemon to LOWEST level in player party
@@ -106,16 +123,14 @@
 #define IMPLEMENT_SCALING
 #define SCALING_TYPE_VARIABLE 0x406A
 
-// RESTORE_ITEMS_AT_BATTLE_END will restore held items that are single-use at the end of battle
-// comment out the line below to keep vanilla behavior
-#define RESTORE_ITEMS_AT_BATTLE_END
+// IMPLEMENT_EXP_MULT defines whether or not to multiply distributed EXP
+// Amount to mult by currently set to 3, will be modified at a later date 
+#define IMPLEMENT_EXP_MULT
 
-
-// PROTEAN_GENERATION defines the behavior that protean should exhibit, where it either changes type every move (<=8) or changes type once per appearance in battle (>=9)
-#define PROTEAN_GENERATION 6
-
-
-// IMPLEMENT_REUSABLE_REPELS defines whether or not a prompt to use another repel automatically appears upon the previous repel being used up
-#define IMPLEMENT_REUSABLE_REPELS
+// IMPLEMENT_BUFF_HAIL defines whether or not to add additional Hail buffs
+// Adds both 1.5x Defense boost from Snow as well as 1.5x Ice-type damage boost
+// requires SNOW_WARNING_GENERATION in armips/include/config.s to be >= 8
+// comment out the line for vanilla Hail behavior
+#define IMPLEMENT_BUFF_HAIL
 
 #endif
