@@ -1249,6 +1249,16 @@ BOOL btl_scr_cmd_27_shouldgetexp(void *bw, struct BattleStruct *sp)
     return FALSE;
 }
 
+/**
+ *  @brief check if EXP All is enabled
+ *
+ *  @return 0 if EXP All is disabled
+ */
+u32 MinGrindType(void)
+{
+    return GetScriptVar(MIN_GRIND_VARIABLE);
+}
+
 // global variables to track experience
 u8 scratchpad[4] = {0, 0, 0, 0};
 
@@ -1271,7 +1281,11 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
     struct PartyPokemon *pp = NULL;
     struct EXP_CALCULATOR *expcalc = work;
     int exp_client_no = 0;
-
+	
+	#ifdef IMPLEMENT_MIN_GRIND
+	u32 exp_plus = MinGrindType();
+	#endif
+	
     client_no = (expcalc->sp->fainting_client >> 1) & 1;
 
     if (expcalc->seq_no < 37)
@@ -1285,7 +1299,7 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
             item = GetMonData(pp, MON_DATA_HELD_ITEM, NULL);
             eqp = GetItemData(item, ITEM_PARAM_HOLD_EFFECT, 5);
 
-            if ((eqp == HOLD_EFFECT_EXP_SHARE) || (expcalc->sp->obtained_exp_right_flag[client_no] & No2Bit(sel_mons_no)))
+            if ((exp_plus >= 1) || (eqp == HOLD_EFFECT_EXP_SHARE) || (expcalc->sp->obtained_exp_right_flag[client_no] & No2Bit(sel_mons_no)))
             {
                 break;
             }
@@ -1391,6 +1405,10 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
         struct PartyPokemon *pp;
         struct BattleStruct *sp = expcalc->sp;
         void *bw = expcalc->bw;
+		
+		#ifdef IMPLEMENT_MIN_GRIND
+		u32 exp_plus = MinGrindType();
+		#endif
 
         // count how many pokémon are getting experience
         if (!expcalc->work[6])
@@ -1424,11 +1442,10 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
         totalexp = 255 * GetSpeciesBaseExp(sp->battlemon[sp->fainting_client].species, sp->battlemon[sp->fainting_client].form_no) / 390;//PokePersonalParaGet(sp->battlemon[sp->fainting_client].species, PERSONAL_EXP_YIELD)
 		totalexp = (totalexp * sp->battlemon[sp->fainting_client].level) / 7;
 		
-		#ifdef IMPLEMENT_EXP_MULT
-		
-		totalexp = totalexp * 3;
-		
-		#endif
+		if (exp_plus > 1)
+		{
+			totalexp = (totalexp * exp_plus);
+		}
 		
         if (monCountFromItem)
         {

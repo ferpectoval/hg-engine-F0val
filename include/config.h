@@ -123,9 +123,14 @@
 #define IMPLEMENT_SCALING
 #define SCALING_TYPE_VARIABLE 0x406A
 
-// IMPLEMENT_EXP_MULT defines whether or not to multiply distributed EXP
-// Amount to mult by currently set to 3, will be modified at a later date 
-#define IMPLEMENT_EXP_MULT
+// IMPLEMENT_MIN_GRIND defines whether or not to add settings to reduce grind
+// This will add a combined variable to enable an EXP All functionality as well as multiply the amount of experience gained
+// Setting variable to 0 will retain vanilla behavior
+// Setting variable to 1 will enable EXP All but not increase EXP gain
+// Setting variable to >1 will multiply EXP gained by that amount
+// comment out IMPLEMENT_MIN_GRIND to remove functionality completely
+#define IMPLEMENT_MIN_GRIND
+#define MIN_GRIND_VARIABLE 0x406B
 
 // IMPLEMENT_BUFF_HAIL defines whether or not to add additional Hail buffs
 // Adds both 1.5x Defense boost from Snow as well as 1.5x Ice-type damage boost
