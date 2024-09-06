@@ -1250,9 +1250,9 @@ BOOL btl_scr_cmd_27_shouldgetexp(void *bw, struct BattleStruct *sp)
 }
 
 /**
- *  @brief check if EXP All is enabled
+ *  @brief check Minimal Grind Setting
  *
- *  @return 0 if EXP All is disabled
+ *  @return value to multiply EXP awarded
  */
 u32 MinGrindType(void)
 {
@@ -1299,7 +1299,7 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
             item = GetMonData(pp, MON_DATA_HELD_ITEM, NULL);
             eqp = GetItemData(item, ITEM_PARAM_HOLD_EFFECT, 5);
 
-            if ((exp_plus >= 1) || (eqp == HOLD_EFFECT_EXP_SHARE) || (expcalc->sp->obtained_exp_right_flag[client_no] & No2Bit(sel_mons_no)))
+            if ((eqp == HOLD_EFFECT_EXP_SHARE) || (expcalc->sp->obtained_exp_right_flag[client_no] & No2Bit(sel_mons_no)))
             {
                 break;
             }
@@ -1430,7 +1430,7 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
                     item = GetMonData(pp, MON_DATA_HELD_ITEM, NULL);
                     eqp = BattleItemDataGet(sp, item, 1);
 
-                    if (eqp == HOLD_EFFECT_EXP_SHARE)
+                    if ((exp_plus != 0) || (eqp == HOLD_EFFECT_EXP_SHARE))
                     {
                         monCountFromItem++;
                     }
@@ -1444,10 +1444,23 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
 		
 		if (exp_plus > 1)
 		{
-			totalexp = (totalexp * exp_plus);
-		}
-		
-        if (monCountFromItem)
+			if (exp_plus = 2)
+			{
+				totalexp = 2 * totalexp;
+			}
+			
+			if (exp_plus = 3)
+			{
+				totalexp = 3 * totalexp;
+			}
+			
+			if (exp_plus = 5)
+			{
+				totalexp = 5 * totalexp;
+			}
+		}	
+	
+        if ((exp_plus != 0) || (monCountFromItem))
         {
             sp->obtained_exp = (totalexp / 2) / monCount;
             if (sp->obtained_exp == 0)
@@ -1455,7 +1468,7 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
                 sp->obtained_exp = 1;
             }
             sp->exp_share_obtained_exp = (totalexp / 2) / monCountFromItem;
-            if (sp->exp_share_obtained_exp == 0)
+            if ((exp_plus != 0) || (sp->exp_share_obtained_exp == 0))
             {
                 sp->exp_share_obtained_exp = 1;
             }
@@ -1556,7 +1569,7 @@ BOOL Task_DistributeExp_capture_experience(void *arg0, void *work, u32 get_clien
                 item = GetMonData(pp, MON_DATA_HELD_ITEM, NULL);
                 eqp = GetItemData(item, ITEM_PARAM_HOLD_EFFECT, 5);
 
-                if ((eqp == HOLD_EFFECT_EXP_SHARE) || (expcalc->sp->obtained_exp_right_flag[(expcalc->sp->fainting_client >> 1) & 1] & No2Bit(sel_mons_no)))
+                if ((eqp == HOLD_EFFECT_EXP_SHARE) || (expcalc->sp->obtained_exp_right_flag[(expcalc->sp->fainting_client >> 1) & 1] & No2Bit(sel_mons_no)) || (exp_plus != 0))
                 {
                     expcalc->work[6] = sel_mons_no;
                     trackPartyExperience |= No2Bit(sel_mons_no);
