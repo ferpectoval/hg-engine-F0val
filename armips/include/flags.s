@@ -1351,7 +1351,7 @@ FLAG_HIDE_ITEMBALL_R11_TM86                               equ 0x51B
 FLAG_HIDE_ITEMBALL_T03_WISE_GLASSES                       equ 0x51C
 FLAG_HIDE_ITEMBALL_R03_BIG_ROOT                           equ 0x51D
 FLAG_HIDE_ITEMBALL_T26_TM57                               equ 0x51E
-FLAG_UNK_51F                                              equ 0x51F
+FLAG_UNK_51F                                              equ 0x51F #used for Lighthouse TM20
 FLAG_UNK_520                                              equ 0x520
 FLAG_UNK_521                                              equ 0x521
 FLAG_UNK_522                                              equ 0x522
