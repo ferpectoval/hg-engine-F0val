@@ -88,3 +88,6 @@ tools/swav2swar.exe
 
 *.gbapal
 *.4bpp
+documentation/EXP All.txt
+documentation/flags.h
+documentation/NPC Trade Documentation.txt
