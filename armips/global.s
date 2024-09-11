@@ -23,6 +23,8 @@
 .include "armips/data/starters.s" // data definitions for which species to use for the starter Pokemon
 
 .include "armips/asm/custom/mart_items.s" // custom mart inventories
+.include "armips/asm/custom/ev_cap.s" // fix EV caps to 252
+.include "armips/asm/custom/vitamins.s" // remove 100 EV cap from vitamins
 
 .if REUSABLE_TMS == 1
 

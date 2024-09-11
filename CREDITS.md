@@ -1,4 +1,17 @@
-# credits
+# HeartPyrite credits
+
+BluRose and Pals below for all of their hard work on HG-Engine
+
+Mixone - the original code of the Level Scaling function, endless patience in educating me as I stumbled thru learning to code
+
+Drayano - asm for ev caps and mart inventories, inspiration.
+
+SauceyaTTA - convincing me to start hacking via YouTube, as well as dozens of tutorials and tons of wisdom
+
+BuffelSaft - Inspriation for the Eeveerstone
+
+
+# Original HG-Engine credits
 Contributors: Aero, BluRose, Brioche, Charliexox, DavveDP, Dog-Broad, Drayano, Koekenpann, kumakuma1, lhearachel, maxchristy, Mixone, mozzydippers, PandaPanda-Panda, TixoRebel, TurtleIsaac, YGlitzer
 
 [AdAstra](https://github.com/AdAstra-LD/) - `debugsyscall` implementation

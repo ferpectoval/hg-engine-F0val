@@ -12625,7 +12625,7 @@ const ITEMDATA __data[] =
 {
     .price = 3000,
     .holdEffect = HOLD_EFFECT_EXP_SHARE,
-    .holdEffectParam = 1,
+    .holdEffectParam = 0,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
