@@ -3336,9 +3336,9 @@ levelup SPECIES_AERODACTYL
     learnset MOVE_ROCK_SLIDE, 44
     learnset MOVE_IRON_HEAD, 45
     learnset MOVE_STONE_EDGE, 45
-    learnset MOVE_SKY_DROP, 49
+    learnset MOVE_BRAVE_BIRD, 49
     learnset MOVE_HYPER_BEAM, 59
-    learnset MOVE_GIGA_IMPACT, 69
+    learnset MOVE_HEAD_SMASH, 69
     terminatelearnset
 
 
