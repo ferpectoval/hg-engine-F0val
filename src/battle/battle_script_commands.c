@@ -1307,6 +1307,10 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
     //u32 mons_getting_exp_from_item = 0;
     //u32 mons_getting_exp = 0;
     u32 totalexp = 0;
+	
+	#ifdef IMPLEMENT_MIN_GRIND
+	u32 exp_plus = MinGrindType();
+	#endif
 
     // count how many pokémon are getting experience
     if (!expcalc->work[6])
@@ -1351,6 +1355,24 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
             totalexp *= top;
             totalexp /= bottom;
             totalexp = totalexp * sqrt(2*level + 10); // square root tacked on
+			
+			if (exp_plus > 1)
+			{
+				if (exp_plus == 2)
+				{
+					totalexp = 2 * totalexp;
+				}
+			
+				if (exp_plus == 3)
+				{
+					totalexp = 3 * totalexp;
+				}
+			
+				if (exp_plus == 5)
+				{
+					totalexp = 5 * totalexp;
+				}
+			}
 
             if (monCountFromItem)
             {
@@ -1464,7 +1486,7 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
                 sp->obtained_exp = 1;
             }
             sp->exp_share_obtained_exp = (totalexp / 2) / monCountFromItem;
-            if ((exp_plus != 0) || (sp->exp_share_obtained_exp == 0))
+            if ((sp->exp_share_obtained_exp == 0)
             {
                 sp->exp_share_obtained_exp = 1;
             }
