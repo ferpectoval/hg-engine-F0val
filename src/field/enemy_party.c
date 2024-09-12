@@ -595,6 +595,7 @@ BOOL LONG_CALL AddWildPartyPokemon(int inTarget, EncounterInfo *encounterInfo, s
     }
 
     species = GetMonData(encounterPartyPokemon, MON_DATA_SPECIES, NULL);
+	level = GetMonData(encounterPartyPokemon, MON_DATA_LEVEL, NULL);
 	
 	#ifdef IMPLEMENT_SCALING
 	
@@ -603,33 +604,40 @@ BOOL LONG_CALL AddWildPartyPokemon(int inTarget, EncounterInfo *encounterInfo, s
 	u16 highLevel = GetHighLevel(bp);
 	u16 lowLevel = GetLowLevel(bp);
 	
-	if (DoScaling == 1) {
-		level = avgLevel;
-		exp = PokeLevelExpGet(species,level);
-		SetMonData(encounterPartyPokemon, MON_DATA_LEVEL, &level);
-		SetMonData(encounterPartyPokemon, MON_DATA_EXPERIENCE, (u8 *)&exp);
-		RecalcPartyPokemonStats(encounterPartyPokemon);
-        InitBoxMonMoveset(&encounterPartyPokemon->box);
+	if ((species == SPECIES_DIANCIE) && (level == 50)) {
+		goto _skipLevelScale;
 	}
 	
-	if (DoScaling == 2) {
-		level = highLevel;
-		exp = PokeLevelExpGet(species,level);
-		SetMonData(encounterPartyPokemon, MON_DATA_LEVEL, &level);
-		SetMonData(encounterPartyPokemon, MON_DATA_EXPERIENCE, (u8 *)&exp);
-		RecalcPartyPokemonStats(encounterPartyPokemon);
-        InitBoxMonMoveset(&encounterPartyPokemon->box);
+	else {
+		if (DoScaling == 1) {
+			level = avgLevel;
+			exp = PokeLevelExpGet(species,level);
+			SetMonData(encounterPartyPokemon, MON_DATA_LEVEL, &level);
+			SetMonData(encounterPartyPokemon, MON_DATA_EXPERIENCE, (u8 *)&exp);
+			RecalcPartyPokemonStats(encounterPartyPokemon);
+			InitBoxMonMoveset(&encounterPartyPokemon->box);
+		}
+	
+		if (DoScaling == 2) {
+			level = highLevel;
+			exp = PokeLevelExpGet(species,level);
+			SetMonData(encounterPartyPokemon, MON_DATA_LEVEL, &level);
+			SetMonData(encounterPartyPokemon, MON_DATA_EXPERIENCE, (u8 *)&exp);
+			RecalcPartyPokemonStats(encounterPartyPokemon);
+			InitBoxMonMoveset(&encounterPartyPokemon->box);
+		}
+	
+		if (DoScaling == 3) {
+			level = lowLevel;
+			exp = PokeLevelExpGet(species,level);
+			SetMonData(encounterPartyPokemon, MON_DATA_LEVEL, &level);
+			SetMonData(encounterPartyPokemon, MON_DATA_EXPERIENCE, (u8 *)&exp);
+			RecalcPartyPokemonStats(encounterPartyPokemon);
+			InitBoxMonMoveset(&encounterPartyPokemon->box);
+		}
 	}
 	
-	if (DoScaling == 3) {
-		level = lowLevel;
-		exp = PokeLevelExpGet(species,level);
-		SetMonData(encounterPartyPokemon, MON_DATA_LEVEL, &level);
-		SetMonData(encounterPartyPokemon, MON_DATA_EXPERIENCE, (u8 *)&exp);
-		RecalcPartyPokemonStats(encounterPartyPokemon);
-        InitBoxMonMoveset(&encounterPartyPokemon->box);
-	}
-	
+_skipLevelScale:
 	#endif
 	
     if (space_for_setmondata != 0)

@@ -1282,11 +1282,7 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
     struct EXP_CALCULATOR *expcalc = work;
     int exp_client_no = 0;
 	
-	#ifdef IMPLEMENT_MIN_GRIND
-	u32 exp_plus = MinGrindType();
-	#endif
-	
-    client_no = (expcalc->sp->fainting_client >> 1) & 1;
+	client_no = (expcalc->sp->fainting_client >> 1) & 1;
 
     if (expcalc->seq_no < 37)
     {
@@ -1430,7 +1426,7 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
                     item = GetMonData(pp, MON_DATA_HELD_ITEM, NULL);
                     eqp = BattleItemDataGet(sp, item, 1);
 
-                    if ((exp_plus != 0) || (eqp == HOLD_EFFECT_EXP_SHARE))
+                    if (eqp == HOLD_EFFECT_EXP_SHARE)
                     {
                         monCountFromItem++;
                     }
@@ -1444,23 +1440,23 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
 		
 		if (exp_plus > 1)
 		{
-			if (exp_plus = 2)
+			if (exp_plus == 2)
 			{
 				totalexp = 2 * totalexp;
 			}
 			
-			if (exp_plus = 3)
+			if (exp_plus == 3)
 			{
 				totalexp = 3 * totalexp;
 			}
 			
-			if (exp_plus = 5)
+			if (exp_plus == 5)
 			{
 				totalexp = 5 * totalexp;
 			}
 		}	
 	
-        if ((exp_plus != 0) || (monCountFromItem))
+        if (monCountFromItem)
         {
             sp->obtained_exp = (totalexp / 2) / monCount;
             if (sp->obtained_exp == 0)
@@ -1569,7 +1565,7 @@ BOOL Task_DistributeExp_capture_experience(void *arg0, void *work, u32 get_clien
                 item = GetMonData(pp, MON_DATA_HELD_ITEM, NULL);
                 eqp = GetItemData(item, ITEM_PARAM_HOLD_EFFECT, 5);
 
-                if ((eqp == HOLD_EFFECT_EXP_SHARE) || (expcalc->sp->obtained_exp_right_flag[(expcalc->sp->fainting_client >> 1) & 1] & No2Bit(sel_mons_no)) || (exp_plus != 0))
+                if ((eqp == HOLD_EFFECT_EXP_SHARE) || (expcalc->sp->obtained_exp_right_flag[(expcalc->sp->fainting_client >> 1) & 1] & No2Bit(sel_mons_no)))
                 {
                     expcalc->work[6] = sel_mons_no;
                     trackPartyExperience |= No2Bit(sel_mons_no);
