@@ -3608,10 +3608,10 @@ levelup SPECIES_BAYLEEF
     learnset MOVE_LEAF_BLADE, 34
     learnset MOVE_BODY_SLAM, 38
     learnset MOVE_PETAL_BLIZZARD, 41
-    learnset MOVE_SOLAR_BLADE, 45
+    learnset MOVE_DRAGON_DANCE, 45
 	learnset MOVE_POWER_WHIP, 49
-	learnset MOVE_DRAGON_DANCE, 59
-	learnset MOVE_WOOD_HAMMER, 69
+	learnset MOVE_FLARE_BLITZ, 54
+	learnset MOVE_WOOD_HAMMER, 59
     terminatelearnset
 
 
@@ -3640,10 +3640,10 @@ levelup SPECIES_MEGANIUM
     learnset MOVE_FIERY_IMPACT, 42
     learnset MOVE_EARTHQUAKE, 45
 	learnset MOVE_ERUPTION, 49
-	learnset MOVE_POWER_WHIP, 51
-	learnset MOVE_FLARE_BLITZ, 56
-    learnset MOVE_DRAGON_DANCE, 61
-	learnset MOVE_WOOD_HAMMER, 69
+    learnset MOVE_DRAGON_DANCE, 51
+	learnset MOVE_POWER_WHIP, 54
+	learnset MOVE_FLARE_BLITZ, 59
+    learnset MOVE_WOOD_HAMMER, 62
     terminatelearnset
 
 
