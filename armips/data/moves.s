@@ -9304,7 +9304,7 @@ movedata MOVE_DRAINING_KISS, "Draining Kiss"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_DRAINING_KISS, "---"
+    movedescription MOVE_DRAINING_KISS, "The user steals the target's HP\nwith a kiss, restoring\rhalf the damage taken by the target."
 
 movedata MOVE_CRAFTY_SHIELD, "Crafty Shield"
     battleeffect MOVE_EFFECT_HIT
