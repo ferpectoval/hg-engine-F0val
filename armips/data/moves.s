@@ -9224,7 +9224,7 @@ movedata MOVE_PETAL_BLIZZARD, "Petal Blizzard"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_PETAL_BLIZZARD, "---"
+    movedescription MOVE_PETAL_BLIZZARD, "The user stirs up a\nviolent petal blizzard and\ndamages everything around it."
 
 movedata MOVE_FREEZE_DRY, "Freeze-Dry"
     battleeffect MOVE_EFFECT_FREEZE_HIT

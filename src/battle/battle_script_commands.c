@@ -1486,7 +1486,7 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
                 sp->obtained_exp = 1;
             }
             sp->exp_share_obtained_exp = (totalexp / 2) / monCountFromItem;
-            if ((sp->exp_share_obtained_exp == 0)
+            if (sp->exp_share_obtained_exp == 0)
             {
                 sp->exp_share_obtained_exp = 1;
             }
