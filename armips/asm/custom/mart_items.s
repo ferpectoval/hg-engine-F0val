@@ -82,7 +82,7 @@ const u16 *_0210FA3C[] = {
     _020FBBEA, 3 ;Goldenrod 2F-Bottom
     _020FBC1A, 4 ;Goldenrod 2F-Top
     _020FBBB4, 5 ;Goldenrod 3F
-    _020FBAFA, 6 ;Goldenrod 4F
+    _020FBAFA, 6 ;Goldenrod 4F & Safari Gate SE Stall
     _020FBC34, 7 ;Goldenrod 5F
     _020FBACA, 8 ;Goldenrod Tunnel Herb Shop
     _020FBA60, 9 ;Ecruteak
@@ -90,7 +90,7 @@ const u16 *_0210FA3C[] = {
     _020FBAD4, 11 ;Cianwood Pharmacy
     _020FBA80, 12 ;Blackthorn City
     _020FBB84, 13 ;Pokemon League
-    _020FBAC0, 14 ;Vermilion City
+    _020FBAC0, 14 ;Vermilion City & Safari Gate SW Stall
     _020FBA70, 15 ;Saffron City
     _020FBA98, 16 ;Lavender Town
     _020FBA5A, 17 ;Cerulean City
