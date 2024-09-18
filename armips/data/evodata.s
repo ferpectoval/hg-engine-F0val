@@ -695,7 +695,7 @@ evodata SPECIES_MANKEY
     terminateevodata
 
 evodata SPECIES_PRIMEAPE
-    evolution EVO_NONE, 20, SPECIES_ANNIHILAPE // TODO: program rage fist counter in battle
+    evolution EVO_STONE, ITEM_SPELL_TAG, SPECIES_ANNIHILAPE // TODO: program rage fist counter in battle
     evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
@@ -779,8 +779,8 @@ evodata SPECIES_ABRA
     terminateevodata
 
 evodata SPECIES_KADABRA
-    evolution EVO_LEVEL, 40, SPECIES_ALAKAZAM
-    evolution EVO_STONE, ITEM_LINKING_CORD, SPECIES_ALAKAZAM
+    evolution EVO_STONE, ITEM_TWISTED_SPOON, SPECIES_ALAKAZAM
+    evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
@@ -815,9 +815,9 @@ evodata SPECIES_MACHOP
     terminateevodata
 
 evodata SPECIES_MACHOKE
-    evolution EVO_LEVEL, 40, SPECIES_MACHAMP
-    evolution EVO_STONE, ITEM_LINKING_CORD, SPECIES_MACHAMP
+    evolution EVO_STONE, ITEM_BLACK_BELT, SPECIES_MACHAMP
     evolution EVO_NONE, 0, SPECIES_NONE
+	evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
@@ -911,9 +911,9 @@ evodata SPECIES_GEODUDE
     terminateevodata
 
 evodata SPECIES_GRAVELER
-    evolution EVO_LEVEL, 40, SPECIES_GOLEM
-    evolution EVO_STONE, ITEM_LINKING_CORD, SPECIES_GOLEM
+    evolution EVO_STONE, ITEM_HARD_STONE, SPECIES_GOLEM
     evolution EVO_NONE, 0, SPECIES_NONE
+	evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
@@ -1007,7 +1007,7 @@ evodata SPECIES_MAGNETON
     terminateevodata
 
 evodata SPECIES_FARFETCHD
-    evolution EVO_NONE, 0, SPECIES_NONE
+    evolution EVO_STONE, ITEM_LEEK, SPECIES_SIRFETCHD
     evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
@@ -1127,9 +1127,9 @@ evodata SPECIES_GASTLY
     terminateevodata
 
 evodata SPECIES_HAUNTER
-    evolution EVO_LEVEL, 40, SPECIES_GENGAR
-    evolution EVO_STONE, ITEM_LINKING_CORD, SPECIES_GENGAR
+    evolution EVO_STONE, ITEM_SPELL_TAG, SPECIES_GENGAR
     evolution EVO_NONE, 0, SPECIES_NONE
+	evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
@@ -6915,9 +6915,9 @@ evodata SPECIES_ROGGENROLA
     terminateevodata
 
 evodata SPECIES_BOLDORE
-    evolution EVO_LEVEL, 40, SPECIES_GIGALITH
-    evolution EVO_STONE, ITEM_LINKING_CORD, SPECIES_GIGALITH
+    evolution EVO_STONE, ITEM_HARD_STONE, SPECIES_GIGALITH
     evolution EVO_NONE, 0, SPECIES_NONE
+	evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
@@ -7011,9 +7011,9 @@ evodata SPECIES_TIMBURR
     terminateevodata
 
 evodata SPECIES_GURDURR
-    evolution EVO_LEVEL, 40, SPECIES_CONKELDURR
-    evolution EVO_STONE, ITEM_LINKING_CORD, SPECIES_CONKELDURR
+    evolution EVO_STONE, ITEM_BLACK_BELT, SPECIES_CONKELDURR
     evolution EVO_NONE, 0, SPECIES_NONE
+	evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
@@ -13676,9 +13676,9 @@ evodata SPECIES_GEODUDE_ALOLAN
 terminateevodata
 
 evodata SPECIES_GRAVELER_ALOLAN
-    evolutionwithform EVO_LEVEL, 40, SPECIES_GOLEM, 1
-    evolutionwithform EVO_STONE, ITEM_LINKING_CORD, SPECIES_GOLEM, 1
+    evolutionwithform EVO_STONE, ITEM_MAGNET, SPECIES_GOLEM, 1
     evolution EVO_NONE, 0, SPECIES_NONE
+	evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
     evolution EVO_NONE, 0, SPECIES_NONE
