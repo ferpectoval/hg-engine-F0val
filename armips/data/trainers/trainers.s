@@ -8882,7 +8882,7 @@ trainerdata 260, "Red"
         abilityslot 0
         level 100
         pokemon SPECIES_CHARIZARD
-        item ITEM_CHARIZARDITE_Y
+        item ITEM_NONE
         move MOVE_FIRE_PLEDGE
         move MOVE_AIR_SLASH
         move MOVE_BLAST_BURN
@@ -8894,7 +8894,7 @@ trainerdata 260, "Red"
         abilityslot 0
         level 100
         pokemon SPECIES_VENUSAUR
-        item ITEM_VENUSAURITE
+        item ITEM_NONE
         move MOVE_SLUDGE_BOMB
         move MOVE_GIGA_DRAIN
         move MOVE_SLEEP_POWDER
@@ -8905,12 +8905,12 @@ trainerdata 260, "Red"
         ivs 255
         abilityslot 1
         level 100
-        pokemon SPECIES_HO_OH
-        item ITEM_LEFTOVERS
-        move MOVE_SACRED_FIRE
-        move MOVE_BRAVE_BIRD
-        move MOVE_EARTHQUAKE
-        move MOVE_ROOST
+        pokemon SPECIES_LAPRAS
+        item ITEM_NONE
+        move MOVE_BLIZZARD
+        move MOVE_BRINE
+        move MOVE_PSYCHIC
+        move MOVE_BODY_SLAM
         ballseal 0
 
         // mon 2
@@ -8942,7 +8942,7 @@ trainerdata 260, "Red"
         abilityslot 0
         level 100
         pokemon SPECIES_BLASTOISE
-        item ITEM_BLASTOISINITE
+        item ITEM_NONE
         move MOVE_FOCUS_BLAST
         move MOVE_HYDRO_CANNON
         move MOVE_BLIZZARD
