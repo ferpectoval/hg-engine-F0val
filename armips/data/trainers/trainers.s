@@ -7765,7 +7765,7 @@ trainerdata 244, "Lance"
         // mon 0
         ivs 250
         abilityslot 0
-        level 75
+        level 84
         pokemon SPECIES_GYARADOS
         item ITEM_FOCUS_SASH
         move MOVE_DRAGON_DANCE
@@ -7777,7 +7777,7 @@ trainerdata 244, "Lance"
         // mon 1
         ivs 250
         abilityslot 1
-        level 77
+        level 85
         pokemon SPECIES_DRAGONITE
         item ITEM_YACHE_BERRY
         move MOVE_EXTREME_SPEED
@@ -7789,7 +7789,7 @@ trainerdata 244, "Lance"
         // mon 2
         ivs 250
         abilityslot 0
-        level 76
+        level 85
         pokemon SPECIES_AERODACTYL
         item ITEM_CHOICE_BAND
         move MOVE_DOUBLE_EDGE
@@ -7801,8 +7801,8 @@ trainerdata 244, "Lance"
         // mon 3
         ivs 250
         abilityslot 1
-        level 76
-		pokemon SPECIES_HAXORUS
+        level 84
+        pokemon SPECIES_HAXORUS
         item ITEM_QUICK_CLAW
         move MOVE_DRAGON_DANCE
         move MOVE_DRAGON_CLAW
@@ -7813,7 +7813,7 @@ trainerdata 244, "Lance"
         // mon 4
         ivs 250
         abilityslot 0
-        level 78
+        level 87
         pokemon SPECIES_CHARIZARD
         item ITEM_CHARIZARDITE_X
         move MOVE_FLARE_BLITZ
@@ -7825,8 +7825,8 @@ trainerdata 244, "Lance"
         // mon 5
         ivs 250
         abilityslot 0
-        level 76
-		pokemon SPECIES_HYDREIGON
+        level 86
+        pokemon SPECIES_HYDREIGON
         item ITEM_CHOICE_SPECS
         move MOVE_DRACO_METEOR
         move MOVE_DARK_PULSE
@@ -7851,7 +7851,7 @@ trainerdata 245, "Will"
         // mon 0
         ivs 250
         abilityslot 0
-        level 72
+        level 80
         pokemon SPECIES_GARDEVOIR
         item ITEM_FOCUS_SASH
         move MOVE_LIGHT_SCREEN
@@ -7863,7 +7863,7 @@ trainerdata 245, "Will"
         // mon 1
         ivs 250
         abilityslot 0
-        level 71
+        level 80
         pokemon SPECIES_JYNX
         item ITEM_OCCA_BERRY
         move MOVE_PERISH_SONG
@@ -7875,7 +7875,7 @@ trainerdata 245, "Will"
         // mon 2
         ivs 250
         abilityslot 0
-        level 73
+        level 81
         pokemon SPECIES_REUNICLUS
         item ITEM_COLBUR_BERRY
         move MOVE_FUTURE_SIGHT
@@ -7887,7 +7887,7 @@ trainerdata 245, "Will"
         // mon 3
         ivs 250
         abilityslot 0
-        level 72
+        level 81
         pokemon SPECIES_SLOWKING
         item ITEM_LEFTOVERS
         move MOVE_SCALD
@@ -7899,7 +7899,7 @@ trainerdata 245, "Will"
         // mon 4
         ivs 250
         abilityslot 1
-        level 71
+        level 80
         pokemon SPECIES_XATU
         item ITEM_NONE
         move MOVE_GRASS_KNOT
@@ -7911,7 +7911,7 @@ trainerdata 245, "Will"
 		//mon 5
 		ivs 250
 		abilityslot 0
-		level 74
+		level 81
 		pokemon SPECIES_GOTHITELLE
 		item ITEM_LIFE_ORB
 		move MOVE_AURA_SPHERE
@@ -7937,7 +7937,7 @@ trainerdata 246, "Karen"
         // mon 0
         ivs 250
         abilityslot 0
-        level 75
+        level 83
         pokemon SPECIES_UMBREON
         item ITEM_LEFTOVERS
         move MOVE_PURSUIT
@@ -7949,7 +7949,7 @@ trainerdata 246, "Karen"
         // mon 1
         ivs 250
         abilityslot 0
-        level 74
+        level 83
         pokemon SPECIES_SHIFTRY
         item ITEM_OCCA_BERRY
         move MOVE_AERIAL_ACE
@@ -7961,7 +7961,7 @@ trainerdata 246, "Karen"
         // mon 2
         ivs 250
         abilityslot 1
-        level 73
+        level 83
         pokemon SPECIES_SHARPEDO
         item ITEM_KINGS_ROCK
         move MOVE_PROTECT
@@ -7973,7 +7973,7 @@ trainerdata 246, "Karen"
         // mon 3
         ivs 250
         abilityslot 1
-        level 74
+        level 84
         pokemon SPECIES_HONCHKROW
         item ITEM_LEFTOVERS
         move MOVE_BRAVE_BIRD
@@ -7985,7 +7985,7 @@ trainerdata 246, "Karen"
         // mon 4
         ivs 250
         abilityslot 0
-        level 74
+        level 84
         pokemon SPECIES_LUXRAY
         item ITEM_MAGNET
         move MOVE_VOLT_SWITCH
@@ -7997,7 +7997,7 @@ trainerdata 246, "Karen"
 		//mon 5
 		ivs 250
 		abilityslot 0
-		level 76
+		level 84
 		pokemon SPECIES_ABSOL
 		item ITEM_ABSOLITE
 		move MOVE_CRUNCH
@@ -8023,7 +8023,7 @@ trainerdata 247, "Koga"
         // mon 0
         ivs 250
         abilityslot 0
-        level 74
+        level 81
         pokemon SPECIES_NINETALES
         item ITEM_FOCUS_SASH
         move MOVE_FLAMETHROWER
@@ -8035,7 +8035,7 @@ trainerdata 247, "Koga"
         // mon 1
         ivs 250
         abilityslot 0
-        level 72
+        level 81
         pokemon SPECIES_VILEPLUME
         item ITEM_BLACK_SLUDGE
         move MOVE_SOLAR_BEAM
@@ -8047,7 +8047,7 @@ trainerdata 247, "Koga"
         // mon 2
         ivs 250
         abilityslot 0
-        level 72
+        level 82
         pokemon SPECIES_SKUNTANK
         item ITEM_LIFE_ORB
         move MOVE_FLAMETHROWER
@@ -8059,7 +8059,7 @@ trainerdata 247, "Koga"
         // mon 3
         ivs 250
         abilityslot 1
-        level 73
+        level 81
         pokemon SPECIES_MUK
         item ITEM_BLACK_SLUDGE
         move MOVE_GUNK_SHOT
@@ -8071,7 +8071,7 @@ trainerdata 247, "Koga"
         // mon 4
         ivs 250
         abilityslot 1
-        level 74
+        level 82
         pokemon SPECIES_GLISCOR
         item ITEM_TOXIC_ORB
         move MOVE_EARTHQUAKE
@@ -8083,7 +8083,7 @@ trainerdata 247, "Koga"
 		// mon 5
 		ivs 250
 		abilityslot 0
-		level 75
+		level 82
 		pokemon SPECIES_VENUSAUR
 		item ITEM_VENUSAURITE
 		move MOVE_PETAL_DANCE
@@ -14450,7 +14450,7 @@ trainerdata 418, "Bruno"
         // mon 0
         ivs 250
         abilityslot 0
-        level 74
+        level 82
         pokemon SPECIES_HIPPOWDON
         item ITEM_LEFTOVERS
         move MOVE_EARTHQUAKE
@@ -14462,7 +14462,7 @@ trainerdata 418, "Bruno"
         // mon 1
         ivs 250
         abilityslot 0
-        level 73
+        level 83
         pokemon SPECIES_TYRANITAR
         item ITEM_LUM_BERRY
         move MOVE_STONE_EDGE
@@ -14474,7 +14474,7 @@ trainerdata 418, "Bruno"
         // mon 2
         ivs 250
         abilityslot 1
-        level 74
+        level 82
         pokemon SPECIES_MAMOSWINE
         item ITEM_WHITE_HERB
         move MOVE_EARTHQUAKE
@@ -14486,7 +14486,7 @@ trainerdata 418, "Bruno"
         // mon 3
         ivs 250
         abilityslot 1
-        level 72
+        level 82
         pokemon SPECIES_RAMPARDOS
         item ITEM_CHOICE_BAND
         move MOVE_HEAD_SMASH
@@ -14498,7 +14498,7 @@ trainerdata 418, "Bruno"
         // mon 4
         ivs 250
         abilityslot 0
-        level 76
+        level 83
         pokemon SPECIES_EXCADRILL
         item ITEM_LEFTOVERS
         move MOVE_EARTHQUAKE
@@ -14510,7 +14510,7 @@ trainerdata 418, "Bruno"
 		//mon 5
 		ivs 250
 		abilityslot 0
-		level 77
+		level 83
 		pokemon SPECIES_GARCHOMP
 		item ITEM_GARCHOMPITE
 		move MOVE_EARTHQUAKE
