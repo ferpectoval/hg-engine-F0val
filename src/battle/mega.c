@@ -280,13 +280,11 @@ BOOL CheckCanMega(struct BattleStruct *battle, int client)
     u16 mon = battle->battlemon[client].species;
     u16 item = battle->battlemon[client].item;
     u32 form = battle->battlemon[client].form_no;
-	struct BattleSystem *bs;
-	u16 trainer = bs->trainerId[client];
 
     if (battle->battlemon[client].canMega)
         return FALSE;
 
-    if ((newBS.SideMega[client]) || (trainer == 260))
+    if (newBS.SideMega[client])
         return FALSE;
 
     if (form)
