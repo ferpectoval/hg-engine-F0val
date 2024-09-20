@@ -258,7 +258,7 @@ An item to be held by CHANSEY. It is a\npair of gloves that boosts CHANSEY’s\n
 An item to be held by DITTO.\nExtremely fine yet hard, this odd\npowder boosts the Defense stat.
 An item to be held by CUBONE or\nMAROWAK. It is a hard bone of some\nsort that boosts the Attack stat.
 An item to be held by FARFETCH’D. It is\na very long and stiff stalk of leek\nthat boosts the critical-hit ratio.
-Add odd stone that is used to revert an\nEeveelution to its original form.
+An item to be held by a Pokémon.\nIt boosts the “Cool” aspect of the\nholder in a Contest in Sinnoh.
 An item to be held by a Pokémon.\nIt boosts the “Beauty” aspect of the\nholder in a Contest in Sinnoh.
 An item to be held by a Pokémon.\nIt boosts the “Cute” aspect of the\nholder in a Contest in Sinnoh.
 An item to be held by a Pokémon.\nIt boosts the “Smart” aspect of the\nholder in a Contest in Sinnoh.
@@ -790,3 +790,4 @@ Having a Pokémon smell this mint can\nmake its Speed stat grow stronger.\nHowev
 Having a Pokémon smell this mint can\nmake its Speed stat grow stronger.\nHowever, its Sp. Atk stat may suffer.
 Having a Pokémon smell this mint can\nmake its Speed stat grow stronger.\nHowever, its Sp. Def stat may suffer.
 Having a Pokémon smell this mint will\ncause all of its stats to grow at\nan equal rate.
+Add odd stone that is used to revert an\nEeveelution to its original form.

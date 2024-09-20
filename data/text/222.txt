@@ -258,7 +258,7 @@ Lucky Punch
 Metal Powder
 Thick Club
 Leek
-Eeveerstone
+RedScarf
 Blue Scarf
 Pink Scarf
 Green Scarf
@@ -790,3 +790,4 @@ Hasty Mint
 Jolly Mint
 Naive Mint
 Serious Mint
+Eeveerstone
