@@ -9211,7 +9211,7 @@ movedata MOVE_FORESTS_CURSE, "Forest’s Curse"
     movedescription MOVE_FORESTS_CURSE, "---"
 
 movedata MOVE_PETAL_BLIZZARD, "Petal Blizzard"
-    battleeffect MOVE_EFFECT_RAISE_ATTACK_HIT
+    battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
     basepower 90
     type TYPE_GRASS
@@ -9224,7 +9224,7 @@ movedata MOVE_PETAL_BLIZZARD, "Petal Blizzard"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_PETAL_BLIZZARD, "The user stirs up a\nviolent petal blizzard and\ndamages everything around it."
+    movedescription MOVE_PETAL_BLIZZARD, "The user stirs up a\nviolent petal blizzard\n damaging everything around."	
 
 movedata MOVE_FREEZE_DRY, "Freeze-Dry"
     battleeffect MOVE_EFFECT_FREEZE_HIT
@@ -9240,7 +9240,7 @@ movedata MOVE_FREEZE_DRY, "Freeze-Dry"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_FREEZE_DRY, "The user rapidly cools\nthe target. This move\nis super effective\non Water pokemon"
+    movedescription MOVE_FREEZE_DRY, "The user rapidly\ncools the target.\nThis move is super\neffective on Water pokemon"
 
 movedata MOVE_DISARMING_VOICE, "Disarming Voice"
     battleeffect MOVE_EFFECT_HIT
@@ -9304,7 +9304,7 @@ movedata MOVE_DRAINING_KISS, "Draining Kiss"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_DRAINING_KISS, "The user steals the target's HP\nwith a kiss, restoring\rhalf the damage taken by the target."
+    movedescription MOVE_DRAINING_KISS, "The user steals the\ntarget's HP with a\nkiss, restoring half\nthe damage dealt."
 
 movedata MOVE_CRAFTY_SHIELD, "Crafty Shield"
     battleeffect MOVE_EFFECT_HIT
@@ -9400,7 +9400,7 @@ movedata MOVE_PLAY_ROUGH, "Play Rough"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_PLAY_ROUGH, "---"
+    movedescription MOVE_PLAY_ROUGH, "The user plays rough\nwith the target and\nattacks it. This may\nalso lower the target's\nAttack stat."
 
 movedata MOVE_FAIRY_WIND, "Fairy Wind"
     battleeffect MOVE_EFFECT_HIT
