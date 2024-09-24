@@ -3091,7 +3091,8 @@ levelup SPECIES_EEVEE
 	learnset MOVE_DRAINING_KISS, 15
     learnset MOVE_SWIFT, 18
     learnset MOVE_REFRESH, 20
-    learnset MOVE_BITE, 21
+    learnset MOVE_NUZZLE, 21
+	learnset MOVE_BITE, 24
     learnset MOVE_COPYCAT, 30
     learnset MOVE_TAKE_DOWN, 33
     learnset MOVE_BATON_PASS, 34
