@@ -2908,7 +2908,7 @@ movedata MOVE_SPITE, "Spite"
 movedata MOVE_POWDER_SNOW, "Powder Snow"
     battleeffect MOVE_EFFECT_FREEZE_HIT
     pss SPLIT_SPECIAL
-    basepower 40
+    basepower 50
     type TYPE_ICE
     accuracy 100
     pp 25
@@ -9304,7 +9304,7 @@ movedata MOVE_DRAINING_KISS, "Draining Kiss"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_DRAINING_KISS, "The user steals the\ntarget's HP with a\nkiss, restoring half\nthe damage dealt."
+	movedescription MOVE_DRAINING_KISS, "The user steals the\ntarget's HP with a\nkiss, restoring half\nthe damage dealt."
 
 movedata MOVE_CRAFTY_SHIELD, "Crafty Shield"
     battleeffect MOVE_EFFECT_HIT
@@ -9916,10 +9916,10 @@ movedata MOVE_THOUSAND_WAVES, "Thousand Waves"
 
 movedata MOVE_LANDS_WRATH, "Land’s Wrath"
     battleeffect MOVE_EFFECT_HIT
-    pss SPLIT_PHYSICAL
-    basepower 90
+    pss SPLIT_SPECIAL
+    basepower 110
     type TYPE_GROUND
-    accuracy 100
+    accuracy 95
     pp 10
     effectchance 0
     target MOVE_TARGET_BOTH
@@ -9928,7 +9928,7 @@ movedata MOVE_LANDS_WRATH, "Land’s Wrath"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_LANDS_WRATH, "---"
+    movedescription MOVE_LANDS_WRATH, "The user gathers the\nenergy of the land\nand focuses that\npower on opposing Pokémon. "
 
 movedata MOVE_LIGHT_OF_RUIN, "Light of Ruin"
     battleeffect MOVE_EFFECT_RECOIL_HALF
@@ -14779,27 +14779,27 @@ movedata MOVE_MALIGNANT_CHAIN, "Malignant Chain"
     terminatedata
     movedescription MOVE_MALIGNANT_CHAIN, "---"
 	
-movedata MOVE_FIERY_IMPACT, "Fiery Impact"
-    battleeffect MOVE_EFFECT_FLINCH_BURN_HIT
-    pss SPLIT_PHYSICAL
-    basepower 100
+movedata MOVE_WILDFIRE, "Wildfire"
+    battleeffect MOVE_EFFECT_RAISE_SPEED_HIT
+    pss SPLIT_SPECIAL
+    basepower 80
     type TYPE_FIRE
     accuracy 100
     pp 10
-    effectchance 30
+    effectchance 100
     target MOVE_TARGET_SELECTED
     priority 0
     flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_FIERY_IMPACT, "The user wraps itself in\nsearing flames before\nramming the target.\nMay burn and flinch."
+    movedescription MOVE_WILDFIRE, "The user whips up an\nuncontrollable blaze,\ndamaging and raising speed."
 	
-movedata MOVE_SHADOW_JUKE, "Shadow Juke"
+movedata MOVE_GEO_SPIRE, "Geo Spire"
     battleeffect MOVE_EFFECT_REMOVE_PROTECT
     pss SPLIT_SPECIAL
     basepower 60
-    type TYPE_DARK
+    type TYPE_GROUND
     accuracy 100
     pp 10
     effectchance 0
@@ -14809,7 +14809,7 @@ movedata MOVE_SHADOW_JUKE, "Shadow Juke"
     appeal 0x10
     contesttype CONTEST_BEAUTY
     terminatedata
-    movedescription MOVE_SHADOW_JUKE, "As the user moves one way, its shadow\nstrikes from another, ignoring Protect."
+    movedescription MOVE_GEO_SPIRE, "The user summons\na spike of earth\n behind the target,\nbreaking protect"
 	
 movedata MOVE_DEATH_ROLL, "Death Roll"
     battleeffect MOVE_EFFECT_CONTINUE_AND_CONFUSE_SELF

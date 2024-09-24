@@ -937,8 +937,8 @@
 #define MOVE_UPPER_HAND 921
 #define MOVE_MALIGNANT_CHAIN 922
 
-#define MOVE_FIERY_IMPACT 923
-#define MOVE_SHADOW_JUKE 924
+#define MOVE_WILDFIRE 923
+#define MOVE_GEO_SPIRE 924
 #define MOVE_DEATH_ROLL 925
 
 // there are a bunch more here but that is fine
