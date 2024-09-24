@@ -790,4 +790,12 @@ Hasty Mint
 Jolly Mint
 Naive Mint
 Serious Mint
+Fairy Feather
+Syrupy Apple
+Unremarkable Teacup
+Masterpiece Teacup
+Cornerstone Mask
+Wellspring Mask
+Hearthflame Mask
+Metal Alloy
 Eeveerstone

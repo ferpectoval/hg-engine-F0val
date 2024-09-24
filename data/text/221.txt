@@ -790,4 +790,12 @@ Having a Pokémon smell this mint can\nmake its Speed stat grow stronger.\nHowev
 Having a Pokémon smell this mint can\nmake its Speed stat grow stronger.\nHowever, its Sp. Atk stat may suffer.
 Having a Pokémon smell this mint can\nmake its Speed stat grow stronger.\nHowever, its Sp. Def stat may suffer.
 Having a Pokémon smell this mint will\ncause all of its stats to grow at\nan equal rate.
+An item to be held by a Pokémon.\nThis feather boosts the power of\nthe holder's Fairy-type moves.
+Syrupy Apple
+Unremarkable Teacup
+Masterpiece Teacup
+Cornerstone Mask
+Wellspring Mask
+Hearthflame Mask
+Metal Alloy
 Add odd stone that is used to revert an\nEeveelution to its original form.
