@@ -656,7 +656,7 @@ mondata SPECIES_NIDORINA, "Nidorina"
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_RIVALRY, ABILITY_POISON_POINT
+    abilities ABILITY_POISON_HEAL, ABILITY_POISON_POINT
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
     mondexentry SPECIES_NIDORINA, "When feeding its young, it first\nchews the food into a paste, then\nspits it out for the offspring."
@@ -2010,7 +2010,7 @@ mondata SPECIES_GENGAR, "Gengar"
 
 
 mondata SPECIES_ONIX, "Onix"
-    basestats 35, 45, 160, 70, 30, 45
+    basestats 35, 70, 160, 70, 30, 45
     types TYPE_ROCK, TYPE_GROUND
     catchrate 45
     baseexp 0 // defined in baseexp.s
@@ -2819,7 +2819,7 @@ mondata SPECIES_EEVEE, "Eevee"
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
-    abilities ABILITY_RUN_AWAY, ABILITY_ADAPTABILITY
+    abilities ABILITY_PICKUP, ABILITY_ADAPTABILITY
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
     mondexentry SPECIES_EEVEE, "It has the ability to alter the\ncomposition of its body to suit its\nsurrounding environment."
@@ -3439,7 +3439,7 @@ mondata SPECIES_FURRET, "Furret"
 
 mondata SPECIES_HOOTHOOT, "Hoothoot"
     basestats 60, 30, 30, 50, 36, 56
-    types TYPE_NORMAL, TYPE_FLYING
+    types TYPE_FLYING, TYPE_NORMAL
     catchrate 255
     baseexp 0 // defined in baseexp.s
     evyields 1, 0, 0, 0, 0, 0
@@ -3460,7 +3460,7 @@ mondata SPECIES_HOOTHOOT, "Hoothoot"
 
 mondata SPECIES_NOCTOWL, "Noctowl"
     basestats 100, 50, 50, 70, 86, 96
-    types TYPE_NORMAL, TYPE_DARK
+    types TYPE_FLYING, TYPE_DARK
     catchrate 90
     baseexp 0 // defined in baseexp.s
     evyields 2, 0, 0, 0, 0, 0
@@ -7397,7 +7397,7 @@ mondata SPECIES_CASTFORM, "Castform"
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS
-    abilities ABILITY_FORECAST, ABILITY_NONE
+    abilities ABILITY_DROUGHT, ABILITY_SNOW_WARNING
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
     mondexentry SPECIES_CASTFORM, "This Pokémon can change its cells,\ntaking different forms based on\nthe temperature and humidity."
@@ -13823,7 +13823,7 @@ mondata SPECIES_LITWICK, "Litwick"
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
-    abilities ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY
+    abilities ABILITY_FLASH_FIRE, ABILITY_INFILTRATOR
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
     mondexentry SPECIES_LITWICK, "Its flame is usually out, but it starts\nshining when it absorbs life force from\npeople or Pokémon."
@@ -13844,7 +13844,7 @@ mondata SPECIES_LAMPENT, "Lampent"
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
-    abilities ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY
+    abilities ABILITY_FLASH_FIRE, ABILITY_INFILTRATOR
     runchance 0
     colorflip BODY_COLOR_BLACK, 0
     mondexentry SPECIES_LAMPENT, "It arrives near the moment of death and\nsteals spirit from the body."
@@ -13865,7 +13865,7 @@ mondata SPECIES_CHANDELURE, "Chandelure"
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
-    abilities ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY
+    abilities ABILITY_FLASH_FIRE, ABILITY_INFILTRATOR
     runchance 0
     colorflip BODY_COLOR_BLACK, 0
     mondexentry SPECIES_CHANDELURE, "Being consumed in Chandelure’s flame\nburns up the spirit, leaving the body\nbehind."

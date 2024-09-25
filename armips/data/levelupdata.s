@@ -3593,8 +3593,7 @@ levelup SPECIES_CHIKORITA
 levelup SPECIES_BAYLEEF
     learnset MOVE_TACKLE, 1
     learnset MOVE_GROWL, 1
-	learnset MOVE_VINE_WHIP, 1
-	learnset MOVE_ABSORB, 5
+	learnset MOVE_ABSORB, 1
     learnset MOVE_RAZOR_LEAF, 6
     learnset MOVE_POISON_POWDER, 9
 	learnset MOVE_SLEEP_POWDER, 9
@@ -3779,9 +3778,11 @@ levelup SPECIES_FERALIGATR
 	learnset MOVE_DEATH_ROLL, 42
     learnset MOVE_LIQUIDATION, 45
     learnset MOVE_DRAGON_CLAW, 50
+	learnset MOVE_DRAIN_PUNCH, 55
     learnset MOVE_THRASH, 58
     learnset MOVE_WATERFALL, 63
-    learnset MOVE_SUPERPOWER, 71
+	learnset MOVE_DRAGON_DANCE, 67
+    learnset MOVE_CLOSE_COMBAT, 71
     learnset MOVE_WAVE_CRASH, 76
     terminatelearnset
 
