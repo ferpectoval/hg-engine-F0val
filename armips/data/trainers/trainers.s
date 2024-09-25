@@ -16212,7 +16212,7 @@ trainerdata 472, "Trenton"
         ballseal 0
     endparty
 
-trainerdata 473, "Mickey"
+trainerdata 473, "Weatherman Mickey"
     trainermontype TRAINER_DATA_TYPE_NOTHING
     trainerclass CLASS_SUPER_NERD
     nummons 2
@@ -16220,7 +16220,7 @@ trainerdata 473, "Mickey"
     item ITEM_NONE
     item ITEM_NONE
     item ITEM_NONE
-    aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EXPERT_ATTACKS | 0
+    aiflags F_USE_WEATHER | 0
     battletype SINGLE_BATTLE
     endentry
 
@@ -16228,15 +16228,22 @@ trainerdata 473, "Mickey"
         // mon 0
         ivs 0
         abilityslot 0
-        level 22
-        pokemon SPECIES_KOFFING
+        level 30
+        pokemon SPECIES_CASTFORM
         ballseal 0
 
         // mon 1
         ivs 0
-        abilityslot 0
-        level 22
-        pokemon SPECIES_KOFFING
+        abilityslot 1
+        level 30
+        pokemon SPECIES_CASTFORM
+        ballseal 0
+
+        // mon 2
+        ivs 0
+        abilityslot 2
+        level 30
+        pokemon SPECIES_CASTFORM
         ballseal 0
     endparty
 
@@ -17116,21 +17123,21 @@ trainerdata 494, "Georgina"
 
         // mon 1
         ivs 10
-        abilityslot 0
+        abilityslot 1
         level 16
         pokemon SPECIES_GASTLY
         ballseal 0
 
         // mon 2
         ivs 10
-        abilityslot 0
+        abilityslot 2
         level 16
         pokemon SPECIES_GASTLY
         ballseal 0
 
         // mon 3
         ivs 10
-        abilityslot 0
+        abilityslot 1
         level 16
         pokemon SPECIES_GASTLY
         ballseal 0
@@ -17146,7 +17153,7 @@ trainerdata 494, "Georgina"
 trainerdata 495, "Boy"
     trainermontype TRAINER_DATA_TYPE_NOTHING
     trainerclass CLASS_PASSERBY
-    nummons 1
+    nummons 2
     item ITEM_NONE
     item ITEM_NONE
     item ITEM_NONE
@@ -17159,8 +17166,15 @@ trainerdata 495, "Boy"
         // mon 0
         ivs 0
         abilityslot 0
-        level 5
+        level 7
         pokemon SPECIES_CHIKORITA
+        ballseal 0
+		
+        // mon 1
+        ivs 0
+        abilityslot 1
+        level 5
+        pokemon SPECIES_NIDORAN_F
         ballseal 0
     endparty
 
@@ -17180,8 +17194,15 @@ trainerdata 496, "Boy"
         // mon 0
         ivs 0
         abilityslot 0
-        level 5
+        level 7
         pokemon SPECIES_CYNDAQUIL
+        ballseal 0
+		
+        // mon 1
+        ivs 0
+        abilityslot 1
+        level 5
+        pokemon SPECIES_NIDORAN_M
         ballseal 0
     endparty
 
@@ -17201,8 +17222,15 @@ trainerdata 497, "Boy"
         // mon 0
         ivs 0
         abilityslot 0
-        level 5
+        level 7
         pokemon SPECIES_TOTODILE
+        ballseal 0
+		
+        // mon 1
+        ivs 0
+        abilityslot 1
+        level 5
+        pokemon SPECIES_NIDORAN_F
         ballseal 0
     endparty
 
