@@ -3691,7 +3691,7 @@ levelup SPECIES_QUILAVA
 
 levelup SPECIES_TYPHLOSION
     learnset MOVE_LAVA_PLUME, 0
-	learnset MOVE_SHADOW_JUKE, 0
+	learnset MOVE_GEO_SPIRE, 0
 	learnset MOVE_ERUPTION, 1
     learnset MOVE_TACKLE, 1
     learnset MOVE_LEER, 1
