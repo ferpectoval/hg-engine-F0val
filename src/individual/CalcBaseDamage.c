@@ -178,7 +178,7 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
     struct sDamageCalc DefendingMon;
 
     switch (moveno) {
-        // handle body press - attack is derived from defense
+        // Handle Body Press - Attack is derived from Defense
         case MOVE_BODY_PRESS:
             attack = BattlePokemonParamGet(sp, attacker, BATTLE_MON_DATA_DEF, NULL);
             atkstate = BattlePokemonParamGet(sp, attacker, BATTLE_MON_DATA_STATE_DEF, NULL) - 6;
@@ -227,10 +227,7 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
 
     battle_type = BattleTypeGet(bw);
 
-    if ((MoldBreakerAbilityCheck(sp, attacker, defender, ABILITY_DISGUISE) == TRUE && sp->battlemon[defender].form_no == 0))
-        return 0;
-
-    if (((MoldBreakerAbilityCheck(sp, attacker, defender, ABILITY_ICE_FACE) == TRUE) && GetMoveSplit(sp, moveno) == SPLIT_PHYSICAL) && sp->battlemon[defender].form_no == 0)
+    if (((MoldBreakerAbilityCheck(sp, attacker, defender, ABILITY_DISGUISE) == TRUE || MoldBreakerAbilityCheck(sp, attacker, defender, ABILITY_ICE_FACE) == TRUE) && GetMoveSplit(sp, moveno) == SPLIT_PHYSICAL) && sp->battlemon[defender].form_no == 0)
         return 0;
 
     if (pow == 0)
@@ -347,12 +344,12 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
     if ((DefendingMon.item_held_effect == HOLD_EFFECT_DITTO_DEF_UP) && (DefendingMon.species == SPECIES_DITTO))
         defense *= 2;
 
-    // handle gorilla tactics
+    // handle Gorilla Tactics
     if (AttackingMon.ability == ABILITY_GORILLA_TACTICS) {
         attack = attack * 150 / 100;
     }    
 
-    // handle assault vest
+    // Handle Assault Vest
     if ((DefendingMon.item_held_effect == HOLD_EFFECT_SPDEF_BOOST_NO_STATUS_MOVES)) {
         sp_defense = sp_defense * 150 / 100;
     }
@@ -478,7 +475,7 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
         movepower = movepower * 130 / 100;
     }
 
-    // handle fluffy
+    // Handle Fluffy
     if (DefendingMon.ability == ABILITY_FLUFFY) {
         if (sp->moveTbl[sp->current_move_index].flag & FLAG_CONTACT) {
             movepower = movepower * 50 / 100;
@@ -604,7 +601,6 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
     {
         movepower = movepower * 150 / 100;
     }
-
     // handle steely spirit for the attacker--can stack
     if (movetype == TYPE_STEEL && AttackingMon.ability == ABILITY_STEELY_SPIRIT)
     {
@@ -791,7 +787,7 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
       && (DefendingMon.ability != ABILITY_BEADS_OF_RUIN))
         sp_defense = sp_defense * 75 / 100;
 
-    // handle field effects interacting with their moves
+    // Handle field effects interacting with their moves
     if (sp->terrainOverlay.numberOfTurnsLeft > 0) {
         switch (sp->terrainOverlay.type)
         {
@@ -813,12 +809,6 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
         default:
             break;
         }
-    }
-
-    // handle grav apple
-    if ((sp->field_condition & FIELD_STATUS_GRAVITY) && (moveno == MOVE_GRAV_APPLE))
-    {
-        movepower = movepower * 15 / 10;
     }
 
     // handle weather boosts
@@ -877,7 +867,7 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
     damage = damage / equivalentDefense;
     damage /= 50;
 
-    // handle parental bond
+    // Handle Parental Bond
     if (sp->oneTurnFlag[attacker].parental_bond_flag == 2) {
         damage /= 4;
     }
@@ -1047,7 +1037,7 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
         damage /= 2;
     }
       
-    // handle field effects
+    // Handle field effects
     if (sp->terrainOverlay.numberOfTurnsLeft > 0) {
         switch (sp->terrainOverlay.type)
         {

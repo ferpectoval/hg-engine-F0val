@@ -24,7 +24,7 @@
  *
  *  @param bw battle work structure
  */
-struct BattleStruct *ServerInit(struct BattleSystem *bw)
+struct BattleStruct *ServerInit(void *bw)
 {
     struct BattleStruct *sp;
 
@@ -46,9 +46,6 @@ struct BattleStruct *ServerInit(struct BattleSystem *bw)
     }
 
 #endif // RESTORE_ITEMS_AT_BATTLE_END
-
-    sp->original_terrain = bw->terrain;
-    sp->original_bgId = bw->bgId;
 
     return sp;
 }

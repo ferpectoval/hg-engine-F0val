@@ -174,9 +174,9 @@ Competitive
 Strong Jaw
 Refrigerate
 Sweet Veil
-StanceChange
+Stance Change
 Gale Wings
-MegaLauncher
+Mega Launcher
 Grass Pelt
 Symbiosis
 Tough Claws
@@ -192,8 +192,8 @@ Desolate Land
 Delta Stream
 Stamina
 Wimp Out
-EmergencyExit
-WaterCompaction
+Emergency Exit
+Water Compaction
 Merciless
 Shields Down
 Stakeout
@@ -228,11 +228,11 @@ Electric Surge
 Psychic Surge
 Misty Surge
 Grassy Surge
-FullMetalBody
+Full Metal Body
 Shadow Shield
 Prism Armor
 Neuroforce
-IntrepidSword
+Intrepid Sword
 Dauntless Shield
 Libero
 Ball Fetch
