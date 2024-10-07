@@ -586,8 +586,6 @@ BOOL LONG_CALL AddWildPartyPokemon(int inTarget, EncounterInfo *encounterInfo, s
     u8 change_form = 0;
     u8 form_no;
     u16 species;
-	u16 level;
-	u32 exp;
 		
     if (encounterInfo->isEgg == 0 && encounterInfo->ability == ABILITY_COMPOUND_EYES)
     {
@@ -595,14 +593,17 @@ BOOL LONG_CALL AddWildPartyPokemon(int inTarget, EncounterInfo *encounterInfo, s
     }
 
     species = GetMonData(encounterPartyPokemon, MON_DATA_SPECIES, NULL);
-	level = GetMonData(encounterPartyPokemon, MON_DATA_LEVEL, NULL);
 	
 	#ifdef IMPLEMENT_SCALING
 	
+	u16 level;
+	u32 exp;
 	u32 DoScaling = GetScalingType();
 	u16 avgLevel = GetAvgLevel(bp);
 	u16 highLevel = GetHighLevel(bp);
 	u16 lowLevel = GetLowLevel(bp);
+	
+	level = GetMonData(encounterPartyPokemon, MON_DATA_LEVEL, NULL);
 	
 	if ((species == SPECIES_DIANCIE) && (level == 50)) {
 		goto _skipLevelScale;
