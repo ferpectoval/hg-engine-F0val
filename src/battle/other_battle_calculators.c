@@ -890,23 +890,13 @@ u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int clien
         priority2 = sp->moveTbl[move2].priority;
 
         // handle prankster
-        if
-		(
-			GetBattlerAbility(sp, client1) == ABILITY_PRANKSTER
-			&& GetMoveSplit(sp, move1) == SPLIT_STATUS
-			&& sp->battlemon[client2].type1 != TYPE_DARK
-			&& sp->battlemon[client2].type2 != TYPE_DARK
-		) {
+        if (GetBattlerAbility(sp, client1) == ABILITY_PRANKSTER && GetMoveSplit(sp, move1) == SPLIT_STATUS)
+        {
             priority1++;
         }
 
-        if
-		(
-			GetBattlerAbility(sp, client2) == ABILITY_PRANKSTER
-			&& GetMoveSplit(sp, move2) == SPLIT_STATUS
-			&& sp->battlemon[client1].type1 != TYPE_DARK
-			&& sp->battlemon[client1].type2 != TYPE_DARK
-		) {
+        if (GetBattlerAbility(sp, client2) == ABILITY_PRANKSTER && GetMoveSplit(sp, move2) == SPLIT_STATUS)
+        {
             priority2++;
         }
 
