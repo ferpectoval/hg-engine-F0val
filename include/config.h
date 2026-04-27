@@ -28,7 +28,7 @@
 
 // EXPERIENCE_FORMULA_GEN defines the experience formula you would like to use.  Gens 5, 7, and 8 consider the difference between the attacker's level and the fainted's level to scale the experience gained.
 // i.e. defining this as "5", "7", or "8" would use a scaled formula, whereas "6" and others would use the default formula.  There is a multiplier of 255 / 390 to not artificially inflate the experience given as well with higher base experience.
-#define EXPERIENCE_FORMULA_GEN GEN_LATEST
+#define EXPERIENCE_FORMULA_GEN 6
 
 // HIDDEN_ABILITIES defines whether or not Pokémon with their hidden ability bit set will receive their hidden abilities when being generated/changing form in battle.
 // commenting this line out essentially disables hidden abilities to maintain default behavior, while leaving this as-is will introduce hidden abilities and all of their handling.
@@ -107,7 +107,7 @@
 // IMPLEMENT_DYNAMIC_WILD_SPECIES_FORMS allows wild species to appear with different forms if it has multiple forms.
 // Normally you will use monwithform, encounterwithform, headbuttencounterwithform to specify different forms (similar to Gen 5+)
 // Uncomment this line to enable this functionality
-// #define IMPLEMENT_DYNAMIC_WILD_SPECIES_FORMS
+#define IMPLEMENT_DYNAMIC_WILD_SPECIES_FORMS
 
 // Some forms only exist in their debut games, with accompying mechanics. IMPLEMENT_GONE_SPECIES_MECHANICS lets these forms' mechanics coexist with the latest mechanics. Examples include Noble Pokémon
 #define IMPLEMENT_DEXIT_FORMS_MECHANICS
@@ -119,7 +119,7 @@
 // SHINY_ODDS are the odds that a pokémon will be shiny.  actual odds are SHINY_ODDS over 65,536, by default 8 / 65536 or 1 / 8192
 // note that changing this still has no chance of spawning shiny mons in for trainers like the tutorial's method does
 // this will change existing mons too!  if you want to change the odds of wild mons only, you will have to add a certain amount of pid rerolls to the AddWildPartyPokemon routine
-#define SHINY_ODDS 8
+#define SHINY_ODDS 512
 
 // FRIENDSHIP_EVOLUTION_THRESHOLD defines the amount of friendship needed to evolve mons with friendship-related evolutions
 // modern generations have this value at 160, older ones at 220.  still max out at 255
@@ -134,7 +134,7 @@
 #define RESTORE_ITEMS_AT_BATTLE_END
 
 // AI_CAN_GRAB_ITEMS allows to use Trick, Switcheroo, (Thief still todo) on the Player and actually grab items. This can result in lost items.
-#define AI_CAN_GRAB_ITEMS
+// #define AI_CAN_GRAB_ITEMS
 
 // PROTEAN_GENERATION defines the behavior that Protean should exhibit, where it either changes type every move (<=8) or changes type once per appearance in battle (>=9)
 #define PROTEAN_GENERATION GEN_LATEST
@@ -160,13 +160,13 @@
 #define REUSABLE_TMS
 
 // DELETABLE_HMS allows HMs to be forgotten, this also makes their quantity reduce, but the infinite TMs change prevents this.
-//#define DELETABLE_HMS
+#define DELETABLE_HMS
 
 // MART_EXPANSION allows for adding and modifying items to the mart inventories
 #define MART_EXPANSION
 
 // POKEATHLON_EXPANSION allows for adding and modifying items to the Pokéathlon shop inventories
-//#define POKEATHLON_SHOP_EXPANSION
+#define POKEATHLON_SHOP_EXPANSION
 
 // STATIC_HP_BAR updates the HP bar to increase/decrease at a fixed rate like later generations
 #define STATIC_HP_BAR
@@ -190,7 +190,7 @@
 #define MOON_BALL_GENERATION    GEN_LATEST
 
 // If caught, the Pokémon's friendship is set to 200 in Generations II through VII, or 150 in Generation VIII onwards.
-#define FRIEND_BALL_GENERATION  GEN_LATEST
+#define FRIEND_BALL_GENERATION 6
 
 // THUNDER_STORM_WEATHER_ELECTRIC_TERRAIN makes the Thunder & Storm map header weathers set permanent
 // Electric Terrain (and rain) in battle
