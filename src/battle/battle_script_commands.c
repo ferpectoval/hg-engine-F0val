@@ -1625,8 +1625,9 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
                 struct PartyPokemon *pploop = BattleWorkPokemonParamGet(expcalc->bw, exp_client_no, i);
                 if ((GetMonData(pploop, MON_DATA_SPECIES, NULL)) && (GetMonData(pploop, MON_DATA_HP, NULL)))
                 {
-                    if (sp->obtained_exp_right_flag[client_no /*(sp->fainting_client >> 1) & 1*/] & No2Bit(i))
-                    {
+                    //if (sp->obtained_exp_right_flag[client_no /*(sp->fainting_client >> 1) & 1*/] & No2Bit(i))
+                    /*
+					{
                         monCount++;
                     }
 
@@ -1636,7 +1637,9 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
                     if (eqp == HOLD_EFFECT_EXP_SHARE)
                     {
                         monCountFromItem++;
-                    }
+                    }*/
+					
+					monCount++;
                 }
             }
         }

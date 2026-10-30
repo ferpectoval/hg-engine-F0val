@@ -1858,7 +1858,23 @@ u32 gLastPokemonLevelForMoneyCalc;
  */
 void set_starter_hidden_ability(struct Party *party UNUSED, struct PartyPokemon *pp)
 {
-    if (CheckScriptFlag(HIDDEN_ABILITIES_STARTERS_FLAG) == 1)
+    
+	#ifdef ALL_PERFECT_IVS
+	
+	u16 IV_31;
+	IV_31 = 31;
+	
+	SetMonData(pp, MON_DATA_HP_IV, &IV_31);
+	SetMonData(pp, MON_DATA_ATK_IV, &IV_31);
+	SetMonData(pp, MON_DATA_DEF_IV, &IV_31);
+	SetMonData(pp, MON_DATA_SPATK_IV, &IV_31);
+	SetMonData(pp, MON_DATA_SPDEF_IV, &IV_31);
+	SetMonData(pp, MON_DATA_SPEED_IV, &IV_31);
+	RecalcPartyPokemonStats(pp);
+	
+	#endif
+	
+	if (CheckScriptFlag(HIDDEN_ABILITIES_STARTERS_FLAG) == 1)
     {
         SET_MON_HIDDEN_ABILITY_BIT(pp)
         SetBoxMonAbility((void *)&pp->box);
@@ -1903,6 +1919,21 @@ void sub_0206D328(struct PartyPokemon *pokemon, u32 heapId)
     SetMonData(pokemon, MON_DATA_POKEBALL, &pokeball);
     SetMonData(pokemon, MON_DATA_MET_LEVEL, &metLevel);
     SetMonData(pokemon, MON_DATA_RESERVED_113, &dummy_p2_1);
+	
+	#ifdef ALL_PERFECT_IVS
+	
+	u16 IV_31;
+	IV_31 = 31;
+	
+	SetMonData(pp, MON_DATA_HP_IV, &IV_31);
+	SetMonData(pp, MON_DATA_ATK_IV, &IV_31);
+	SetMonData(pp, MON_DATA_DEF_IV, &IV_31);
+	SetMonData(pp, MON_DATA_SPATK_IV, &IV_31);
+	SetMonData(pp, MON_DATA_SPDEF_IV, &IV_31);
+	SetMonData(pp, MON_DATA_SPEED_IV, &IV_31);
+	
+	#endif
+	
     RecalcPartyPokemonStats(pokemon);
 
     ResetPartyPokemonAbility(pokemon);

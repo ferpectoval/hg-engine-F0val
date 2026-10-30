@@ -375,7 +375,7 @@ u16 LONG_CALL ActivateParadoxAbility(void *bsys, struct BattleStruct *ctx, u8 cl
             // Just change to WEATHER_SUNNY_ANY if you want Desolate Land to activate this
             if ((CheckSideAbility(bsys, ctx, CHECK_ABILITY_ALL_HP, 0, ABILITY_CLOUD_NINE) == 0)
              && (CheckSideAbility(bsys, ctx, CHECK_ABILITY_ALL_HP, 0, ABILITY_AIR_LOCK) == 0)
-             && (ctx->field_condition & WEATHER_SUNNY_NOT_EXTREMELY_HARSH)) {
+             && (ctx->field_condition & WEATHER_SUNNY_ANY)) {
                 isHarshSunlight = TRUE;
             }
 
